@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SwashSim ProjectType="Custom">
+  <Project>
+    <FileName>Projects\SignalizedIntersections\Gnv_Archer_37th\Archer_37th.ssim</FileName>
+    <FacilityName />
+    <FileNameNetwork>Projects\SignalizedIntersections\Gnv_Archer_37th\Archer_37th.nwf</FileNameNetwork>
+    <FileNameDriverParms>DataFiles_ModelParms\DriverParms.xml</FileNameDriverParms>
+    <FileNameLaneChangeParms>DataFiles_ModelParms\LaneChangeParameters.xml</FileNameLaneChangeParms>
+    <FileNameVehicleMoveParms>DataFiles_ModelParms\VehicleMovementParms.xml</FileNameVehicleMoveParms>
+    <FileNameCarFollowModelParms>DataFiles_ModelParms\CarFollowModelParms.xml</FileNameCarFollowModelParms>
+    <FileNameVehicleBase>DataFiles_Vehicles\VehiclesBase.xml</FileNameVehicleBase>
+    <FileNameVehicleDimensions>DataFiles_Vehicles\VehiclesDimensions.xml</FileNameVehicleDimensions>
+    <FileNameVehicleEngines>DataFiles_Vehicles\Engines.xml</FileNameVehicleEngines>
+    <FileNameVehicleTransmissions>DataFiles_Vehicles\Transmissions.xml</FileNameVehicleTransmissions>
+    <FileNameSignalData>Projects\SignalizedIntersections\Gnv_Archer_37th\Archer_37th_SignalData.xml</FileNameSignalData>
+    <OutputDataFolder>Projects\SignalizedIntersections\Gnv_Archer_37th</OutputDataFolder>
+    <RouteAssignmentMethod>Random</RouteAssignmentMethod>
+    <Location />
+    <FacilityStart />
+    <FacilityEnd />
+    <AnalysisDirection />
+    <AnalysisPeriod />
+    <Analyst />
+    <Date>4/6/2017 2:33:48 PM</Date>
+    <Agency />
+    <Comment />
+    <Program>SwashSim</Program>
+  </Project>
+  <SimulationSettings>
+    <WarmupTimeSeconds>60</WarmupTimeSeconds>
+    <DurationSeconds>300</DurationSeconds>
+    <NumReplications>1</NumReplications>
+    <DetectorAggregationIntervalSeconds>30</DetectorAggregationIntervalSeconds>
+    <RandSeed1>2314</RandSeed1>
+    <RandSeed2>6113</RandSeed2>
+    <RandSeed3>4039</RandSeed3>
+    <RandSeed4>9818</RandSeed4>
+    <CheckTruckPercentages>false</CheckTruckPercentages>
+    <MaxTruckPctErrorValue>0.0</MaxTruckPctErrorValue>
+    <MaxTruckPctErrorProp>0.0</MaxTruckPctErrorProp>
+    <DetectorSummaryOutput>false</DetectorSummaryOutput>
+    <DetectorActuationOutput>false</DetectorActuationOutput>
+    <HeadwayDataOutput>false</HeadwayDataOutput>
+    <LaneChangeDataOutput>false</LaneChangeDataOutput>
+    <PlatoonDataOutput>false</PlatoonDataOutput>
+    <RampMeteringData>false</RampMeteringData>
+    <SignalTSDOutput>false</SignalTSDOutput>
+    <LinkPerformanceData>false</LinkPerformanceData>
+    <QueueDataOutput>false</QueueDataOutput>
+    <VehicleTSDOutput>false</VehicleTSDOutput>
+  </SimulationSettings>
+</SwashSim>

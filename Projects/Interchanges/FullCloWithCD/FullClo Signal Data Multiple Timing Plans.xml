@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SwashSim>
+  <SignalControllerOnRamp id="1">
+    <Label>EB On-Ramp</Label>
+    <ControlMode>RampMetering</ControlMode>
+    <IsMaster>false</IsMaster>
+    <AssociatedLinkIds />
+    <TimingPlans>
+      <TimingPlan id="1">
+        <Label>Scenarios 1,3,5,7,9,11,13,15,17,19,21,23</Label>
+        <ControlAlgorithm>Pretimed</ControlAlgorithm>
+        <GreenIntervalSec>2</GreenIntervalSec>
+        <MeteringRateMinVehPerHour>240</MeteringRateMinVehPerHour>
+        <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
+        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
+        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
+        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
+        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <Phases>
+          <Phase id="1">
+            <Label>EB On-Ramp Direct</Label>
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>56</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeter</Function>
+                <Label>EB On-Ramp</Label>
+                <LinkPositionPct>78</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>56</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>EB On-Ramp Presence Q Det</Label>
+                <LinkPositionPct>55</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>45</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q Det</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>34</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>EB On-Ramp Adv Q Det</Label>
+                <LinkPositionPct>15</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+          <Phase id="2">
+            <Label>EB On-Ramp Loop</Label>
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>807</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeter</Function>
+                <Label>EB Loop On-Ramp </Label>
+                <LinkPositionPct>95</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>807</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>EB Loop On-Ramp Presence Q Det</Label>
+                <LinkPositionPct>90</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>807</LinkId>
+                <LaneId>1</LaneId>
+                <Id>2</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB Loop On-Ramp Int Q Det</Label>
+                <LinkPositionPct>40</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7880</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>EB Loop On-Ramp Adv Q Det</Label>
+                <LinkPositionPct>30</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+        </Phases>
+      </TimingPlan>
+      <TimingPlan id="2">
+        <Label>Scenarios 2,4,6,8,10,12,14,16,18,20,22,24</Label>
+        <ControlAlgorithm>Pretimed</ControlAlgorithm>
+        <GreenIntervalSec>2</GreenIntervalSec>
+        <MeteringRateMinVehPerHour>550</MeteringRateMinVehPerHour>
+        <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
+        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
+        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
+        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
+        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <Phases>
+          <Phase id="1">
+            <Label>EB On-Ramp Direct</Label>
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>56</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeter</Function>
+                <Label>EB On-Ramp</Label>
+                <LinkPositionPct>78</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>34</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>EB On-Ramp Adv Q Det</Label>
+                <LinkPositionPct>15</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>34</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>EB On-Ramp Adv Q Det</Label>
+                <LinkPositionPct>15</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>56</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>EB On-Ramp Presence Q Det</Label>
+                <LinkPositionPct>55</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>45</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q Det</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>34</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>EB On-Ramp Adv Q Det</Label>
+                <LinkPositionPct>15</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+          <Phase id="2">
+            <Label>EB On-Ramp Loop</Label>
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>807</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeter</Function>
+                <Label>EB Loop On-Ramp </Label>
+                <LinkPositionPct>95</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>807</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>EB Loop On-Ramp Presence Q Det</Label>
+                <LinkPositionPct>90</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>807</LinkId>
+                <LaneId>1</LaneId>
+                <Id>2</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB Loop On-Ramp Int Q Det</Label>
+                <LinkPositionPct>40</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>1</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7880</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>EB Loop On-Ramp Adv Q Det</Label>
+                <LinkPositionPct>30</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+        </Phases>
+      </TimingPlan>
+    </TimingPlans>
+  </SignalControllerOnRamp>
+  <SignalControllerOnRamp id="2">
+    <Label>WB On-Ramp</Label>
+    <ControlMode>RampMetering</ControlMode>
+    <IsMaster>false</IsMaster>
+    <AssociatedLinkIds />
+    <TimingPlans>
+      <TimingPlan id="1">
+        <Label>Scenarios 1,3,5,7,9,11,13,15,17,19,21,23</Label>
+        <ControlAlgorithm>Pretimed</ControlAlgorithm>
+        <GreenIntervalSec>2</GreenIntervalSec>
+        <MeteringRateMinVehPerHour>240</MeteringRateMinVehPerHour>
+        <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
+        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
+        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
+        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
+        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <Phases>
+          <Phase id="1">
+            <Label>WB On-Ramp Direct</Label>
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>4041</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeter</Function>
+                <Label>WB On-Ramp</Label>
+                <LinkPositionPct>77.6</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>4041</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>WB On-Ramp Presence Q Det</Label>
+                <LinkPositionPct>55</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>3940</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>WB On-Ramp Int Q Det</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>3739</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>WB On-Ramp Adv Q Det </Label>
+                <LinkPositionPct>15</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+          <Phase id="2">
+            <Label>WB On-Ramp Loop</Label>
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7727</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeter</Function>
+                <Label>WB Loop On-Ramp</Label>
+                <LinkPositionPct>95.2</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7727</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>WB Loop On-Ramp Presence Q Det</Label>
+                <LinkPositionPct>90</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7727</LinkId>
+                <LaneId>1</LaneId>
+                <Id>2</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>WB Loop On-Ramp Int Q Det</Label>
+                <LinkPositionPct>40</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7577</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>WB Loop On ramp Adv Q det</Label>
+                <LinkPositionPct>30</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+        </Phases>
+      </TimingPlan>
+      <TimingPlan id="2">
+        <Label>Scenarios 2,4,6,8,10,12,14,16,18,20,22,24</Label>
+        <ControlAlgorithm>Pretimed</ControlAlgorithm>
+        <GreenIntervalSec>2</GreenIntervalSec>
+        <MeteringRateMinVehPerHour>550</MeteringRateMinVehPerHour>
+        <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
+        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
+        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
+        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
+        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <Phases>
+          <Phase id="1">
+            <Label>WB On-Ramp Direct</Label>
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>4041</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeter</Function>
+                <Label>WB On-Ramp</Label>
+                <LinkPositionPct>77.6</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>4041</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>WB On-Ramp Presence Q Det</Label>
+                <LinkPositionPct>55</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>3940</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>WB On-Ramp Int Q Det</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>3739</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>WB On-Ramp Adv Q Det </Label>
+                <LinkPositionPct>15</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+          <Phase id="2">
+            <Label>WB On-Ramp Loop</Label>
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7727</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeter</Function>
+                <Label>WB Loop On-Ramp</Label>
+                <LinkPositionPct>95.2</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7727</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>WB Loop On-Ramp Presence Q Det</Label>
+                <LinkPositionPct>90</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7727</LinkId>
+                <LaneId>1</LaneId>
+                <Id>2</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>WB Loop On-Ramp Int Q Det</Label>
+                <LinkPositionPct>40</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>7577</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>WB Loop On ramp Adv Q det</Label>
+                <LinkPositionPct>30</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+        </Phases>
+      </TimingPlan>
+    </TimingPlans>
+  </SignalControllerOnRamp>
+</SwashSim>

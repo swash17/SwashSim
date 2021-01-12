@@ -1,0 +1,2284 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SwashSim>
+  <SignalControllerPretimed id="1">
+    <Label>West Arterial Int</Label>
+    <ControlMode>Pretimed</ControlMode>
+    <IsMaster>true</IsMaster>
+    <AssociatedLinkIds>
+      <LinkId>211</LinkId>
+      <LinkId>2427</LinkId>
+      <LinkId>3140</LinkId>
+      <LinkId>3813</LinkId>
+      <LinkId>5354</LinkId>
+      <LinkId>5229</LinkId>
+    </AssociatedLinkIds>
+    <TimingPlans>
+      <TimingPlan id="1">
+        <Label>Scenarios 1-4</Label>
+        <IsCoordinated>false</IsCoordinated>
+        <TimingStages>
+          <TimingStage id="1">
+            <IncludedPhases>
+              <PhaseId>5</PhaseId>
+              <PhaseId>1</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>8.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>4</PhaseId>
+              <PhaseId>8</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>45.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>7</PhaseId>
+              <PhaseId>3</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>19.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+        </TimingStages>
+        <TimingRings>
+          <TimingRing id="1">
+            <Phases>
+              <Phase id="1">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>8.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L1</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L2</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="4">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>45.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L3</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="3">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>19.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3140</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB RT L1</Label>
+                    <LinkPositionPct>80</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>1</PhaseId>
+              <PhaseId>4</PhaseId>
+              <PhaseId>3</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+          <TimingRing id="2">
+            <Phases>
+              <Phase id="5">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>8.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB Off-Ramp LT L1</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB LT off-ramp L2</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="8">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>45.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L3</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L2</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L1</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="7">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>19.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5354</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB RT </Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>5</PhaseId>
+              <PhaseId>8</PhaseId>
+              <PhaseId>7</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+        </TimingRings>
+      </TimingPlan>
+      <TimingPlan id="2">
+        <Label>Scenarios 5-8</Label>
+        <IsCoordinated>false</IsCoordinated>
+        <TimingStages>
+          <TimingStage id="1">
+            <IncludedPhases>
+              <PhaseId>5</PhaseId>
+              <PhaseId>1</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>8.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>4</PhaseId>
+              <PhaseId>8</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>38.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>7</PhaseId>
+              <PhaseId>3</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>16.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+        </TimingStages>
+        <TimingRings>
+          <TimingRing id="1">
+            <Phases>
+              <Phase id="1">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>8.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L1</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L2</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="4">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>38.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L3</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="3">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>16.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3140</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB RT L1</Label>
+                    <LinkPositionPct>80</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>1</PhaseId>
+              <PhaseId>4</PhaseId>
+              <PhaseId>3</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+          <TimingRing id="2">
+            <Phases>
+              <Phase id="5">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>8.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB Off-Ramp LT L1</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB LT off-ramp L2</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="8">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>38.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L3</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L2</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L1</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="7">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>16.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5354</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB RT </Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>5</PhaseId>
+              <PhaseId>8</PhaseId>
+              <PhaseId>7</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+        </TimingRings>
+      </TimingPlan>
+      <TimingPlan id="3">
+        <Label>Scenarios 9-12</Label>
+        <IsCoordinated>false</IsCoordinated>
+        <TimingStages>
+          <TimingStage id="1">
+            <IncludedPhases>
+              <PhaseId>5</PhaseId>
+              <PhaseId>1</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>7.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>4</PhaseId>
+              <PhaseId>8</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>32.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>7</PhaseId>
+              <PhaseId>3</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>13.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+        </TimingStages>
+        <TimingRings>
+          <TimingRing id="1">
+            <Phases>
+              <Phase id="1">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>7.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L1</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L2</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="4">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>32.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L3</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="3">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>13.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3140</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB RT L1</Label>
+                    <LinkPositionPct>80</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>1</PhaseId>
+              <PhaseId>4</PhaseId>
+              <PhaseId>3</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+          <TimingRing id="2">
+            <Phases>
+              <Phase id="5">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>7.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB Off-Ramp LT L1</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB LT off-ramp L2</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="8">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>32.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L3</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L2</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L1</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="7">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>13.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5354</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB RT </Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>5</PhaseId>
+              <PhaseId>8</PhaseId>
+              <PhaseId>7</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+        </TimingRings>
+      </TimingPlan>
+      <TimingPlan id="4">
+        <Label>Scenarios 13-16</Label>
+        <IsCoordinated>false</IsCoordinated>
+        <TimingStages>
+          <TimingStage id="1">
+            <IncludedPhases>
+              <PhaseId>5</PhaseId>
+              <PhaseId>1</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>9.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>4</PhaseId>
+              <PhaseId>8</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>37.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>7</PhaseId>
+              <PhaseId>3</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>16.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+        </TimingStages>
+        <TimingRings>
+          <TimingRing id="1">
+            <Phases>
+              <Phase id="1">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>9.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L1</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L2</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="4">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>37.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L3</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="3">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>16.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3140</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB RT L1</Label>
+                    <LinkPositionPct>80</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>1</PhaseId>
+              <PhaseId>4</PhaseId>
+              <PhaseId>3</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+          <TimingRing id="2">
+            <Phases>
+              <Phase id="5">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>9.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB Off-Ramp LT L1</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB LT off-ramp L2</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="8">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>37.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L3</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L2</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L1</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="7">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>16.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5354</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB RT </Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>5</PhaseId>
+              <PhaseId>8</PhaseId>
+              <PhaseId>7</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+        </TimingRings>
+      </TimingPlan>
+      <TimingPlan id="5">
+        <Label>Scenarios 17-20</Label>
+        <IsCoordinated>false</IsCoordinated>
+        <TimingStages>
+          <TimingStage id="1">
+            <IncludedPhases>
+              <PhaseId>5</PhaseId>
+              <PhaseId>1</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>8.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>4</PhaseId>
+              <PhaseId>8</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>31.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>7</PhaseId>
+              <PhaseId>3</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>13.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+        </TimingStages>
+        <TimingRings>
+          <TimingRing id="1">
+            <Phases>
+              <Phase id="1">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>8.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L1</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L2</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="4">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>31.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L3</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="3">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>13.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3140</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB RT L1</Label>
+                    <LinkPositionPct>80</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>1</PhaseId>
+              <PhaseId>4</PhaseId>
+              <PhaseId>3</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+          <TimingRing id="2">
+            <Phases>
+              <Phase id="5">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>8.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB Off-Ramp LT L1</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB LT off-ramp L2</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="8">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>31.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L3</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L2</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L1</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="7">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>13.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5354</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB RT </Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>5</PhaseId>
+              <PhaseId>8</PhaseId>
+              <PhaseId>7</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+        </TimingRings>
+      </TimingPlan>
+      <TimingPlan id="6">
+        <Label>Scenarios 21-24</Label>
+        <IsCoordinated>false</IsCoordinated>
+        <TimingStages>
+          <TimingStage id="1">
+            <IncludedPhases>
+              <PhaseId>5</PhaseId>
+              <PhaseId>1</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>7.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>4</PhaseId>
+              <PhaseId>8</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>25.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+          <TimingStage id="2">
+            <IncludedPhases>
+              <PhaseId>7</PhaseId>
+              <PhaseId>3</PhaseId>
+            </IncludedPhases>
+            <MaxGreen>10.0</MaxGreen>
+            <Yellow>4.0</Yellow>
+            <AllRed>2.0</AllRed>
+          </TimingStage>
+        </TimingStages>
+        <TimingRings>
+          <TimingRing id="1">
+            <Phases>
+              <Phase id="1">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>7.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L1</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5229</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB LT L2</Label>
+                    <LinkPositionPct>40</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="4">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>25.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>4</ControlPhaseId>
+                    <LinkId>6828</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB Thru L3</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="3">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>10.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>6311</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>LT NBL2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3140</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB RT L1</Label>
+                    <LinkPositionPct>80</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>1</PhaseId>
+              <PhaseId>4</PhaseId>
+              <PhaseId>3</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+          <TimingRing id="2">
+            <Phases>
+              <Phase id="5">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>7.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB Off-Ramp LT L1</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>5</ControlPhaseId>
+                    <LinkId>3813</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>EB LT off-ramp L2</Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="8">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>25.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>3</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L3</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L2</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>8</ControlPhaseId>
+                    <LinkId>7612</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>NB Thru L1</Label>
+                    <LinkPositionPct>65</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+              <Phase id="7">
+                <MinGreen>0.0</MinGreen>
+                <MaxGreen>10.0</MaxGreen>
+                <Yellow>4.0</Yellow>
+                <AllRed>2.0</AllRed>
+                <ControlPoints>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L1</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>7</ControlPhaseId>
+                    <LinkId>2427</LinkId>
+                    <LaneId>2</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>SB LT L2</Label>
+                    <LinkPositionPct>90</LinkPositionPct>
+                  </ControlPoint>
+                  <ControlPoint>
+                    <SignalControllerId>1</SignalControllerId>
+                    <ControlPhaseId>1</ControlPhaseId>
+                    <LinkId>5354</LinkId>
+                    <LaneId>1</LaneId>
+                    <Id>1</Id>
+                    <Function>None</Function>
+                    <Label>WB RT </Label>
+                    <LinkPositionPct>60</LinkPositionPct>
+                  </ControlPoint>
+                </ControlPoints>
+              </Phase>
+            </Phases>
+            <PhaseSequence>
+              <PhaseId>5</PhaseId>
+              <PhaseId>8</PhaseId>
+              <PhaseId>7</PhaseId>
+            </PhaseSequence>
+          </TimingRing>
+        </TimingRings>
+      </TimingPlan>
+    </TimingPlans>
+  </SignalControllerPretimed>
+  <SignalControllerOnRamp id="2">
+    <Label>EB On-Ramp</Label>
+    <ControlMode>RampMetering</ControlMode>
+    <IsMaster>false</IsMaster>
+    <AssociatedLinkIds />
+    <TimingPlans>
+      <TimingPlan id="1">
+        <Label>Scenarios 1,3,5,7,9,11,13,15,17,19,21,23</Label>
+        <ControlAlgorithm>Pretimed</ControlAlgorithm>
+        <GreenIntervalSec>2</GreenIntervalSec>
+        <MeteringRateMinVehPerHour>240</MeteringRateMinVehPerHour>
+        <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
+        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
+        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
+        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
+        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <Phases>
+          <Phase id="1">
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>0</MeteringRateVehPerHour>
+            <TotalTimeSec>0</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>78</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>None</Function>
+                <Label>EB On-Ramp L1</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>78</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>EB On ramp Presence L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>67</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q det L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>67</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q Det L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>34</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q EB On-Ramp</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>275</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det EB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>275</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det EB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+          <Phase id="2">
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>0</MeteringRateVehPerHour>
+            <TotalTimeSec>0</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>78</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>None</Function>
+                <Label>EB On-Ramp L2</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>78</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>EB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>67</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q det L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>67</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q Det L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>34</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q EB On-Ramp</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>275</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det EB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>275</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det EB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+        </Phases>
+      </TimingPlan>
+      <TimingPlan id="2">
+        <Label>Scenarios 2,4,6,8,10,12,14,16,18,20,22,24</Label>
+        <ControlAlgorithm>Pretimed</ControlAlgorithm>
+        <GreenIntervalSec>2</GreenIntervalSec>
+        <MeteringRateMinVehPerHour>550</MeteringRateMinVehPerHour>
+        <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
+        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
+        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
+        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
+        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <Phases>
+          <Phase id="1">
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>0</MeteringRateVehPerHour>
+            <TotalTimeSec>0</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>78</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>None</Function>
+                <Label>EB On-Ramp L1</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>78</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>EB On ramp Presence L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>67</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q det L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>67</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q Det L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>34</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q EB On-Ramp</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>275</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det EB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>275</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det EB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+          <Phase id="2">
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>78</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>None</Function>
+                <Label>EB On-Ramp L2</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>78</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>EB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>67</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q det L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>67</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>EB On-Ramp Int Q Det L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>34</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q EB On-Ramp</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>275</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det EB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>2</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>275</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det EB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+        </Phases>
+      </TimingPlan>
+    </TimingPlans>
+  </SignalControllerOnRamp>
+  <SignalControllerOnRamp id="3">
+    <Label>WB On-Ramp</Label>
+    <ControlMode>RampMetering</ControlMode>
+    <IsMaster>false</IsMaster>
+    <AssociatedLinkIds />
+    <TimingPlans>
+      <TimingPlan id="1">
+        <Label>Scenarios 1,3,5,7,9,11,13,15,17,19,21,23</Label>
+        <ControlAlgorithm>Pretimed</ControlAlgorithm>
+        <GreenIntervalSec>2</GreenIntervalSec>
+        <MeteringRateMinVehPerHour>240</MeteringRateMinVehPerHour>
+        <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
+        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
+        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
+        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
+        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <Phases>
+          <Phase id="1">
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>0</MeteringRateVehPerHour>
+            <TotalTimeSec>0</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>2021</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>None</Function>
+                <Label>Ramp Controller</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>2021</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>Presence Det WB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1920</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>Int Q Det WB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1920</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>Int Q Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>2526</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det WB On-Ramp</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1118</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1118</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Det Wb On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+          <Phase id="2">
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>0</MeteringRateVehPerHour>
+            <TotalTimeSec>0</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>2021</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>None</Function>
+                <Label>WB On-Ramp L2 Ramp Controller</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>2021</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>Presence Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>1920</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>Int Q Det WB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>1920</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>Int Q Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>1118</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Det Wb On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>1118</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>2526</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det WB On-Ramp</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+        </Phases>
+      </TimingPlan>
+      <TimingPlan id="2">
+        <Label>Scenarios 2,4,6,8,10,12,14,16,18,20,22,24</Label>
+        <ControlAlgorithm>Pretimed</ControlAlgorithm>
+        <GreenIntervalSec>2</GreenIntervalSec>
+        <MeteringRateMinVehPerHour>550</MeteringRateMinVehPerHour>
+        <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
+        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
+        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
+        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
+        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <Phases>
+          <Phase id="1">
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>2021</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>None</Function>
+                <Label>Ramp Controller</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>2021</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>Presence Det WB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1920</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>Int Q Det WB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1920</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>Int Q Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>2526</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det WB On-Ramp</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1118</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1118</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Det Wb On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+          <Phase id="2">
+            <MeteringRateProportion>0.5</MeteringRateProportion>
+            <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
+            <TotalTimeSec>30</TotalTimeSec>
+            <ControlPoints>
+              <ControlPoint>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>2021</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>None</Function>
+                <Label>WB On-Ramp L2 Ramp Controller</Label>
+                <LinkPositionPct>50</LinkPositionPct>
+              </ControlPoint>
+            </ControlPoints>
+            <Detectors>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>2</ControlPhaseId>
+                <LinkId>2021</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterPresence</Function>
+                <Label>Presence Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1920</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>Int Q Det WB On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1920</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueIntermediate</Function>
+                <Label>Int Q Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1118</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Det Wb On-Ramp L1</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>1118</LinkId>
+                <LaneId>2</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Det WB On-Ramp L2</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+              <Detector>
+                <SignalControllerId>3</SignalControllerId>
+                <ControlPhaseId>1</ControlPhaseId>
+                <LinkId>2526</LinkId>
+                <LaneId>1</LaneId>
+                <Id>1</Id>
+                <Function>RampMeterQueueAdvance</Function>
+                <Label>Adv Q Det WB On-Ramp</Label>
+                <LinkPositionPct>0</LinkPositionPct>
+              </Detector>
+            </Detectors>
+          </Phase>
+        </Phases>
+      </TimingPlan>
+    </TimingPlans>
+  </SignalControllerOnRamp>
+</SwashSim>

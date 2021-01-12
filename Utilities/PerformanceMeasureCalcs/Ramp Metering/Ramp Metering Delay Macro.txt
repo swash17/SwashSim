@@ -1,0 +1,272 @@
+Option Explicit
+
+Sub AverageDelayTableStopbar()             'use in LinkResults
+
+Dim x As Integer 'counter for # of rows w data
+Dim endScenario As Integer 'final Scenario #
+Dim scenarioNum As Integer
+Dim instanceCountNB As Integer
+Dim instanceCountSB As Integer
+Dim interchangeType As String
+Dim linkNBRamp(1 To 14) As Integer
+Dim linkSBRamp(1 To 14) As Integer
+Dim avgDelayNB As Double 'sum of average vehicle delay for given Scenario & linkID
+Dim avgDelaySB As Double
+Dim y As Integer ' array counter for loop
+
+interchangeType = InputBox("What is the interchange type (Enter the number)?" & vbNewLine & "Supported Interchanges:" & vbNewLine & "(1) Diamond-Large" & vbNewLine & "(2) DDI-Large" & vbNewLine & "(3) SPUI" & vbNewLine & "(4) ParClo" & vbNewLine & "(5) General FullClo" & vbNewLine & "(6) Miami FullClo") '& vbNewLine & "Input is case-sensitive.")
+'Have the input box ask for the interchange type, such as:
+'Diamond-Large: 1
+'DDI-Large: 2
+'SPUI: 3
+'ParClo: 4
+
+'Based on the interchange selection, assign the Link ID's as follows:
+'Interchange     EB/NB on-ramp                    WB/SB on-ramp
+'Diamond Large   8022, 7280, 2072, 6920, 3021    737, 7173, 671, 706, 45
+'DDI             6322, 2063, 1520, 3221          627, 662, 366, 45
+'SPUI            2526, 1118, 1819, 1920, 2021    34, 275, 56, 67, 78
+If interchangeType = "1" Then  ' "Diamond-Large" Then
+    linkNBRamp(1) = 8022
+    linkNBRamp(2) = 7280
+    linkNBRamp(3) = 2072
+    'linkNBRamp(4) = 6920
+    linkNBRamp(5) = 3021
+    'linkNBRamp(6) = 2325
+    'linkNBRamp(7) = 2223
+    
+    linkSBRamp(1) = 737
+    linkSBRamp(2) = 7173
+    linkSBRamp(3) = 671
+    'linkSBRamp(4) = 706
+    linkSBRamp(5) = 45
+    'linkSBRamp(6) = 89
+    'linkSBRamp(7) = 78
+    
+ElseIf interchangeType = "2" Then  ' "DDI-Large" Then
+    linkNBRamp(1) = 6322
+    linkNBRamp(2) = 2063
+    linkNBRamp(3) = 1520
+    linkNBRamp(4) = 3221
+    'linkNBRamp(5) = 2325
+    'linkNBRamp(6) = 2223
+    'linkNBRamp(7) = 2180
+    
+    linkSBRamp(1) = 627
+    linkSBRamp(2) = 662
+    linkSBRamp(3) = 366
+    linkSBRamp(4) = 45
+    'linkSBRamp(5) = 89
+    'linkSBRamp(6) = 78
+    'linkSBRamp(7) = 878
+ElseIf interchangeType = "3" Then ' "SPUI" Then
+    linkNBRamp(1) = 2526
+    linkNBRamp(2) = 1118
+    linkNBRamp(3) = 1819
+    linkNBRamp(4) = 1920
+    linkNBRamp(5) = 2021
+    
+    linkSBRamp(1) = 34
+    linkSBRamp(2) = 275
+    linkSBRamp(3) = 56
+    linkSBRamp(4) = 67
+    linkSBRamp(5) = 78
+ElseIf interchangeType = "4" Or interchangeType = "4" Then   ' interchangeType = "ParClo" Or interchangeType = "Parclo" Then
+    'linkSBRamp(1) = 810
+    'linkSBRamp(2) = 78
+    linkSBRamp(3) = 56
+    linkSBRamp(4) = 45
+    linkSBRamp(5) = 34
+    
+    linkSBRamp(9) = 467
+    linkSBRamp(10) = 5546
+    linkSBRamp(11) = 5455
+    linkSBRamp(12) = 4854
+    
+    'linkNBRamp(1) = 3537
+    'linkNBRamp(2) = 3435
+    linkNBRamp(3) = 3233
+    linkNBRamp(4) = 3132
+    linkNBRamp(5) = 2931
+    
+    linkNBRamp(9) = 2034
+    linkNBRamp(10) = 2720
+    linkNBRamp(11) = 2627
+    linkNBRamp(12) = 2226
+ElseIf interchangeType = "5" Then
+	'WB/SB loop link IDs
+    linkSBRamp(9) = 807
+    linkSBRamp(10) = 7880
+    
+	'Direct right turn IDs
+    linkSBRamp(4) = 56
+    linkSBRamp(5) = 45
+    linkSBRamp(6) = 34
+    
+   'EB/NB loop link IDs
+    linkNBRamp(9) = 7727
+    linkNBRamp(10) = 7577
+
+	'Direct right turn IDs
+    linkNBRamp(4) = 4041
+    linkNBRamp(5) = 3940
+    linkNBRamp(6) = 3739
+ElseIf interchangeType = "6" Then
+	'WB/SB loop link IDs
+    linkSBRamp(10) = 2930
+    linkSBRamp(11) = 2829
+    linkSBRamp(12) = 2728
+    
+	'Direct right turn IDs
+    linkSBRamp(2) = 4243
+    linkSBRamp(3) = 4142
+    linkSBRamp(4) = 4041
+    
+	'EB/NB loop link IDs
+    linkNBRamp(10) = 1718
+    linkNBRamp(11) = 1617
+    linkNBRamp(12) = 1516
+	
+	'Direct right turn IDs
+    linkNBRamp(2) = 3738
+    linkNBRamp(3) = 3637
+    linkNBRamp(4) = 3536
+Else
+    MsgBox ("Invalid entry.")
+End If
+
+x = 2
+Do While Cells(x, 1).Value <> 0
+    endScenario = Cells(x, 1).Value
+    x = x + 1
+Loop
+
+Cells(x + 4, 1).Value = "Scenario"
+Cells(x + 4, 2).Value = "NB On-Ramp"
+Cells(x + 4, 3).Value = "SB On-Ramp"
+Cells(x + 4, 1).Font.Bold = True
+Cells(x + 4, 2).Font.Bold = True
+Cells(x + 4, 3).Font.Bold = True
+
+If interchangeType >= 4 Then    'write add. columns for delay on loops
+    Cells(x + 4, 2).Value = "NB On-Ramp Direct RT"
+    Cells(x + 4, 3).Value = "NB On-Ramp Loop"
+    Cells(x + 4, 4).Value = "SB On-Ramp Direct RT"
+    Cells(x + 4, 5).Value = "SB On-Ramp Loop"
+    Cells(x + 4, 4).Font.Bold = True
+    Cells(x + 4, 5).Font.Bold = True
+End If
+
+x = 2
+
+If interchangeType <= 3 Then    'Normal run for all interchanges except cloverleafs
+For scenarioNum = 1 To endScenario
+    avgDelayNB = 0
+    avgDelaySB = 0
+    instanceCountNB = 0
+    instanceCountSB = 0
+    For y = 1 To 14 ' edit if max # of links per direction per interchange increases
+        x = 2
+        Do While Cells(x, 1).Value <> 0
+            If Cells(x, 1).Value = scenarioNum And Cells(x, 4).Value = linkNBRamp(y) Then
+                avgDelayNB = avgDelayNB + Cells(x, 26).Value / Cells(x, 29).Value
+                instanceCountNB = instanceCountNB + 1
+            End If
+            x = x + 1
+        Loop
+        x = 2
+        Do While Cells(x, 1).Value <> 0
+            If Cells(x, 1).Value = scenarioNum And Cells(x, 4).Value = linkSBRamp(y) Then
+                avgDelaySB = avgDelaySB + Cells(x, 26).Value / Cells(x, 29).Value
+                instanceCountSB = instanceCountSB + 1
+            End If
+            x = x + 1
+        Loop
+    Next y
+    Cells(x + 4 + scenarioNum, 1).Value = scenarioNum
+    If instanceCountNB = 0 Then
+        Cells(x + 4 + scenarioNum, 2).Value = 0
+    Else
+        Cells(x + 4 + scenarioNum, 2).Value = avgDelayNB / 6    'change divisor if # reps changes
+    End If
+    If instanceCountSB = 0 Then
+        Cells(x + 4 + scenarioNum, 3).Value = 0
+    Else
+        Cells(x + 4 + scenarioNum, 3).Value = avgDelaySB / 6
+    End If
+Next scenarioNum
+ElseIf interchangeType >= 4 Then    'run to find delays on loop and direct right turn for cloverleafs
+    For scenarioNum = 1 To endScenario
+        avgDelayNB = 0
+        avgDelaySB = 0
+        instanceCountNB = 0
+        instanceCountSB = 0
+        For y = 1 To 8 ' edit if max # of links per direction per interchange increases '
+            x = 2       'loop will be split to run/output for loop links and direct RT links
+            Do While Cells(x, 1).Value <> 0
+                If Cells(x, 1).Value = scenarioNum And Cells(x, 4).Value = linkNBRamp(y) Then
+                    avgDelayNB = avgDelayNB + Cells(x, 26).Value / Cells(x, 29).Value
+                    instanceCountNB = instanceCountNB + 1
+                End If
+                x = x + 1
+            Loop
+            x = 2
+            Do While Cells(x, 1).Value <> 0
+                If Cells(x, 1).Value = scenarioNum And Cells(x, 4).Value = linkSBRamp(y) Then
+                    avgDelaySB = avgDelaySB + Cells(x, 26).Value / Cells(x, 29).Value
+                    instanceCountSB = instanceCountSB + 1
+                End If
+                x = x + 1
+            Loop
+        Next y
+        Cells(x + 4 + scenarioNum, 1).Value = scenarioNum
+        
+        If instanceCountNB = 0 Then
+            Cells(x + 4 + scenarioNum, 2).Value = 0
+        Else
+            Cells(x + 4 + scenarioNum, 2).Value = avgDelayNB / 6
+        End If
+        If instanceCountSB = 0 Then
+            Cells(x + 4 + scenarioNum, 4).Value = 0
+        Else
+            Cells(x + 4 + scenarioNum, 4).Value = avgDelaySB / 6
+        End If
+        
+        avgDelayNB = 0  'resetting variables for direct RT delay
+        avgDelaySB = 0
+        instanceCountNB = 0
+        instanceCountSB = 0
+        
+        For y = 9 To 14 ' edit if max # of links per direction per interchange increases 'make sure both loops don't skip iterations
+            x = 2       'loop will be split to run/output for loop links and direct RT links
+            Do While Cells(x, 1).Value <> 0
+                If Cells(x, 1).Value = scenarioNum And Cells(x, 4).Value = linkNBRamp(y) Then
+                    avgDelayNB = avgDelayNB + Cells(x, 26).Value / Cells(x, 29).Value
+                    instanceCountNB = instanceCountNB + 1
+                End If
+                x = x + 1
+            Loop
+            x = 2
+            Do While Cells(x, 1).Value <> 0
+                If Cells(x, 1).Value = scenarioNum And Cells(x, 4).Value = linkSBRamp(y) Then
+                    avgDelaySB = avgDelaySB + Cells(x, 26).Value / Cells(x, 29).Value
+                    instanceCountSB = instanceCountSB + 1
+                End If
+                x = x + 1
+            Loop
+        Next y
+        
+        If instanceCountNB = 0 Then
+            Cells(x + 4 + scenarioNum, 3).Value = 0
+        Else
+            Cells(x + 4 + scenarioNum, 3).Value = avgDelayNB / 6
+        End If
+        If instanceCountSB = 0 Then
+            Cells(x + 4 + scenarioNum, 5).Value = 0
+        Else
+            Cells(x + 4 + scenarioNum, 5).Value = avgDelaySB / 6
+        End If
+    Next scenarioNum
+End If
+
+End Sub

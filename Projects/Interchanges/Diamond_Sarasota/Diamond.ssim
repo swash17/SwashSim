@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SwashSim Facility="Custom">
+  <Project>
+    <Facility>Custom</Facility>
+    <FileName>Projects\Interchanges\Diamond_Sarasota\Diamond.ssim</FileName>
+    <FacilityName />
+    <FileNameNetwork>Projects\Interchanges\Diamond_Sarasota\Diamond.nwf</FileNameNetwork>
+    <FileNameDriverParms>DataFiles_ModelParms\DriverParms.xml</FileNameDriverParms>
+    <FileNameLaneChangeParms>DataFiles_ModelParms\LaneChangeParameters.xml</FileNameLaneChangeParms>
+    <FileNameVehicleMoveParms>DataFiles_ModelParms\VehicleMovementParms.xml</FileNameVehicleMoveParms>
+    <FileNameCarFollowModelParms>DataFiles_ModelParms\CarFollowModelParms.xml</FileNameCarFollowModelParms>
+    <FileNameVehicleBase>DataFiles_Vehicles\VehiclesBase.xml</FileNameVehicleBase>
+    <FileNameVehicleDimensions>DataFiles_Vehicles\VehiclesDimensions.xml</FileNameVehicleDimensions>
+    <FileNameVehicleEngines>DataFiles_Vehicles\Engines.xml</FileNameVehicleEngines>
+    <FileNameVehicleTransmissions>DataFiles_Vehicles\Transmissions.xml</FileNameVehicleTransmissions>
+    <FileNameSignalData>Projects\Interchanges\Diamond_Sarasota\Diamond Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+    <FileNameMultirunData>Projects\Interchanges\Diamond_Sarasota\Diamond Multirun.xml</FileNameMultirunData>
+    <OutputDataFolder>Projects\Interchanges\Diamond_Sarasota</OutputDataFolder>
+    <RouteAssignmentMethod>Random</RouteAssignmentMethod>
+    <Location />
+    <FacilityStart />
+    <FacilityEnd />
+    <AnalysisDirection />
+    <AnalysisPeriod />
+    <Analyst />
+    <Date>6/22/2018 11:01:13 PM</Date>
+    <Agency />
+    <Comment />
+    <Program>SwashSim</Program>
+  </Project>
+  <SimulationSettings>
+    <WarmupTimeSeconds>600</WarmupTimeSeconds>
+    <DurationSeconds>3600</DurationSeconds>
+    <NumReplications>1</NumReplications>
+    <DetectorAggregationIntervalSeconds>30</DetectorAggregationIntervalSeconds>
+    <RandSeed1>109</RandSeed1>
+    <RandSeed2>1487</RandSeed2>
+    <RandSeed3>5196</RandSeed3>
+    <RandSeed4>1914</RandSeed4>
+    <DetectorSummaryOutput>true</DetectorSummaryOutput>
+    <DetectorActuationOutput>true</DetectorActuationOutput>
+    <HeadwayDataOutput>false</HeadwayDataOutput>
+    <LaneChangeDataOutput>false</LaneChangeDataOutput>
+    <PlatoonDataOutput>false</PlatoonDataOutput>
+    <RampMeteringData>true</RampMeteringData>
+    <SignalTSDOutput>false</SignalTSDOutput>
+    <LinkPerformanceData>true</LinkPerformanceData>
+    <QueueDataOutput>false</QueueDataOutput>
+    <VehicleTSDOutput>false</VehicleTSDOutput>
+    <LinkResultsLinks>
+      <LinkIDs>
+        <ID>87802</ID>
+        <ID>39804</ID>
+        <ID>1011</ID>
+        <ID>89</ID>
+        <ID>78</ID>
+        <ID>737</ID>
+        <ID>7173</ID>
+        <ID>45</ID>
+        <ID>34</ID>
+        <ID>1887</ID>
+        <ID>2325</ID>
+        <ID>2223</ID>
+        <ID>8022</ID>
+        <ID>7280</ID>
+        <ID>2072</ID>
+        <ID>6418</ID>
+        <ID>6920</ID>
+        <ID>6369</ID>
+        <ID>263</ID>
+        <ID>6864</ID>
+        <ID>9568</ID>
+        <ID>12</ID>
+        <ID>3021</ID>
+        <ID>3839</ID>
+        <ID>671</ID>
+        <ID>706</ID>
+        <ID>6738</ID>
+        <ID>6270</ID>
+        <ID>3162</ID>
+        <ID>4950</ID>
+        <ID>4749</ID>
+        <ID>9667</ID>
+        <ID>4866</ID>
+        <ID>4648</ID>
+        <ID>7846</ID>
+        <ID>7544</ID>
+        <ID>4375</ID>
+        <ID>4243</ID>
+        <ID>5860</ID>
+        <ID>5658</ID>
+        <ID>5968</ID>
+        <ID>5759</ID>
+        <ID>5557</ID>
+        <ID>7654</ID>
+        <ID>5276</ID>
+        <ID>8189</ID>
+        <ID>9796</ID>
+        <ID>10031</ID>
+        <ID>8586</ID>
+        <ID>70285</ID>
+        <ID>70181</ID>
+        <ID>12801</ID>
+        <ID>27803</ID>
+        <ID>1112</ID>
+        <ID>2627</ID>
+        <ID>2426</ID>
+        <ID>4124</ID>
+        <ID>4041</ID>
+        <ID>5310</ID>
+        <ID>5153</ID>
+        <ID>70340</ID>
+        <ID>70451</ID>
+      </LinkIDs>
+    </LinkResultsLinks>
+  </SimulationSettings>
+</SwashSim>

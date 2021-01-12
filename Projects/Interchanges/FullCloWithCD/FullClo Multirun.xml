@@ -1,0 +1,4065 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SwashSim>
+  <MultiRunScenarios>
+    <OverallSettings>
+      <UseSeparateOutputDataFolders>true</UseSeparateOutputDataFolders>
+      <UseFirstScenarioOutputDataOptions>true</UseFirstScenarioOutputDataOptions>
+    </OverallSettings>
+    <Scenario id="1">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>1</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>2340</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1260</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="2">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>1</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>2340</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1260</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="3">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>1</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>2340</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1260</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="4">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>1</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>2340</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1260</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>55</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>37</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="5">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>2</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1980</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1620</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="6">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>2</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1980</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1620</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="7">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>2</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1980</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1620</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="8">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>2</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1980</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1620</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="9">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>3</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1800</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1800</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="10">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>3</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1800</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1800</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="11">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>3</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1800</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1800</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="12">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>3</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1800</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1800</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="13">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>4</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1820</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>980</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="14">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>4</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1820</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>980</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="15">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>4</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1820</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>980</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="16">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>4</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1820</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>980</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="17">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>5</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1540</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1260</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="18">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>5</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1540</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1260</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="19">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>5</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1540</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1260</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="20">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>5</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1540</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1260</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="21">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>6</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1400</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1400</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="22">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>6</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1400</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1400</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>58</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>38</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>2</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>2</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="23">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>6</ID>
+        <ID>1</ID>
+        <ID>1</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1400</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1400</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+    <Scenario id="24">
+      <IncludeInSimulation>true</IncludeInSimulation>
+      <NumReplications>2</NumReplications>
+      <WarmupTimeSec>600</WarmupTimeSec>
+      <SimDurationSec>3600</SimDurationSec>
+      <IncludeSignalData>true</IncludeSignalData>
+      <FileNameSignalData>C:\SwashSim Projects\General FullClo SigData\FullClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+      <SignalTimingPlanIDs>
+        <ID>6</ID>
+        <ID>2</ID>
+        <ID>2</ID>
+      </SignalTimingPlanIDs>
+      <Replication id="1">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <Replication id="2">
+        <RandomSeedValues>
+          <RandSeed1>0</RandSeed1>
+          <RandSeed2>0</RandSeed2>
+          <RandSeed3>0</RandSeed3>
+          <RandSeed4>0</RandSeed4>
+        </RandomSeedValues>
+      </Replication>
+      <OutputDataOptions>
+        <LinkPerformanceData>true</LinkPerformanceData>
+        <VehicleTSDOutput>false</VehicleTSDOutput>
+        <SignalTSDOutput>false</SignalTSDOutput>
+        <DetectorSummaryOutput>true</DetectorSummaryOutput>
+        <DetectorActuationOutput>true</DetectorActuationOutput>
+        <LaneChangeDataOutput>false</LaneChangeDataOutput>
+        <HeadwayDataOutput>false</HeadwayDataOutput>
+        <PlatoonDataOutput>false</PlatoonDataOutput>
+        <RampMeteringDataOutput>true</RampMeteringDataOutput>
+        <LinkResultsLinks>
+          <LinkIDs>
+            <ID>62804</ID>
+            <ID>17802</ID>
+            <ID>78</ID>
+            <ID>67</ID>
+            <ID>56</ID>
+            <ID>34</ID>
+            <ID>1617</ID>
+            <ID>1416</ID>
+            <ID>1314</ID>
+            <ID>1213</ID>
+            <ID>2021</ID>
+            <ID>1920</ID>
+            <ID>1819</ID>
+            <ID>1118</ID>
+            <ID>6311</ID>
+            <ID>7612</ID>
+            <ID>6476</ID>
+            <ID>7263</ID>
+            <ID>12</ID>
+            <ID>2526</ID>
+            <ID>3262</ID>
+            <ID>3032</ID>
+            <ID>2930</ID>
+            <ID>2829</ID>
+            <ID>275</ID>
+            <ID>2427</ID>
+            <ID>6624</ID>
+            <ID>6828</ID>
+            <ID>6768</ID>
+            <ID>7366</ID>
+            <ID>6175</ID>
+            <ID>3140</ID>
+            <ID>3813</ID>
+            <ID>3738</ID>
+            <ID>4337</ID>
+            <ID>5354</ID>
+            <ID>5229</ID>
+            <ID>5152</ID>
+            <ID>5751</ID>
+            <ID>5859</ID>
+            <ID>70261</ID>
+            <ID>7011</ID>
+            <ID>23803</ID>
+            <ID>10801</ID>
+            <ID>910</ID>
+            <ID>2223</ID>
+            <ID>469</ID>
+            <ID>4546</ID>
+            <ID>4445</ID>
+            <ID>4244</ID>
+            <ID>4142</ID>
+            <ID>6022</ID>
+            <ID>5960</ID>
+            <ID>5658</ID>
+            <ID>5556</ID>
+            <ID>70355</ID>
+            <ID>70441</ID>
+          </LinkIDs>
+        </LinkResultsLinks>
+      </OutputDataOptions>
+      <TrafficData NodeId="701">
+        <EnteringFlowRateVehPerHr>1400</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="702">
+        <EnteringFlowRateVehPerHr>1400</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="703">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+      <TrafficData NodeId="704">
+        <EnteringFlowRateVehPerHr>1500</EnteringFlowRateVehPerHr>
+        <FleetTypePercentages>
+          <Fleet id="1">
+            <Percentage>56</Percentage>
+          </Fleet>
+          <Fleet id="2">
+            <Percentage>36</Percentage>
+          </Fleet>
+          <Fleet id="3">
+            <Percentage>4</Percentage>
+          </Fleet>
+          <Fleet id="4">
+            <Percentage>4</Percentage>
+          </Fleet>
+        </FleetTypePercentages>
+      </TrafficData>
+    </Scenario>
+  </MultiRunScenarios>
+</SwashSim>

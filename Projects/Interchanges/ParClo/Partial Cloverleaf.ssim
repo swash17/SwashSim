@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SwashSim ProjectType="Custom">
+  <Project>
+    <Facility>Custom</Facility>
+    <FileName>Projects\Interchange\ParClo\Partial Cloverleaf.ssim</FileName>
+    <FacilityName />
+    <FileNameNetwork>Projects\Interchange\ParClo\Partial Cloverleaf.nwf</FileNameNetwork>
+    <FileNameDriverParms>DataFiles_ModelParms\DriverParms.xml</FileNameDriverParms>
+    <FileNameLaneChangeParms>DataFiles_ModelParms\LaneChangeParameters.xml</FileNameLaneChangeParms>
+    <FileNameVehicleMoveParms>DataFiles_ModelParms\VehicleMovementParms.xml</FileNameVehicleMoveParms>
+    <FileNameCarFollowModelParms>DataFiles_ModelParms\CarFollowModelParms.xml</FileNameCarFollowModelParms>
+    <FileNameVehicleBase>DataFiles_Vehicles\VehiclesBase.xml</FileNameVehicleBase>
+    <FileNameVehicleDimensions>DataFiles_Vehicles\VehiclesDimensions.xml</FileNameVehicleDimensions>
+    <FileNameVehicleEngines>DataFiles_Vehicles\Engines.xml</FileNameVehicleEngines>
+    <FileNameVehicleTransmissions>DataFiles_Vehicles\Transmissions.xml</FileNameVehicleTransmissions>
+    <FileNameSignalData>Projects\Interchange\ParClo\ParClo Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+    <FileNameMultirunData>Projects\Interchange\ParClo\ParClo Multirun.xml</FileNameMultirunData>
+    <OutputDataFolder>Projects\Interchange\ParClo\Output Data</OutputDataFolder>
+    <RouteAssignmentMethod>Random</RouteAssignmentMethod>
+    <Location />
+    <FacilityStart />
+    <FacilityEnd />
+    <AnalysisDirection />
+    <AnalysisPeriod />
+    <Analyst />
+    <Date>8/8/2018 4:37:47 PM</Date>
+    <Agency />
+    <Comment />
+    <Program>SwashSim</Program>
+  </Project>
+  <SimulationSettings>
+    <WarmupTimeSeconds>600</WarmupTimeSeconds>
+    <DurationSeconds>3600</DurationSeconds>
+    <NumReplications>1</NumReplications>
+    <DetectorAggregationIntervalSeconds>30</DetectorAggregationIntervalSeconds>
+    <RandSeed1>3824</RandSeed1>
+    <RandSeed2>1098</RandSeed2>
+    <RandSeed3>908</RandSeed3>
+    <RandSeed4>2297</RandSeed4>
+    <DetectorSummaryOutput>false</DetectorSummaryOutput>
+    <DetectorActuationOutput>false</DetectorActuationOutput>
+    <HeadwayDataOutput>false</HeadwayDataOutput>
+    <LaneChangeDataOutput>false</LaneChangeDataOutput>
+    <PlatoonDataOutput>false</PlatoonDataOutput>
+    <RampMeteringData>false</RampMeteringData>
+    <SignalTSDOutput>false</SignalTSDOutput>
+    <LinkPerformanceData>false</LinkPerformanceData>
+    <QueueDataOutput>false</QueueDataOutput>
+    <VehicleTSDOutput>false</VehicleTSDOutput>
+  </SimulationSettings>
+</SwashSim>
