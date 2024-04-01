@@ -1,40 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SwashSim Facility="TwoLaneHighway">
+<SwashSim ProjectType="TwoLaneHighway">
   <Project>
-    <Facility>TwoLaneHighway</Facility>
-    <ProjectType>0</ProjectType>
-    <FileName>Projects\TwoLaneHighway\Lake Tahoe\Lake Tahoe.ssim</FileName>
+    <FileName>Lake Tahoe.ssim</FileName>
     <FacilityName />
-    <FileNameNetwork>Projects\TwoLaneHighway\Lake Tahoe\Lake Tahoe.nwf</FileNameNetwork>
+    <FileNameNetwork>Lake Tahoe.nwf</FileNameNetwork>
     <FileNameDriverParms>DataFiles_ModelParms\DriverParms.xml</FileNameDriverParms>
     <FileNameLaneChangeParms>DataFiles_ModelParms\LaneChangeParameters.xml</FileNameLaneChangeParms>
     <FileNameVehicleMoveParms>DataFiles_ModelParms\VehicleMovementParms.xml</FileNameVehicleMoveParms>
-    <OutputDataFolder>Projects\TwoLaneHighway\Lake Tahoe\Data</OutputDataFolder>
+    <FileNameCarFollowModelParms>DataFiles_ModelParms\CarFollowModelParms.xml</FileNameCarFollowModelParms>
+    <FileNameVehicleBase>DataFiles_Vehicles\VehiclesBase.xml</FileNameVehicleBase>
+    <FileNameVehicleDimensions>DataFiles_Vehicles\VehiclesDimensions.xml</FileNameVehicleDimensions>
+    <FileNameVehicleEngines>DataFiles_Vehicles\Engines.xml</FileNameVehicleEngines>
+    <FileNameVehicleTransmissions>DataFiles_Vehicles\Transmissions.xml</FileNameVehicleTransmissions>
+    <OutputDataFolder />
+    <RouteAssignmentMethod>Random</RouteAssignmentMethod>
+    <IncludeTruckPlatooning>false</IncludeTruckPlatooning>
     <Location />
     <FacilityStart />
     <FacilityEnd />
     <AnalysisDirection />
     <AnalysisPeriod />
     <Analyst />
-    <Date>2/3/2018 7:22:17 PM</Date>
+    <Date>4/2/2024 4:00:00 PM</Date>
     <Agency />
     <Comment />
     <Program>SwashSim</Program>
   </Project>
   <SimulationSettings>
-    <WarmupTimeSeconds>0</WarmupTimeSeconds>
-    <DurationSeconds>300</DurationSeconds>
+    <WarmupTimeSeconds>600</WarmupTimeSeconds>
+    <DurationSeconds>900</DurationSeconds>
+    <NumReplications>0</NumReplications>
+    <DetectorAggregationIntervalSeconds>30</DetectorAggregationIntervalSeconds>
     <RandSeed1>5949</RandSeed1>
     <RandSeed2>9274</RandSeed2>
     <RandSeed3>22</RandSeed3>
     <RandSeed4>3573</RandSeed4>
-    <LinkPerformanceData>false</LinkPerformanceData>
+    <CheckTruckPercentages>false</CheckTruckPercentages>
+    <MaxTruckPctErrorValue>0.0</MaxTruckPctErrorValue>
+    <MaxTruckPctErrorProp>0.0</MaxTruckPctErrorProp>
     <DetectorSummaryOutput>false</DetectorSummaryOutput>
     <DetectorActuationOutput>false</DetectorActuationOutput>
+    <VehicleRouteDataOutput>false</VehicleRouteDataOutput>
     <HeadwayDataOutput>false</HeadwayDataOutput>
     <LaneChangeDataOutput>false</LaneChangeDataOutput>
     <PlatoonDataOutput>false</PlatoonDataOutput>
-    <VehicleTSDOutput>false</VehicleTSDOutput>
+    <RampMeteringData>false</RampMeteringData>
     <SignalTSDOutput>false</SignalTSDOutput>
+    <LinkPerformanceData>false</LinkPerformanceData>
+    <QueueDataOutput>false</QueueDataOutput>
+    <VehicleTSDOutput>false</VehicleTSDOutput>
   </SimulationSettings>
 </SwashSim>

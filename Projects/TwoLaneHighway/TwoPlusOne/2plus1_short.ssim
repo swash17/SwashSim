@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <SwashSim ProjectType="TwoLaneHighway">
   <Project>
-    <FileName>PassingLaneCurves.ssim</FileName>
-    <FacilityName>Passing Lane and Curves</FacilityName>
-    <FileNameNetwork>PassingLaneCurves.nwf</FileNameNetwork>
+    <FileName>2plus1_short.ssim</FileName>
+    <FacilityName />
+    <FileNameNetwork>2plus1_short.nwf</FileNameNetwork>
     <FileNameDriverParms>DataFiles_ModelParms\DriverParms.xml</FileNameDriverParms>
     <FileNameLaneChangeParms>DataFiles_ModelParms\LaneChangeParameters.xml</FileNameLaneChangeParms>
     <FileNameVehicleMoveParms>DataFiles_ModelParms\VehicleMovementParms.xml</FileNameVehicleMoveParms>
@@ -21,7 +21,7 @@
     <AnalysisDirection />
     <AnalysisPeriod />
     <Analyst />
-    <Date>4/1/2024 3:30:00 PM</Date>
+    <Date>4/1/2024 5:00:00 PM</Date>
     <Agency />
     <Comment />
     <Program>SwashSim</Program>
@@ -31,18 +31,18 @@
     <DurationSeconds>900</DurationSeconds>
     <NumReplications>1</NumReplications>
     <DetectorAggregationIntervalSeconds>30</DetectorAggregationIntervalSeconds>
-    <RandSeed1>2723</RandSeed1>
-    <RandSeed2>3775</RandSeed2>
-    <RandSeed3>5703</RandSeed3>
-    <RandSeed4>8898</RandSeed4>
+    <RandSeed1>4575</RandSeed1>
+    <RandSeed2>1411</RandSeed2>
+    <RandSeed3>8454</RandSeed3>
+    <RandSeed4>813</RandSeed4>
     <CheckTruckPercentages>false</CheckTruckPercentages>
     <MaxTruckPctErrorValue>0.0</MaxTruckPctErrorValue>
     <MaxTruckPctErrorProp>0.0</MaxTruckPctErrorProp>
-    <DetectorSummaryOutput>true</DetectorSummaryOutput>
+    <DetectorSummaryOutput>false</DetectorSummaryOutput>
     <DetectorActuationOutput>false</DetectorActuationOutput>
     <VehicleRouteDataOutput>false</VehicleRouteDataOutput>
     <HeadwayDataOutput>false</HeadwayDataOutput>
-    <LaneChangeDataOutput>true</LaneChangeDataOutput>
+    <LaneChangeDataOutput>false</LaneChangeDataOutput>
     <PlatoonDataOutput>false</PlatoonDataOutput>
     <RampMeteringData>false</RampMeteringData>
     <SignalTSDOutput>false</SignalTSDOutput>
