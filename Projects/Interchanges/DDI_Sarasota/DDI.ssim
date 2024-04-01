@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <SwashSim ProjectType="Custom">
   <Project>
-    <FileName>Projects\Interchanges\DDI_Sarasota\DDI.ssim</FileName>
+    <FileName>DDI.ssim</FileName>
     <FacilityName />
-    <FileNameNetwork>Projects\Interchanges\DDI_Sarasota\DDI.nwf</FileNameNetwork>
+    <FileNameNetwork>DDI.nwf</FileNameNetwork>
     <FileNameDriverParms>DataFiles_ModelParms\DriverParms.xml</FileNameDriverParms>
     <FileNameLaneChangeParms>DataFiles_ModelParms\LaneChangeParameters.xml</FileNameLaneChangeParms>
     <FileNameVehicleMoveParms>DataFiles_ModelParms\VehicleMovementParms.xml</FileNameVehicleMoveParms>
@@ -12,9 +12,9 @@
     <FileNameVehicleDimensions>DataFiles_Vehicles\VehiclesDimensions.xml</FileNameVehicleDimensions>
     <FileNameVehicleEngines>DataFiles_Vehicles\Engines.xml</FileNameVehicleEngines>
     <FileNameVehicleTransmissions>DataFiles_Vehicles\Transmissions.xml</FileNameVehicleTransmissions>
-    <FileNameSignalData>Projects\Interchanges\DDI_Sarasota\DDI Signal Data Multiple Timing Plans.xml</FileNameSignalData>
-    <FileNameMultirunData>Projects\Interchanges\DDI_Sarasota\DDI Multirun.xml</FileNameMultirunData>
-    <OutputDataFolder>Projects\Interchanges\DDI_Sarasota</OutputDataFolder>
+    <FileNameSignalData>DDI Signal Data Multiple Timing Plans.xml</FileNameSignalData>
+    <FileNameMultirunData>DDI Multirun.xml</FileNameMultirunData>
+    <OutputDataFolder />
     <RouteAssignmentMethod>Random</RouteAssignmentMethod>
     <Location />
     <FacilityStart />
@@ -28,19 +28,20 @@
     <Program>SwashSim</Program>
   </Project>
   <SimulationSettings>
-    <WarmupTimeSeconds>600</WarmupTimeSeconds>
-    <DurationSeconds>3600</DurationSeconds>
+    <WarmupTimeSeconds>300</WarmupTimeSeconds>
+    <DurationSeconds>300</DurationSeconds>
     <NumReplications>1</NumReplications>
     <DetectorAggregationIntervalSeconds>60</DetectorAggregationIntervalSeconds>
-    <RandSeed1>1945</RandSeed1>
-    <RandSeed2>4246</RandSeed2>
-    <RandSeed3>1863</RandSeed3>
-    <RandSeed4>7841</RandSeed4>
+    <RandSeed1>7602</RandSeed1>
+    <RandSeed2>2563</RandSeed2>
+    <RandSeed3>3113</RandSeed3>
+    <RandSeed4>4895</RandSeed4>
     <CheckTruckPercentages>false</CheckTruckPercentages>
     <MaxTruckPctErrorValue>0.0</MaxTruckPctErrorValue>
     <MaxTruckPctErrorProp>0.0</MaxTruckPctErrorProp>
     <DetectorSummaryOutput>true</DetectorSummaryOutput>
     <DetectorActuationOutput>true</DetectorActuationOutput>
+    <VehicleRouteDataOutput>false</VehicleRouteDataOutput>
     <HeadwayDataOutput>false</HeadwayDataOutput>
     <LaneChangeDataOutput>false</LaneChangeDataOutput>
     <PlatoonDataOutput>false</PlatoonDataOutput>
