@@ -9,7 +9,7 @@ Developed by <a href="https://faculty.eng.ufl.edu/scott-washburn">Dr. Scott Wash
 
 SwashSim is available (at no cost).
 
-Note that SwashSim only runs on the Windows operating system and 64-bit CPU architecture. You also need version 4.5, or higher, of the .NET Framework installed on your computer.  The installation process should give you a warning if you do not have the required version of the .NET Framework.  But if you have any problem starting the program after installation, this should be the first thing to check.  You can check which version of the .NET Framework you have installed in your Programs and Features section of the Control Panel.  If needed, you can download the latest version, for free, from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=53345">.NET Framework download link</a>
+Note that SwashSim only runs on the Windows operating system and 64-bit CPU architecture. You also need version 7, or higher, of the .NET Desktop Runtime installed on your computer. The installation process should give you a warning if you do not have the required version of the .NET Desktop Runtime. But if you have any problem starting the program after installation, this should be the first thing to check.  You can check which version of .NET you have installed in your Programs and Features section of the Control Panel.  If needed, you can download the latest version, for free, from <a href="https://dotnet.microsoft.com/en-us/download/dotnet/7.0">.NET Desktop Runtime download link</a>. On this page, find the section for the most recent version of the .NET Desktop Runtime. From there, select the 'x64' Windows OS option.
 
 To obtain the installation files for SwashSim, please contact Dr. Washburn (swash@ce.ufl.edu).
 
@@ -18,7 +18,6 @@ To obtain the installation files for SwashSim, please contact Dr. Washburn (swas
 Example project files are available on <a href="https://github.com/swash17/SwashSim/tree/master/Projects">GitHub.</a>
 
 Example and tutorial videos on <a href="https://www.youtube.com/channel/UCNZCZ00coz8na0MtHBhdetg">YouTube.</a>
-
 
 <img alt="Start Screen" src="Images\SwashSimStartScreen.PNG">
 <img alt="Freeway Facility Input Screen" src="Images\SwashSimFreewayInputScreen.PNG">
