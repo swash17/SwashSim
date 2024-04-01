@@ -2,7 +2,6 @@
 <SwashSim Facility="Custom">
   <Project>
     <Facility>Custom</Facility>
-    <ProjectType>0</ProjectType>
     <FileName>Projects\SignalizedIntersections\Gnv_Archer_34th\Archer@34th.ssim</FileName>
     <FacilityName />
     <FileNameNetwork>Projects\SignalizedIntersections\Gnv_Archer_34th\Archer@34th.nwf</FileNameNetwork>
@@ -22,7 +21,7 @@
     <FacilityEnd />
     <AnalysisDirection />
     <AnalysisPeriod />
-    <Analyst>Jeff Gordon and Scott Washburn</Analyst>
+    <Analyst />
     <Date>4/20/2018 9:28:12 AM</Date>
     <Agency />
     <Comment />
