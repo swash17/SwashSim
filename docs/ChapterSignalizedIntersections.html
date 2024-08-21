@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>10 Signalized Intersections | SwashSim-Documentation.knit</title>
+  <meta name="description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="10 Signalized Intersections | SwashSim-Documentation.knit" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="10 Signalized Intersections | SwashSim-Documentation.knit" />
+  
+  <meta name="twitter:description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  
+
+<meta name="author" content="" />
+
+
+<meta name="date" content="2024-08-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ChapterCustomNetwork.html"/>
+<link rel="next" href="ChapterUnsignalized.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SwashSim Documentation</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section" id="toc-section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#document-organization"><i class="fa fa-check"></i>Document Organization</a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-the-developer"><i class="fa fa-check"></i>About the Developer</a></li>
+</ul></li>
+<li class="part"><span><b>I Getting Started</b></span></li>
+<li class="chapter" data-level="1" data-path="ChapterIntro.html"><a href="ChapterIntro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#swashsim-overview"><i class="fa fa-check"></i><b>1.1</b> SwashSim Overview</a></li>
+<li class="chapter" data-level="1.2" data-path="ChapterIntro.html"><a href="ChapterIntro.html#SupportingResources"><i class="fa fa-check"></i><b>1.2</b> Supporting Resources and Tools</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#example-projects"><i class="fa fa-check"></i><b>1.2.1</b> Example Projects</a></li>
+<li class="chapter" data-level="1.2.2" data-path="ChapterIntro.html"><a href="ChapterIntro.html#tutorial-videos"><i class="fa fa-check"></i><b>1.2.2</b> Tutorial Videos</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="ChapterIntro.html"><a href="ChapterIntro.html#program-installation"><i class="fa fa-check"></i><b>1.3</b> Program Installation</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#system-requirements"><i class="fa fa-check"></i><b>1.3.1</b> System Requirements</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html"><i class="fa fa-check"></i><b>2</b> User Interface Overview</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#starting-the-program"><i class="fa fa-check"></i><b>2.1</b> Starting the Program</a></li>
+<li class="chapter" data-level="2.2" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#starting-a-new-project"><i class="fa fa-check"></i><b>2.2</b> Starting a New Project</a></li>
+<li class="chapter" data-level="2.3" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#opening-a-project"><i class="fa fa-check"></i><b>2.3</b> Opening a Project</a></li>
+<li class="chapter" data-level="2.4" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#saving-a-project"><i class="fa fa-check"></i><b>2.4</b> Saving a Project</a></li>
+<li class="chapter" data-level="2.5" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#screensmodules"><i class="fa fa-check"></i><b>2.5</b> Screens/Modules</a></li>
+<li class="chapter" data-level="2.6" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#network-file-treeview"><i class="fa fa-check"></i><b>2.6</b> Network File Treeview</a></li>
+</ul></li>
+<li class="part"><span><b>II Creating a Simulation Project</b></span></li>
+<li class="chapter" data-level="3" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>3</b> Overview</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="overview.html"><a href="overview.html#Settings"><i class="fa fa-check"></i><b>3.1</b> Settings</a></li>
+<li class="chapter" data-level="3.2" data-path="overview.html"><a href="overview.html#ProjectProperties"><i class="fa fa-check"></i><b>3.2</b> Project Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ChapterDrivers.html"><a href="ChapterDrivers.html"><i class="fa fa-check"></i><b>4</b> Drivers</a></li>
+<li class="chapter" data-level="5" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html"><i class="fa fa-check"></i><b>5</b> Vehicles</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-fleet-types"><i class="fa fa-check"></i><b>5.1</b> Vehicle Fleet Types</a></li>
+<li class="chapter" data-level="5.2" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-models"><i class="fa fa-check"></i><b>5.2</b> Vehicle Models</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-model-definitions"><i class="fa fa-check"></i><b>5.2.1</b> Vehicle Model Definitions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html"><i class="fa fa-check"></i><b>6</b> Network Structure</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#overview-1"><i class="fa fa-check"></i><b>6.1</b> Overview</a></li>
+<li class="chapter" data-level="6.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#node-properties"><i class="fa fa-check"></i><b>6.2</b> Node Properties</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#xy-coordinates"><i class="fa fa-check"></i><b>6.2.1</b> X/Y Coordinates</a></li>
+<li class="chapter" data-level="6.2.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#entry-node-inputs"><i class="fa fa-check"></i><b>6.2.2</b> Entry Node Inputs</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#common-link-properties"><i class="fa fa-check"></i><b>6.3</b> Common Link Properties</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-node-id"><i class="fa fa-check"></i><b>6.3.1</b> Upstream/Downstream Node ID</a></li>
+<li class="chapter" data-level="6.3.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#length"><i class="fa fa-check"></i><b>6.3.2</b> Length</a></li>
+<li class="chapter" data-level="6.3.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#orientation-angle"><i class="fa fa-check"></i><b>6.3.3</b> Orientation Angle</a></li>
+<li class="chapter" data-level="6.3.4" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#horizontal-curvature"><i class="fa fa-check"></i><b>6.3.4</b> Horizontal Curvature</a></li>
+<li class="chapter" data-level="6.3.5" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#grade"><i class="fa fa-check"></i><b>6.3.5</b> Grade</a></li>
+<li class="chapter" data-level="6.3.6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#free-flow-speed"><i class="fa fa-check"></i><b>6.3.6</b> Free-Flow Speed</a></li>
+<li class="chapter" data-level="6.3.7" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#downstream-vehicle-turning-percentages"><i class="fa fa-check"></i><b>6.3.7</b> Downstream Vehicle Turning Percentages</a></li>
+<li class="chapter" data-level="6.3.8" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-connecting-link-ids"><i class="fa fa-check"></i><b>6.3.8</b> Upstream/downstream connecting link ID’s</a></li>
+<li class="chapter" data-level="6.3.9" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-connecting-lane-ids"><i class="fa fa-check"></i><b>6.3.9</b> Upstream/downstream connecting lane ID’s</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#two-lane-highway-only-link-properties"><i class="fa fa-check"></i><b>6.4</b> Two-lane highway-only Link Properties</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passing-in-oncoming-lane"><i class="fa fa-check"></i><b>6.4.1</b> Passing in Oncoming Lane</a></li>
+<li class="chapter" data-level="6.4.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passingclimbing-lane-direction"><i class="fa fa-check"></i><b>6.4.2</b> Passing/Climbing Lane Direction</a></li>
+<li class="chapter" data-level="6.4.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passingclimbing-lane-rule"><i class="fa fa-check"></i><b>6.4.3</b> Passing/Climbing Lane Rule</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#lane-data"><i class="fa fa-check"></i><b>6.5</b> Lane Data</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#lane-objects"><i class="fa fa-check"></i><b>6.5.1</b> Lane Objects</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#ConnectingLinksLanes"><i class="fa fa-check"></i><b>6.6</b> Upstream/Downstream Connecting Link/Lane IDs Example</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html"><i class="fa fa-check"></i><b>7</b> Freeway Quick Editor</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#main-input-screen"><i class="fa fa-check"></i><b>7.1</b> Main Input Screen</a></li>
+<li class="chapter" data-level="7.2" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#segment-input-fields"><i class="fa fa-check"></i><b>7.2</b> Segment Input Fields</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#detectors"><i class="fa fa-check"></i><b>7.2.1</b> Detectors</a></li>
+<li class="chapter" data-level="7.2.2" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#entering-traffic-data"><i class="fa fa-check"></i><b>7.2.2</b> Entering Traffic Data</a></li>
+<li class="chapter" data-level="7.2.3" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#exiting-traffic-data"><i class="fa fa-check"></i><b>7.2.3</b> Exiting Traffic Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html"><i class="fa fa-check"></i><b>8</b> Two-Lane Highway Quick Editor</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#main-input-screen-1"><i class="fa fa-check"></i><b>8.1</b> Main Input Screen</a></li>
+<li class="chapter" data-level="8.2" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#segment-input-fields-1"><i class="fa fa-check"></i><b>8.2</b> Segment Input Fields</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#upstreamdownstream-node-id-1"><i class="fa fa-check"></i><b>8.2.1</b> Upstream/Downstream Node ID</a></li>
+<li class="chapter" data-level="8.2.2" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#x-coord-startx-coord-end-and-y-coord-starty-coord-end"><i class="fa fa-check"></i><b>8.2.2</b> X Coord Start/X Coord End and Y Coord Start/Y Coord End</a></li>
+<li class="chapter" data-level="8.2.3" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#length-1"><i class="fa fa-check"></i><b>8.2.3</b> Length</a></li>
+<li class="chapter" data-level="8.2.4" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#horizontal-curve-specific-inputs"><i class="fa fa-check"></i><b>8.2.4</b> Horizontal Curve Specific Inputs</a></li>
+<li class="chapter" data-level="8.2.5" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#section-1"><i class="fa fa-check"></i><b>8.2.5</b> 2 + 1 Section</a></li>
+<li class="chapter" data-level="8.2.6" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#control-point-xcontrol-point-y"><i class="fa fa-check"></i><b>8.2.6</b> Control Point X/Control Point Y</a></li>
+<li class="chapter" data-level="8.2.7" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#entering-traffic-data-1"><i class="fa fa-check"></i><b>8.2.7</b> Entering Traffic Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html"><i class="fa fa-check"></i><b>9</b> Custom Network Editor</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#node-data-screen"><i class="fa fa-check"></i><b>9.1</b> Node Data Screen</a></li>
+<li class="chapter" data-level="9.2" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#link-data-screen"><i class="fa fa-check"></i><b>9.2</b> Link Data Screen</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#lane-data-1"><i class="fa fa-check"></i><b>9.2.1</b> Lane Data</a></li>
+<li class="chapter" data-level="9.2.2" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#CustomNetworkTrafficData"><i class="fa fa-check"></i><b>9.2.2</b> Traffic Data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#map-manipulation-functions-and-display-options"><i class="fa fa-check"></i><b>9.3</b> Map Manipulation Functions and Display Options</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html"><i class="fa fa-check"></i><b>10</b> Signalized Intersections</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#traffic-control-screen"><i class="fa fa-check"></i><b>10.1</b> Traffic Control Screen</a></li>
+<li class="chapter" data-level="10.2" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#pretimed-signal-phasing-and-timing-inputs"><i class="fa fa-check"></i><b>10.2</b> Pretimed Signal Phasing and Timing Inputs</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#phase-control-and-detector-assignments"><i class="fa fa-check"></i><b>10.2.1</b> Phase Control and Detector Assignments</span></a></li>
+<li class="chapter" data-level="10.2.2" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#coordination-settings"><i class="fa fa-check"></i><b>10.2.2</b> Coordination Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#actuated-signal-control"><i class="fa fa-check"></i><b>10.3</b> Actuated Signal Control</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#actuated-signal-controller-file-setup"><i class="fa fa-check"></i><b>10.3.1</b> Actuated Signal Controller File Setup</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html"><i class="fa fa-check"></i><b>11</b> Unsignalized Intersections</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#overview-2"><i class="fa fa-check"></i><b>11.1</b> Overview</a></li>
+<li class="chapter" data-level="11.2" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#gap-acceptance"><i class="fa fa-check"></i><b>11.2</b> Gap Acceptance</a></li>
+<li class="chapter" data-level="11.3" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#limitations"><i class="fa fa-check"></i><b>11.3</b> Limitations</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html"><i class="fa fa-check"></i><b>12</b> Ramp Metering</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#introduction"><i class="fa fa-check"></i><b>12.1</b> Introduction</a></li>
+<li class="chapter" data-level="12.2" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#pretimed"><i class="fa fa-check"></i><b>12.2</b> Pretimed</a></li>
+<li class="chapter" data-level="12.3" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#demandcapacity"><i class="fa fa-check"></i><b>12.3</b> Demand/Capacity</a></li>
+<li class="chapter" data-level="12.4" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#alinea"><i class="fa fa-check"></i><b>12.4</b> ALINEA</a></li>
+<li class="chapter" data-level="12.5" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#fuzzy-logic"><i class="fa fa-check"></i><b>12.5</b> Fuzzy Logic</a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#inputs-aggregated-performance-measures"><i class="fa fa-check"></i><b>12.5.1</b> Inputs (Aggregated Performance Measures)</a></li>
+<li class="chapter" data-level="12.5.2" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#inference"><i class="fa fa-check"></i><b>12.5.2</b> Inference</a></li>
+<li class="chapter" data-level="12.5.3" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#output-ramp-metering"><i class="fa fa-check"></i><b>12.5.3</b> Output (Ramp Metering)</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#limitations-1"><i class="fa fa-check"></i><b>12.6</b> Limitations</a></li>
+</ul></li>
+<li class="part"><span><b>III Running a Simulation Project</b></span></li>
+<li class="chapter" data-level="13" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html"><i class="fa fa-check"></i><b>13</b> Running the Simulation</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#single-scenario-run-settings"><i class="fa fa-check"></i><b>13.1</b> Single-Scenario Run Settings</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#warm-up-time"><i class="fa fa-check"></i><b>13.1.1</b> Warm-up Time</a></li>
+<li class="chapter" data-level="13.1.2" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#simulation-duration"><i class="fa fa-check"></i><b>13.1.2</b> Simulation Duration</a></li>
+<li class="chapter" data-level="13.1.3" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#random-number-seeds"><i class="fa fa-check"></i><b>13.1.3</b> Random Number Seeds</a></li>
+<li class="chapter" data-level="13.1.4" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#number-of-replications"><i class="fa fa-check"></i><b>13.1.4</b> Number of Replications</a></li>
+<li class="chapter" data-level="13.1.5" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#output-options"><i class="fa fa-check"></i><b>13.1.5</b> Output Options</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#multi-scenario-run-settings"><i class="fa fa-check"></i><b>13.2</b> Multi-Scenario Run Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html"><i class="fa fa-check"></i><b>14</b> Route Assignment</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#introduction-1"><i class="fa fa-check"></i><b>14.1</b> Introduction</a></li>
+<li class="chapter" data-level="14.2" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#link-performance-function"><i class="fa fa-check"></i><b>14.2</b> Link Performance Function</a></li>
+<li class="chapter" data-level="14.3" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#user-equilibrium-route-assignment"><i class="fa fa-check"></i><b>14.3</b> User Equilibrium Route Assignment</a></li>
+<li class="chapter" data-level="14.4" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#xxe"><i class="fa fa-check"></i><b>14.4</b> XXE</a></li>
+<li class="chapter" data-level="14.5" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#user-equilibrium-path-flow"><i class="fa fa-check"></i><b>14.5</b> User Equilibrium Path Flow</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="SimOutputData.html"><a href="SimOutputData.html"><i class="fa fa-check"></i><b>15</b> Simulation Output Data</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="SimOutputData.html"><a href="SimOutputData.html#vehicle-headway-data"><i class="fa fa-check"></i><b>15.1</b> Vehicle Headway Data</a></li>
+<li class="chapter" data-level="15.2" data-path="SimOutputData.html"><a href="SimOutputData.html#link-performance-measure-data"><i class="fa fa-check"></i><b>15.2</b> Link Performance Measure Data</a></li>
+<li class="chapter" data-level="15.3" data-path="SimOutputData.html"><a href="SimOutputData.html#detector-vehicle-actuation-data"><i class="fa fa-check"></i><b>15.3</b> Detector Vehicle Actuation Data</a></li>
+<li class="chapter" data-level="15.4" data-path="SimOutputData.html"><a href="SimOutputData.html#detector-aggregate-measures-data"><i class="fa fa-check"></i><b>15.4</b> Detector Aggregate Measures Data</a></li>
+<li class="chapter" data-level="15.5" data-path="SimOutputData.html"><a href="SimOutputData.html#vehicle-time-step-data"><i class="fa fa-check"></i><b>15.5</b> Vehicle Time Step Data</a></li>
+<li class="chapter" data-level="15.6" data-path="SimOutputData.html"><a href="SimOutputData.html#signal-time-step-data"><i class="fa fa-check"></i><b>15.6</b> Signal Time Step Data</a></li>
+<li class="chapter" data-level="15.7" data-path="SimOutputData.html"><a href="SimOutputData.html#ramp-metering-data"><i class="fa fa-check"></i><b>15.7</b> Ramp Metering Data</a></li>
+<li class="chapter" data-level="15.8" data-path="SimOutputData.html"><a href="SimOutputData.html#lane-change-data"><i class="fa fa-check"></i><b>15.8</b> Lane Change Data</a></li>
+<li class="chapter" data-level="15.9" data-path="SimOutputData.html"><a href="SimOutputData.html#platoon-data"><i class="fa fa-check"></i><b>15.9</b> Platoon Data</a></li>
+<li class="chapter" data-level="15.10" data-path="SimOutputData.html"><a href="SimOutputData.html#emissions-and-fuel-consumption-data"><i class="fa fa-check"></i><b>15.10</b> Emissions and Fuel Consumption Data</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html"><i class="fa fa-check"></i><b>16</b> Performance Measures</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#average-entry-headway"><i class="fa fa-check"></i><b>16.1</b> Average Entry Headway</a></li>
+<li class="chapter" data-level="16.2" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#flow-rate"><i class="fa fa-check"></i><b>16.2</b> Flow Rate</a></li>
+<li class="chapter" data-level="16.3" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#average-speed"><i class="fa fa-check"></i><b>16.3</b> Average Speed</a></li>
+<li class="chapter" data-level="16.4" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#density"><i class="fa fa-check"></i><b>16.4</b> Density</a></li>
+<li class="chapter" data-level="16.5" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#percent-followers"><i class="fa fa-check"></i><b>16.5</b> Percent Followers</a></li>
+<li class="chapter" data-level="16.6" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#follower-density"><i class="fa fa-check"></i><b>16.6</b> Follower Density</a></li>
+<li class="chapter" data-level="16.7" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#acceleration-noise"><i class="fa fa-check"></i><b>16.7</b> Acceleration Noise</a></li>
+<li class="chapter" data-level="16.8" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#travel-time"><i class="fa fa-check"></i><b>16.8</b> Travel Time</a></li>
+<li class="chapter" data-level="16.9" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#running-time"><i class="fa fa-check"></i><b>16.9</b> Running Time</a></li>
+<li class="chapter" data-level="16.10" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#delay"><i class="fa fa-check"></i><b>16.10</b> Delay</a></li>
+<li class="chapter" data-level="16.11" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#queue-length"><i class="fa fa-check"></i><b>16.11</b> Queue Length</a></li>
+<li class="chapter" data-level="16.12" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#saturation-flow-rate"><i class="fa fa-check"></i><b>16.12</b> Saturation Flow Rate</a></li>
+<li class="chapter" data-level="16.13" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#stop-rate"><i class="fa fa-check"></i><b>16.13</b> Stop Rate</a></li>
+<li class="chapter" data-level="16.14" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#vehicle-hours-traveled-vht"><i class="fa fa-check"></i><b>16.14</b> Vehicle-Hours-Traveled (VHT)</a></li>
+<li class="chapter" data-level="16.15" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#vehicle-miles-traveled-vmt"><i class="fa fa-check"></i><b>16.15</b> Vehicle-Miles-Traveled (VMT)</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html"><i class="fa fa-check"></i><b>17</b> Calibration</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#introduction-2"><i class="fa fa-check"></i><b>17.1</b> Introduction</a></li>
+<li class="chapter" data-level="17.2" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#network-calibration"><i class="fa fa-check"></i><b>17.2</b> Network Calibration</a></li>
+<li class="chapter" data-level="17.3" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#vehicle-movement-model-calibration"><i class="fa fa-check"></i><b>17.3</b> Vehicle Movement Model Calibration</a>
+<ul>
+<li class="chapter" data-level="17.3.1" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#signalized-intersections"><i class="fa fa-check"></i><b>17.3.1</b> Signalized intersections</a></li>
+<li class="chapter" data-level="17.3.2" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#two-lane-highways"><i class="fa fa-check"></i><b>17.3.2</b> Two-lane highways</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html"><i class="fa fa-check"></i><b>18</b> Simulation Animation</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#initiating-simulation-animation-mode"><i class="fa fa-check"></i><b>18.1</b> Initiating Simulation Animation Mode</a></li>
+<li class="chapter" data-level="18.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#animation-playback-controls"><i class="fa fa-check"></i><b>18.2</b> Animation Playback Controls</a>
+<ul>
+<li class="chapter" data-level="18.2.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#startpausestop"><i class="fa fa-check"></i><b>18.2.1</b> Start/Pause/Stop</a></li>
+<li class="chapter" data-level="18.2.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#forwardreverse"><i class="fa fa-check"></i><b>18.2.2</b> Forward/Reverse</a></li>
+<li class="chapter" data-level="18.2.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#animation-speed"><i class="fa fa-check"></i><b>18.2.3</b> Animation Speed</a></li>
+<li class="chapter" data-level="18.2.4" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#simulation-time"><i class="fa fa-check"></i><b>18.2.4</b> Simulation Time</a></li>
+</ul></li>
+<li class="chapter" data-level="18.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#display-options"><i class="fa fa-check"></i><b>18.3</b> Display Options</a>
+<ul>
+<li class="chapter" data-level="18.3.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#show-vehicle-information"><i class="fa fa-check"></i><b>18.3.1</b> Show Vehicle Information</a></li>
+<li class="chapter" data-level="18.3.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#vehicle-properties"><i class="fa fa-check"></i><b>18.3.2</b> Vehicle Properties</a></li>
+<li class="chapter" data-level="18.3.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#signal-controllers"><i class="fa fa-check"></i><b>18.3.3</b> Signal Controllers</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Simulation Logic and Vehicle Movement Models</b></span></li>
+<li class="chapter" data-level="19" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html"><i class="fa fa-check"></i><b>19</b> Simulation Logic Flow</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#first-vehicle-entry"><i class="fa fa-check"></i><b>19.1</b> First Vehicle Entry</a></li>
+<li class="chapter" data-level="19.2" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#simulation-time-loop"><i class="fa fa-check"></i><b>19.2</b> Simulation Time Loop</a>
+<ul>
+<li class="chapter" data-level="19.2.1" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#create-new-vehicle"><i class="fa fa-check"></i><b>19.2.1</b> Create new vehicle</a></li>
+<li class="chapter" data-level="19.2.2" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#update-status-of-control-points"><i class="fa fa-check"></i><b>19.2.2</b> Update Status of Control Points</a></li>
+<li class="chapter" data-level="19.2.3" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#update-vehicle-properties"><i class="fa fa-check"></i><b>19.2.3</b> Update Vehicle Properties</a></li>
+<li class="chapter" data-level="19.2.4" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#check-detector-status"><i class="fa fa-check"></i><b>19.2.4</b> Check Detector Status</a></li>
+</ul></li>
+<li class="chapter" data-level="19.3" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#end-of-simulation-run"><i class="fa fa-check"></i><b>19.3</b> End of Simulation Run</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html"><i class="fa fa-check"></i><b>20</b> Vehicle Generation</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#vehicle-entry-headway-distribution"><i class="fa fa-check"></i><b>20.1</b> Vehicle Entry Headway Distribution</a></li>
+<li class="chapter" data-level="20.2" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-entry-lane"><i class="fa fa-check"></i><b>20.2</b> Set Vehicle Entry Lane</a></li>
+<li class="chapter" data-level="20.3" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-driver-type"><i class="fa fa-check"></i><b>20.3</b> Set Vehicle Driver Type</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html"><i class="fa fa-check"></i><b>21</b> Leader/Follower Status</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html#variable-definitions"><i class="fa fa-check"></i><b>21.1</b> Variable Definitions</a></li>
+<li class="chapter" data-level="21.2" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html#logic-conditions"><i class="fa fa-check"></i><b>21.2</b> Logic Conditions</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html"><i class="fa fa-check"></i><b>22</b> Vehicle Movement Logic</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#longitudinal-motion"><i class="fa fa-check"></i><b>22.1</b> Longitudinal Motion</a>
+<ul>
+<li class="chapter" data-level="22.1.1" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#AccelMode"><i class="fa fa-check"></i><b>22.1.1</b> Acceleration Mode</a></li>
+<li class="chapter" data-level="22.1.2" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#queue-status"><i class="fa fa-check"></i><b>22.1.2</b> Queue Status</a></li>
+</ul></li>
+<li class="chapter" data-level="22.2" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#lane-changing"><i class="fa fa-check"></i><b>22.2</b> Lane Changing</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html"><i class="fa fa-check"></i><b>23</b> Acceleration Mode</a>
+<ul>
+<li class="chapter" data-level="23.1" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#unimpedednormal"><i class="fa fa-check"></i><b>23.1</b> UnimpededNormal</a></li>
+<li class="chapter" data-level="23.2" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#carfollow"><i class="fa fa-check"></i><b>23.2</b> CarFollow</a></li>
+<li class="chapter" data-level="23.3" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stoppingforqueue"><i class="fa fa-check"></i><b>23.3</b> StoppingForQueue</a></li>
+<li class="chapter" data-level="23.4" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stoppingforcontrol"><i class="fa fa-check"></i><b>23.4</b> StoppingForControl</a></li>
+<li class="chapter" data-level="23.5" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stopped"><i class="fa fa-check"></i><b>23.5</b> Stopped</a></li>
+<li class="chapter" data-level="23.6" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#MaxAccel"><i class="fa fa-check"></i><b>23.6</b> MaxAccel</a></li>
+<li class="chapter" data-level="23.7" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#MaxDecel"><i class="fa fa-check"></i><b>23.7</b> Max Decel</a></li>
+<li class="chapter" data-level="23.8" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#desired-accel"><i class="fa fa-check"></i><b>23.8</b> Desired Accel</a></li>
+<li class="chapter" data-level="23.9" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#desired-decel"><i class="fa fa-check"></i><b>23.9</b> Desired Decel</a></li>
+<li class="chapter" data-level="23.10" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#downstreamlinkspeedchange"><i class="fa fa-check"></i><b>23.10</b> DownstreamLinkSpeedChange</a></li>
+<li class="chapter" data-level="23.11" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#slowingfordowngrade"><i class="fa fa-check"></i><b>23.11</b> SlowingForDowngrade</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html"><i class="fa fa-check"></i><b>24</b> Desired Speed</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#horizontal-curves"><i class="fa fa-check"></i><b>24.1</b> Horizontal Curves</a></li>
+<li class="chapter" data-level="24.2" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#tangents"><i class="fa fa-check"></i><b>24.2</b> Tangents</a>
+<ul>
+<li class="chapter" data-level="24.2.1" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#heavy-vehicles"><i class="fa fa-check"></i><b>24.2.1</b> Heavy Vehicles</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="ChapterCarFollow.html"><a href="ChapterCarFollow.html"><i class="fa fa-check"></i><b>25</b> Car Following</a></li>
+<li class="chapter" data-level="26" data-path="ChapterMaxAccel.html"><a href="ChapterMaxAccel.html"><i class="fa fa-check"></i><b>26</b> Maximum Acceleration</a></li>
+<li class="chapter" data-level="27" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html"><i class="fa fa-check"></i><b>27</b> Lane Changing</a>
+<ul>
+<li class="chapter" data-level="27.1" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#MandatoryLaneChanging"><i class="fa fa-check"></i><b>27.1</b> Mandatory Lane Changing</a></li>
+<li class="chapter" data-level="27.2" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#DiscretionaryLaneChanging"><i class="fa fa-check"></i><b>27.2</b> Discretionary Lane Changing</a></li>
+<li class="chapter" data-level="27.3" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#anticipatory-lane-changing"><i class="fa fa-check"></i><b>27.3</b> Anticipatory Lane Changing</a></li>
+<li class="chapter" data-level="27.4" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#vehicle-lane-change-modes"><i class="fa fa-check"></i><b>27.4</b> Vehicle Lane Change Modes</a></li>
+</ul></li>
+<li class="chapter" data-level="28" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html"><i class="fa fa-check"></i><b>28</b> Two-Lane Highway Modeling</a>
+<ul>
+<li class="chapter" data-level="28.1" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-modes"><i class="fa fa-check"></i><b>28.1</b> Passing Modes</a></li>
+<li class="chapter" data-level="28.2" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-in-oncoming-lane-1"><i class="fa fa-check"></i><b>28.2</b> Passing in Oncoming Lane</a></li>
+<li class="chapter" data-level="28.3" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-in-a-passing-lane-section"><i class="fa fa-check"></i><b>28.3</b> Passing in a Passing Lane Section</a></li>
+</ul></li>
+<li class="chapter" data-level="29" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html"><i class="fa fa-check"></i><b>29</b> Emissions and Fuel Consumption</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html#EmissionsVSP"><i class="fa fa-check"></i><b>29.1</b> Vehicle-Specific Power (VSP) Emission</a></li>
+<li class="chapter" data-level="29.2" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html#obd-based-emissionsfuel-use-calculations"><i class="fa fa-check"></i><b>29.2</b> OBD-based emissions/fuel use calculations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/swash17/SwashSim" target="blank">View Book Source</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ChapterSignalizedIntersections" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">10</span> Signalized Intersections<a href="ChapterSignalizedIntersections.html#ChapterSignalizedIntersections" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>This section discusses how traffic signal control settings are specified in SwashSim.</p>
+<div id="traffic-control-screen" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Traffic Control Screen<a href="ChapterSignalizedIntersections.html#traffic-control-screen" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TrafficControlToolbarButton"></span>
+<img src="Images/TrafficControlToolbarButton.png" alt="Toolbar Traffic Control Button" width="80%" />
+<p class="caption">
+Figure 10.1: Toolbar Traffic Control Button
+</p>
+</div>
+<p>Pressing the ‘Traffic Control’ button on the toolbar will load the controller setup screen. Pressing the ‘Add Pretimed Controller’, ‘Add Actuated Signal Controller’ or ‘Add On-Ramp Signal Controller’ will add a signal controller entry to the table immediately below the button. Pressing the ‘Edit’ button for a given controller under the ‘Edit Timing Plan’ column will load the signal timing and phasing inputs screen (discussed below).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TrafficControlMainScreen"></span>
+<img src="Images/TrafficControlMainScreen.png" alt="Traffic Control Main Screen" width="60%" />
+<p class="caption">
+Figure 10.2: Traffic Control Main Screen
+</p>
+</div>
+</div>
+<div id="pretimed-signal-phasing-and-timing-inputs" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Pretimed Signal Phasing and Timing Inputs<a href="ChapterSignalizedIntersections.html#pretimed-signal-phasing-and-timing-inputs" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Pressing the ‘Set Phasing &amp; Timing’ button on the main inputs screen will load the ‘Signal Phasing and Timing Inputs’ screen.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TrafficControlPretimed1"></span>
+<img src="Images/Signals/TrafficControlPretimed1.png" alt="Pretimed Signal Controller Settings (1)" width="75%" />
+<p class="caption">
+Figure 10.3: Pretimed Signal Controller Settings (1)
+</p>
+</div>
+<p>To add a timing stage, press the “Add Timing Stage” button. This will highlight the next available Timing Stage box in yellow. To edit a Timing Stage, click the desired stage so that it is highlighted in yellow. Timing stages are used to specify the phases (1-8) that will move (i.e., receive green) simultaneously. To add a traffic movement to the timing stage, click on the desired movement arrow(s) in the ring/barrier diagram. To remove a movement, click on the corresponding arrow in the ring/barrier diagram. If movement is selected that conflicts with another movement in that timing stage, an error message will appear and the movement arrow will not be added to the timing stage.
+For each timing stage, the green (G), yellow (Y), and all-red (AR) times need to be specified. To edit a timing interval, click on the appropriate table cell to highlight it in blue and type in the desired number. Press the ‘Tab’ or ‘Enter’ key to save edits. Note that the number in the left-most column corresponds to the timing stage number. The figure below shows an example timing stage plan.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TrafficControlPretimed2"></span>
+<img src="Images/Signals/TrafficControlPretimed2.png" alt="Pretimed Signal Controller Settings (2)" width="75%" />
+<p class="caption">
+Figure 10.4: Pretimed Signal Controller Settings (2)
+</p>
+</div>
+<p>When the timing stage movements and corresponding interval times have been specified, the last step is to select ‘Create Signal Controller Phasing/Timing Plan’. This will generate a timing plan that is used by the dual-ring signal controller.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TrafficControlPretimed3"></span>
+<img src="Images/Signals/TrafficControlPretimed3.png" alt="Pretimed Signal Controller Settings (3)" width="75%" />
+<p class="caption">
+Figure 10.5: Pretimed Signal Controller Settings (3)
+</p>
+</div>
+<p>If revisions are made to the timing stages and/or interval times, press the ‘Create Signal Controller Phasing/Timing Plan’ again to create a new signal controller timing plan. The last timing plan that is generated is the one that is stored in memory. The simulation program will continue to store this timing plan in memory for the duration of the current session. If you want to save the timing plan to disk, press the “Save To File” button in the Traffic Control Setup screen after existing the controller settings screen.</p>
+<div id="phase-control-and-detector-assignments" class="section level3 hasAnchor" number="10.2.1">
+<h3><span class="header-section-number">10.2.1</span> Phase Control and Detector Assignments</span><a href="ChapterSignalizedIntersections.html#phase-control-and-detector-assignments" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Select the Phase Control and Detector Assignments tab to specify the signalized control points and/or detectors that associated with each signal phase.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TrafficControlPretimed4"></span>
+<img src="Images/Signals/TrafficControlPretimed4.png" alt="Pretimed Signal Controller Settings (4)" width="75%" />
+<p class="caption">
+Figure 10.6: Pretimed Signal Controller Settings (4)
+</p>
+</div>
+<p>Pressing the Select button for a given phase will load the control points/detectors selection screen (an example for control points is shown in the following figure). After checking the desired control points/detectors and closing, the selections will be displayed in the table on the controller settings screen.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TrafficControlSelectControlPoints"></span>
+<img src="Images/Signals/TrafficControlSelectControlPoints.png" alt="Traffic Signal Control Points Selection" width="60%" />
+<p class="caption">
+Figure 10.7: Traffic Signal Control Points Selection
+</p>
+</div>
+</div>
+<div id="coordination-settings" class="section level3 hasAnchor" number="10.2.2">
+<h3><span class="header-section-number">10.2.2</span> Coordination Settings<a href="ChapterSignalizedIntersections.html#coordination-settings" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Coordination settings can be specified under the corresponding tab. The inputs on this tab are as follows:</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TrafficControlPretimed5"></span>
+<img src="Images/Signals/TrafficControlPretimed5.png" alt="Pretimed Signal Controller Settings (5)" width="75%" />
+<p class="caption">
+Figure 10.8: Pretimed Signal Controller Settings (5)
+</p>
+</div>
+<ul>
+<li><p>Coordination?: Check this box to enable coordination for the selected intersection controller</p></li>
+<li><p>Master Controller?: This box should be checked for only one of the intersections among the group of intersections to which you are applying coordination settings. Generally, the intersection selected as the ‘Master’ should be the most upstream intersection for the direction of coordination. For example, if coordination is being set up for a series of four intersections for the eastbound direction of travel…</p>
+<ol style="list-style-type: decimal">
+<li>-&gt; (2) -&gt; (3) -&gt; (4)</li>
+</ol></li>
+</ul>
+<p>intersection (1) should be selected as the master intersection.</p>
+<ul>
+<li>Reference Phase ID: This value corresponds to the phase number (1-8) of the coordinated movement. For example, if the eastbound through movement is being coordinated, this value should be set to ‘2’.</li>
+<li>Cycle Lengths (s): This value is calculated from the previously entered timing stage settings (green, yellow, all-red). It is for information purposes only and cannot be modified on this screen. If you return to the Timing Stage Settings tab and change any of the timing values there and then return to the Coordination Settings tab, the cycle length value will be updated accordingly.</li>
+<li>Offset(s):
+** For the master intersection, this value should correspond to the number of seconds the coordinated phase starts relative to the start of the cycle (i.e., 0). For example, assume a timing plan starts with leading left turns for the eastbound and westbound approaches (phases 5 and 1) in timing stage 1, with a duration of 20 seconds (G+Y+AR), and then serves the eastbound and westbound through movements (phases 2 and 6) in timing stage 2. Assuming the coordinated movement is the eastbound through movement, the offset value should be set to 20; i.e., the coordinated movement starts 20 seconds after the start of the cycle, assuming a cycle start time of 0 seconds for the master intersection.
+** For coordinated intersections downstream of the master intersection, the offset value should be set to the number of seconds that you want the reference phase to start after the start of the reference phase at the master intersection.</li>
+</ul>
+<p>See <span class="citation">(<a href="references.html#ref-mannering_principles_2019">Mannering and Washburn 2019</a>)</span> for more information about signal coordination concepts.</p>
+</div>
+</div>
+<div id="actuated-signal-control" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Actuated Signal Control<a href="ChapterSignalizedIntersections.html#actuated-signal-control" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>After adding an actuated signal controller, press ‘Edit’ under ‘Edit Timing Plan’ to open the Timing Plan Data window.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SignalControlActuated1"></span>
+<img src="Images/Signals/SignalControlActuated1.png" alt="Actuated Signal Controller Settings (1)" width="75%" />
+<p class="caption">
+Figure 10.9: Actuated Signal Controller Settings (1)
+</p>
+</div>
+<p>Use the ‘Add Phase’ and ‘Remove Phase’ buttons to add and remove phases to the table on the right. To edit a phase, click on the desired cell so that it is highlighted blue, type the Phase Number (1 through 8) and press tab to move to the next cell. All cells except for Recall Mode should be numerical inputs and then use the drop-down menu to assign a recall mode for each phase. For more information on signal timing, see [[Traffic Signal Control Concepts#Basic Signal Timings|Basic Signal Timings]].</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SignalControlActuated2"></span>
+<img src="Images/Signals/SignalControlActuated2.png" alt="Timing Plan Data (Add, Remove Phase)" width="75%" />
+<p class="caption">
+Figure 10.10: Timing Plan Data (Add, Remove Phase)
+</p>
+</div>
+<p>Once the phases are created in the table, then click on ‘Edit Phase Sequence’ to set phases to corresponding rings. Use the ‘Number of Rings’ drop down menu to select the number of rings to be used in the intersection. Then, in a similar manner in the Timing Plan Data window, use the ‘Add New Row’ and ‘Remove Current Row’ buttons to create a table for ring information. For the typical two-ring, eight-phase timing plan, insert six rows and then use the drop down menu to select ‘Barrier’ for rows three and six.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SignalControlActuated3"></span>
+<img src="Images/Signals/SignalControlActuated3.png" alt="Timing Plan Data (Edit Phase Sequence)" width="75%" />
+<p class="caption">
+Figure 10.11: Timing Plan Data (Edit Phase Sequence)
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:SignalControlActuated4"></span>
+<img src="Images/Signals/SignalControlActuated4.png" alt="Phase Sequence Inputs" width="50%" />
+<p class="caption">
+Figure 10.12: Phase Sequence Inputs
+</p>
+</div>
+<p>Once the Phase Sequence Input table is complete, press ‘Close and Save Changes’.</p>
+<div id="actuated-signal-controller-file-setup" class="section level3 hasAnchor" number="10.3.1">
+<h3><span class="header-section-number">10.3.1</span> Actuated Signal Controller File Setup<a href="ChapterSignalizedIntersections.html#actuated-signal-controller-file-setup" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Before adding an actuated signal controller, all detectors and control points must be setup for the intersection(s). The next steps involve the editing of the actuated signal control files labeled ActControlPoints, ActDetectors, and ActTimingPlan. The following steps describe the process for editing the actuated signal control files in order to get actuated signal control to work properly in SwashSim. These files are plain text files and can be edited within any text editing program. Example files can be found in the Actuated Signal Control example project on the <a href="https://github.com/swash17/SwashSim/tree/master/Projects/SignalizedIntersections">SwashSim GitHub site</a>.</p>
+<p>Once the actuated signal control files have been obtained, the first step is to set the directory location for the ControlPoints and Detectors files. This is done within the ActTimingPlan file. The following shows examples of this from an ActTimingPlan file.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="ChapterSignalizedIntersections.html#cb1-1" tabindex="-1"></a>&lt;<span class="kw">FilenameControlPoints</span>&gt;C:\Program Files\SwashWare\SwashSim\Projects\Signalized Intersections\Actuated\University_13th\ActControlPoints.xml&lt;/<span class="kw">FilenameControlPoints</span>&gt;</span>
+<span id="cb1-2"><a href="ChapterSignalizedIntersections.html#cb1-2" tabindex="-1"></a>&lt;<span class="kw">FilenameDetectors</span>&gt;C:\Program Files\SwashWare\Projects\Signalized Intersections\Actuated\University_13th\ActDetectors.xml&lt;/<span class="kw">FilenameDetectors</span>&gt;</span></code></pre></div>
+<p>The next step is to edit the ActDetector file. This file is used to identify the detectors that are used by the actuated signal controller. The following shows an example of the code for one detector. Each detector at the intersection needs its own section of code.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="ChapterSignalizedIntersections.html#cb2-1" tabindex="-1"></a>&lt;<span class="kw">DetectorData</span>&gt;</span>
+<span id="cb2-2"><a href="ChapterSignalizedIntersections.html#cb2-2" tabindex="-1"></a>  &lt;<span class="kw">Id</span>&gt;1&lt;/<span class="kw">Id</span>&gt;</span>
+<span id="cb2-3"><a href="ChapterSignalizedIntersections.html#cb2-3" tabindex="-1"></a>  &lt;<span class="kw">ControllerId</span>&gt;1&lt;/<span class="kw">ControllerId</span>&gt;</span>
+<span id="cb2-4"><a href="ChapterSignalizedIntersections.html#cb2-4" tabindex="-1"></a>  &lt;<span class="kw">ControlPhaseId</span>&gt;2&lt;/<span class="kw">ControlPhaseId</span>&gt;</span>
+<span id="cb2-5"><a href="ChapterSignalizedIntersections.html#cb2-5" tabindex="-1"></a>  &lt;<span class="kw">LinkId</span>&gt;56&lt;/<span class="kw">LinkId</span>&gt;</span>
+<span id="cb2-6"><a href="ChapterSignalizedIntersections.html#cb2-6" tabindex="-1"></a>  &lt;<span class="kw">LaneId</span>&gt;1&lt;/<span class="kw">LaneId</span>&gt;</span>
+<span id="cb2-7"><a href="ChapterSignalizedIntersections.html#cb2-7" tabindex="-1"></a>  &lt;<span class="kw">LanePositionBeginFeet</span>&gt;218&lt;/<span class="kw">LanePositionBeginFeet</span>&gt;</span>
+<span id="cb2-8"><a href="ChapterSignalizedIntersections.html#cb2-8" tabindex="-1"></a>  &lt;<span class="kw">LanePositionBeginPct</span>&gt;95&lt;/<span class="kw">LanePositionBeginPct</span>&gt;</span>
+<span id="cb2-9"><a href="ChapterSignalizedIntersections.html#cb2-9" tabindex="-1"></a>  &lt;<span class="kw">LengthFeet</span>&gt;6&lt;/<span class="kw">LengthFeet</span>&gt;</span>
+<span id="cb2-10"><a href="ChapterSignalizedIntersections.html#cb2-10" tabindex="-1"></a>  &lt;<span class="kw">LanePositionEndFeet</span>&gt;224&lt;/<span class="kw">LanePositionEndFeet</span>&gt;</span>
+<span id="cb2-11"><a href="ChapterSignalizedIntersections.html#cb2-11" tabindex="-1"></a>&lt;/<span class="kw">DetectorData</span>&gt;</span></code></pre></div>
+<ul>
+<li><em>Id</em>: the value should always be 1</li>
+<li><em>ControllerId</em>: should be the controller number labeled on the timing plan data page</li>
+<li><em>ControlPhaseId</em>: should correspond to the phase called by this detector</li>
+<li><em>LinkId</em>: the link ID where this detector is located</li>
+<li><em>LaneId</em>: the lane ID where this detector is located for the given link ID</li>
+<li><em>LanePositionBeginFeet</em>: location of the detector within the link (as measured from upstream end of link)</li>
+<li><em>LanePostionBeginPct</em>: location (as a percentage of the link length) of the detector within the link</li>
+<li><em>LengthFeet</em>: length of detector in feet</li>
+<li><em>LanePositionEndFeet</em>: the value of <em>LanePositionBeginFeet</em> + <em>LengthFeet</em></li>
+</ul>
+<p>The next step is to edit the ActControlPoints file. This files is used to identify the control points that are used by the actuated signal controller. The following shows an example of the code for one control point. Each control point at the intersection needs its own section of code.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="ChapterSignalizedIntersections.html#cb3-1" tabindex="-1"></a>&lt;<span class="kw">VehicleControlPointData</span>&gt;</span>
+<span id="cb3-2"><a href="ChapterSignalizedIntersections.html#cb3-2" tabindex="-1"></a>  &lt;<span class="kw">Id</span>&gt;1&lt;/<span class="kw">Id</span>&gt;</span>
+<span id="cb3-3"><a href="ChapterSignalizedIntersections.html#cb3-3" tabindex="-1"></a>  &lt;<span class="kw">Control</span>&gt;Signalized&lt;/<span class="kw">Control</span>&gt;</span>
+<span id="cb3-4"><a href="ChapterSignalizedIntersections.html#cb3-4" tabindex="-1"></a>  &lt;<span class="kw">ControllerId</span>&gt;1&lt;/<span class="kw">ControllerId</span>&gt;</span>
+<span id="cb3-5"><a href="ChapterSignalizedIntersections.html#cb3-5" tabindex="-1"></a>  &lt;<span class="kw">ControlPhaseId</span>&gt;2&lt;/<span class="kw">ControlPhaseId</span>&gt;</span>
+<span id="cb3-6"><a href="ChapterSignalizedIntersections.html#cb3-6" tabindex="-1"></a>  &lt;<span class="kw">TravDir</span>&gt;NB&lt;/<span class="kw">TravDir</span>&gt;</span>
+<span id="cb3-7"><a href="ChapterSignalizedIntersections.html#cb3-7" tabindex="-1"></a>  &lt;<span class="kw">LinkId</span>&gt;56&lt;/<span class="kw">LinkId</span>&gt;</span>
+<span id="cb3-8"><a href="ChapterSignalizedIntersections.html#cb3-8" tabindex="-1"></a>  &lt;<span class="kw">LaneId</span>&gt;1&lt;/<span class="kw">LaneId</span>&gt;</span>
+<span id="cb3-9"><a href="ChapterSignalizedIntersections.html#cb3-9" tabindex="-1"></a>  &lt;<span class="kw">LaneIdsControlled</span>&gt;</span>
+<span id="cb3-10"><a href="ChapterSignalizedIntersections.html#cb3-10" tabindex="-1"></a>    &lt;<span class="kw">unsignedByte</span>&gt;1&lt;/<span class="kw">unsignedByte</span>&gt;</span>
+<span id="cb3-11"><a href="ChapterSignalizedIntersections.html#cb3-11" tabindex="-1"></a>  &lt;/<span class="kw">LaneIdsControlled</span>&gt;</span>
+<span id="cb3-12"><a href="ChapterSignalizedIntersections.html#cb3-12" tabindex="-1"></a>  &lt;<span class="kw">PositionLaneFeet</span>&gt;223&lt;/<span class="kw">PositionLaneFeet</span>&gt;</span>
+<span id="cb3-13"><a href="ChapterSignalizedIntersections.html#cb3-13" tabindex="-1"></a>  &lt;<span class="kw">PositionLanePct</span>&gt;97&lt;/<span class="kw">PositionLanePct</span>&gt;</span>
+<span id="cb3-14"><a href="ChapterSignalizedIntersections.html#cb3-14" tabindex="-1"></a>&lt;/<span class="kw">VehicleControlPointData</span>&gt;</span></code></pre></div>
+<ul>
+<li><em>Id</em>: the value should always be 1</li>
+<li><em>Control</em>: this value indicates what type of control mode applies for the control point–for a signalized intersection this will be set to “Signalized”</li>
+<li><em>ControllerId</em>: should be the controller number labeled on the timing plan data page</li>
+<li><em>ControlPhaseId</em>: should correspond to the phase called by this detector</li>
+<li><em>TravDir</em>: indicates the direction of travel for vehicles passing this control point (EB,WB,NB,SB,NEB,NWB,SEB,SWB)</li>
+<li><em>LinkId</em>: the link ID where this detector is located</li>
+<li><em>LaneId</em>: the lane ID where this detector is located for the given link ID</li>
+<li><em>LanePositionBeginFeet</em>: location of the detector within the link (as measured from upstream end of link)</li>
+<li><em>LanePostionBeginPct</em>: location (as a percentage of the link length) of the detector within the link</li>
+<li><em>LaneIdsControlled</em>: Same as <em>LaneId</em></li>
+</ul>
+<p>This completes the setup process for adding a new actuated signal controller to a SwashSim intersection project.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ChapterCustomNetwork.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ChapterUnsignalized.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/swash17/SwashSim/edit/master/17-TrafficControlSignalizedIntx.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["SwashSim Documentation.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toc_depth": 0
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>28 Two-Lane Highway Modeling | SwashSim-Documentation.knit</title>
+  <meta name="description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="28 Two-Lane Highway Modeling | SwashSim-Documentation.knit" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="28 Two-Lane Highway Modeling | SwashSim-Documentation.knit" />
+  
+  <meta name="twitter:description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  
+
+<meta name="author" content="" />
+
+
+<meta name="date" content="2024-08-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ChapterLaneChanging.html"/>
+<link rel="next" href="ChapterEmissions.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SwashSim Documentation</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section" id="toc-section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#document-organization"><i class="fa fa-check"></i>Document Organization</a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-the-developer"><i class="fa fa-check"></i>About the Developer</a></li>
+</ul></li>
+<li class="part"><span><b>I Getting Started</b></span></li>
+<li class="chapter" data-level="1" data-path="ChapterIntro.html"><a href="ChapterIntro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#swashsim-overview"><i class="fa fa-check"></i><b>1.1</b> SwashSim Overview</a></li>
+<li class="chapter" data-level="1.2" data-path="ChapterIntro.html"><a href="ChapterIntro.html#SupportingResources"><i class="fa fa-check"></i><b>1.2</b> Supporting Resources and Tools</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#example-projects"><i class="fa fa-check"></i><b>1.2.1</b> Example Projects</a></li>
+<li class="chapter" data-level="1.2.2" data-path="ChapterIntro.html"><a href="ChapterIntro.html#tutorial-videos"><i class="fa fa-check"></i><b>1.2.2</b> Tutorial Videos</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="ChapterIntro.html"><a href="ChapterIntro.html#program-installation"><i class="fa fa-check"></i><b>1.3</b> Program Installation</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#system-requirements"><i class="fa fa-check"></i><b>1.3.1</b> System Requirements</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html"><i class="fa fa-check"></i><b>2</b> User Interface Overview</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#starting-the-program"><i class="fa fa-check"></i><b>2.1</b> Starting the Program</a></li>
+<li class="chapter" data-level="2.2" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#starting-a-new-project"><i class="fa fa-check"></i><b>2.2</b> Starting a New Project</a></li>
+<li class="chapter" data-level="2.3" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#opening-a-project"><i class="fa fa-check"></i><b>2.3</b> Opening a Project</a></li>
+<li class="chapter" data-level="2.4" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#saving-a-project"><i class="fa fa-check"></i><b>2.4</b> Saving a Project</a></li>
+<li class="chapter" data-level="2.5" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#screensmodules"><i class="fa fa-check"></i><b>2.5</b> Screens/Modules</a></li>
+<li class="chapter" data-level="2.6" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#network-file-treeview"><i class="fa fa-check"></i><b>2.6</b> Network File Treeview</a></li>
+</ul></li>
+<li class="part"><span><b>II Creating a Simulation Project</b></span></li>
+<li class="chapter" data-level="3" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>3</b> Overview</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="overview.html"><a href="overview.html#Settings"><i class="fa fa-check"></i><b>3.1</b> Settings</a></li>
+<li class="chapter" data-level="3.2" data-path="overview.html"><a href="overview.html#ProjectProperties"><i class="fa fa-check"></i><b>3.2</b> Project Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ChapterDrivers.html"><a href="ChapterDrivers.html"><i class="fa fa-check"></i><b>4</b> Drivers</a></li>
+<li class="chapter" data-level="5" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html"><i class="fa fa-check"></i><b>5</b> Vehicles</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-fleet-types"><i class="fa fa-check"></i><b>5.1</b> Vehicle Fleet Types</a></li>
+<li class="chapter" data-level="5.2" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-models"><i class="fa fa-check"></i><b>5.2</b> Vehicle Models</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-model-definitions"><i class="fa fa-check"></i><b>5.2.1</b> Vehicle Model Definitions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html"><i class="fa fa-check"></i><b>6</b> Network Structure</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#overview-1"><i class="fa fa-check"></i><b>6.1</b> Overview</a></li>
+<li class="chapter" data-level="6.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#node-properties"><i class="fa fa-check"></i><b>6.2</b> Node Properties</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#xy-coordinates"><i class="fa fa-check"></i><b>6.2.1</b> X/Y Coordinates</a></li>
+<li class="chapter" data-level="6.2.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#entry-node-inputs"><i class="fa fa-check"></i><b>6.2.2</b> Entry Node Inputs</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#common-link-properties"><i class="fa fa-check"></i><b>6.3</b> Common Link Properties</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-node-id"><i class="fa fa-check"></i><b>6.3.1</b> Upstream/Downstream Node ID</a></li>
+<li class="chapter" data-level="6.3.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#length"><i class="fa fa-check"></i><b>6.3.2</b> Length</a></li>
+<li class="chapter" data-level="6.3.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#orientation-angle"><i class="fa fa-check"></i><b>6.3.3</b> Orientation Angle</a></li>
+<li class="chapter" data-level="6.3.4" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#horizontal-curvature"><i class="fa fa-check"></i><b>6.3.4</b> Horizontal Curvature</a></li>
+<li class="chapter" data-level="6.3.5" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#grade"><i class="fa fa-check"></i><b>6.3.5</b> Grade</a></li>
+<li class="chapter" data-level="6.3.6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#free-flow-speed"><i class="fa fa-check"></i><b>6.3.6</b> Free-Flow Speed</a></li>
+<li class="chapter" data-level="6.3.7" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#downstream-vehicle-turning-percentages"><i class="fa fa-check"></i><b>6.3.7</b> Downstream Vehicle Turning Percentages</a></li>
+<li class="chapter" data-level="6.3.8" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-connecting-link-ids"><i class="fa fa-check"></i><b>6.3.8</b> Upstream/downstream connecting link ID’s</a></li>
+<li class="chapter" data-level="6.3.9" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-connecting-lane-ids"><i class="fa fa-check"></i><b>6.3.9</b> Upstream/downstream connecting lane ID’s</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#two-lane-highway-only-link-properties"><i class="fa fa-check"></i><b>6.4</b> Two-lane highway-only Link Properties</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passing-in-oncoming-lane"><i class="fa fa-check"></i><b>6.4.1</b> Passing in Oncoming Lane</a></li>
+<li class="chapter" data-level="6.4.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passingclimbing-lane-direction"><i class="fa fa-check"></i><b>6.4.2</b> Passing/Climbing Lane Direction</a></li>
+<li class="chapter" data-level="6.4.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passingclimbing-lane-rule"><i class="fa fa-check"></i><b>6.4.3</b> Passing/Climbing Lane Rule</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#lane-data"><i class="fa fa-check"></i><b>6.5</b> Lane Data</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#lane-objects"><i class="fa fa-check"></i><b>6.5.1</b> Lane Objects</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#ConnectingLinksLanes"><i class="fa fa-check"></i><b>6.6</b> Upstream/Downstream Connecting Link/Lane IDs Example</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html"><i class="fa fa-check"></i><b>7</b> Freeway Quick Editor</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#main-input-screen"><i class="fa fa-check"></i><b>7.1</b> Main Input Screen</a></li>
+<li class="chapter" data-level="7.2" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#segment-input-fields"><i class="fa fa-check"></i><b>7.2</b> Segment Input Fields</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#detectors"><i class="fa fa-check"></i><b>7.2.1</b> Detectors</a></li>
+<li class="chapter" data-level="7.2.2" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#entering-traffic-data"><i class="fa fa-check"></i><b>7.2.2</b> Entering Traffic Data</a></li>
+<li class="chapter" data-level="7.2.3" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#exiting-traffic-data"><i class="fa fa-check"></i><b>7.2.3</b> Exiting Traffic Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html"><i class="fa fa-check"></i><b>8</b> Two-Lane Highway Quick Editor</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#main-input-screen-1"><i class="fa fa-check"></i><b>8.1</b> Main Input Screen</a></li>
+<li class="chapter" data-level="8.2" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#segment-input-fields-1"><i class="fa fa-check"></i><b>8.2</b> Segment Input Fields</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#upstreamdownstream-node-id-1"><i class="fa fa-check"></i><b>8.2.1</b> Upstream/Downstream Node ID</a></li>
+<li class="chapter" data-level="8.2.2" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#x-coord-startx-coord-end-and-y-coord-starty-coord-end"><i class="fa fa-check"></i><b>8.2.2</b> X Coord Start/X Coord End and Y Coord Start/Y Coord End</a></li>
+<li class="chapter" data-level="8.2.3" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#length-1"><i class="fa fa-check"></i><b>8.2.3</b> Length</a></li>
+<li class="chapter" data-level="8.2.4" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#horizontal-curve-specific-inputs"><i class="fa fa-check"></i><b>8.2.4</b> Horizontal Curve Specific Inputs</a></li>
+<li class="chapter" data-level="8.2.5" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#section-1"><i class="fa fa-check"></i><b>8.2.5</b> 2 + 1 Section</a></li>
+<li class="chapter" data-level="8.2.6" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#control-point-xcontrol-point-y"><i class="fa fa-check"></i><b>8.2.6</b> Control Point X/Control Point Y</a></li>
+<li class="chapter" data-level="8.2.7" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#entering-traffic-data-1"><i class="fa fa-check"></i><b>8.2.7</b> Entering Traffic Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html"><i class="fa fa-check"></i><b>9</b> Custom Network Editor</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#node-data-screen"><i class="fa fa-check"></i><b>9.1</b> Node Data Screen</a></li>
+<li class="chapter" data-level="9.2" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#link-data-screen"><i class="fa fa-check"></i><b>9.2</b> Link Data Screen</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#lane-data-1"><i class="fa fa-check"></i><b>9.2.1</b> Lane Data</a></li>
+<li class="chapter" data-level="9.2.2" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#CustomNetworkTrafficData"><i class="fa fa-check"></i><b>9.2.2</b> Traffic Data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#map-manipulation-functions-and-display-options"><i class="fa fa-check"></i><b>9.3</b> Map Manipulation Functions and Display Options</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html"><i class="fa fa-check"></i><b>10</b> Signalized Intersections</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#traffic-control-screen"><i class="fa fa-check"></i><b>10.1</b> Traffic Control Screen</a></li>
+<li class="chapter" data-level="10.2" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#pretimed-signal-phasing-and-timing-inputs"><i class="fa fa-check"></i><b>10.2</b> Pretimed Signal Phasing and Timing Inputs</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#phase-control-and-detector-assignments"><i class="fa fa-check"></i><b>10.2.1</b> Phase Control and Detector Assignments</span></a></li>
+<li class="chapter" data-level="10.2.2" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#coordination-settings"><i class="fa fa-check"></i><b>10.2.2</b> Coordination Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#actuated-signal-control"><i class="fa fa-check"></i><b>10.3</b> Actuated Signal Control</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#actuated-signal-controller-file-setup"><i class="fa fa-check"></i><b>10.3.1</b> Actuated Signal Controller File Setup</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html"><i class="fa fa-check"></i><b>11</b> Unsignalized Intersections</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#overview-2"><i class="fa fa-check"></i><b>11.1</b> Overview</a></li>
+<li class="chapter" data-level="11.2" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#gap-acceptance"><i class="fa fa-check"></i><b>11.2</b> Gap Acceptance</a></li>
+<li class="chapter" data-level="11.3" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#limitations"><i class="fa fa-check"></i><b>11.3</b> Limitations</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html"><i class="fa fa-check"></i><b>12</b> Ramp Metering</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#introduction"><i class="fa fa-check"></i><b>12.1</b> Introduction</a></li>
+<li class="chapter" data-level="12.2" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#pretimed"><i class="fa fa-check"></i><b>12.2</b> Pretimed</a></li>
+<li class="chapter" data-level="12.3" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#demandcapacity"><i class="fa fa-check"></i><b>12.3</b> Demand/Capacity</a></li>
+<li class="chapter" data-level="12.4" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#alinea"><i class="fa fa-check"></i><b>12.4</b> ALINEA</a></li>
+<li class="chapter" data-level="12.5" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#fuzzy-logic"><i class="fa fa-check"></i><b>12.5</b> Fuzzy Logic</a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#inputs-aggregated-performance-measures"><i class="fa fa-check"></i><b>12.5.1</b> Inputs (Aggregated Performance Measures)</a></li>
+<li class="chapter" data-level="12.5.2" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#inference"><i class="fa fa-check"></i><b>12.5.2</b> Inference</a></li>
+<li class="chapter" data-level="12.5.3" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#output-ramp-metering"><i class="fa fa-check"></i><b>12.5.3</b> Output (Ramp Metering)</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#limitations-1"><i class="fa fa-check"></i><b>12.6</b> Limitations</a></li>
+</ul></li>
+<li class="part"><span><b>III Running a Simulation Project</b></span></li>
+<li class="chapter" data-level="13" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html"><i class="fa fa-check"></i><b>13</b> Running the Simulation</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#single-scenario-run-settings"><i class="fa fa-check"></i><b>13.1</b> Single-Scenario Run Settings</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#warm-up-time"><i class="fa fa-check"></i><b>13.1.1</b> Warm-up Time</a></li>
+<li class="chapter" data-level="13.1.2" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#simulation-duration"><i class="fa fa-check"></i><b>13.1.2</b> Simulation Duration</a></li>
+<li class="chapter" data-level="13.1.3" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#random-number-seeds"><i class="fa fa-check"></i><b>13.1.3</b> Random Number Seeds</a></li>
+<li class="chapter" data-level="13.1.4" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#number-of-replications"><i class="fa fa-check"></i><b>13.1.4</b> Number of Replications</a></li>
+<li class="chapter" data-level="13.1.5" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#output-options"><i class="fa fa-check"></i><b>13.1.5</b> Output Options</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#multi-scenario-run-settings"><i class="fa fa-check"></i><b>13.2</b> Multi-Scenario Run Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html"><i class="fa fa-check"></i><b>14</b> Route Assignment</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#introduction-1"><i class="fa fa-check"></i><b>14.1</b> Introduction</a></li>
+<li class="chapter" data-level="14.2" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#link-performance-function"><i class="fa fa-check"></i><b>14.2</b> Link Performance Function</a></li>
+<li class="chapter" data-level="14.3" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#user-equilibrium-route-assignment"><i class="fa fa-check"></i><b>14.3</b> User Equilibrium Route Assignment</a></li>
+<li class="chapter" data-level="14.4" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#xxe"><i class="fa fa-check"></i><b>14.4</b> XXE</a></li>
+<li class="chapter" data-level="14.5" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#user-equilibrium-path-flow"><i class="fa fa-check"></i><b>14.5</b> User Equilibrium Path Flow</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="SimOutputData.html"><a href="SimOutputData.html"><i class="fa fa-check"></i><b>15</b> Simulation Output Data</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="SimOutputData.html"><a href="SimOutputData.html#vehicle-headway-data"><i class="fa fa-check"></i><b>15.1</b> Vehicle Headway Data</a></li>
+<li class="chapter" data-level="15.2" data-path="SimOutputData.html"><a href="SimOutputData.html#link-performance-measure-data"><i class="fa fa-check"></i><b>15.2</b> Link Performance Measure Data</a></li>
+<li class="chapter" data-level="15.3" data-path="SimOutputData.html"><a href="SimOutputData.html#detector-vehicle-actuation-data"><i class="fa fa-check"></i><b>15.3</b> Detector Vehicle Actuation Data</a></li>
+<li class="chapter" data-level="15.4" data-path="SimOutputData.html"><a href="SimOutputData.html#detector-aggregate-measures-data"><i class="fa fa-check"></i><b>15.4</b> Detector Aggregate Measures Data</a></li>
+<li class="chapter" data-level="15.5" data-path="SimOutputData.html"><a href="SimOutputData.html#vehicle-time-step-data"><i class="fa fa-check"></i><b>15.5</b> Vehicle Time Step Data</a></li>
+<li class="chapter" data-level="15.6" data-path="SimOutputData.html"><a href="SimOutputData.html#signal-time-step-data"><i class="fa fa-check"></i><b>15.6</b> Signal Time Step Data</a></li>
+<li class="chapter" data-level="15.7" data-path="SimOutputData.html"><a href="SimOutputData.html#ramp-metering-data"><i class="fa fa-check"></i><b>15.7</b> Ramp Metering Data</a></li>
+<li class="chapter" data-level="15.8" data-path="SimOutputData.html"><a href="SimOutputData.html#lane-change-data"><i class="fa fa-check"></i><b>15.8</b> Lane Change Data</a></li>
+<li class="chapter" data-level="15.9" data-path="SimOutputData.html"><a href="SimOutputData.html#platoon-data"><i class="fa fa-check"></i><b>15.9</b> Platoon Data</a></li>
+<li class="chapter" data-level="15.10" data-path="SimOutputData.html"><a href="SimOutputData.html#emissions-and-fuel-consumption-data"><i class="fa fa-check"></i><b>15.10</b> Emissions and Fuel Consumption Data</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html"><i class="fa fa-check"></i><b>16</b> Performance Measures</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#average-entry-headway"><i class="fa fa-check"></i><b>16.1</b> Average Entry Headway</a></li>
+<li class="chapter" data-level="16.2" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#flow-rate"><i class="fa fa-check"></i><b>16.2</b> Flow Rate</a></li>
+<li class="chapter" data-level="16.3" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#average-speed"><i class="fa fa-check"></i><b>16.3</b> Average Speed</a></li>
+<li class="chapter" data-level="16.4" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#density"><i class="fa fa-check"></i><b>16.4</b> Density</a></li>
+<li class="chapter" data-level="16.5" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#percent-followers"><i class="fa fa-check"></i><b>16.5</b> Percent Followers</a></li>
+<li class="chapter" data-level="16.6" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#follower-density"><i class="fa fa-check"></i><b>16.6</b> Follower Density</a></li>
+<li class="chapter" data-level="16.7" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#acceleration-noise"><i class="fa fa-check"></i><b>16.7</b> Acceleration Noise</a></li>
+<li class="chapter" data-level="16.8" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#travel-time"><i class="fa fa-check"></i><b>16.8</b> Travel Time</a></li>
+<li class="chapter" data-level="16.9" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#running-time"><i class="fa fa-check"></i><b>16.9</b> Running Time</a></li>
+<li class="chapter" data-level="16.10" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#delay"><i class="fa fa-check"></i><b>16.10</b> Delay</a></li>
+<li class="chapter" data-level="16.11" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#queue-length"><i class="fa fa-check"></i><b>16.11</b> Queue Length</a></li>
+<li class="chapter" data-level="16.12" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#saturation-flow-rate"><i class="fa fa-check"></i><b>16.12</b> Saturation Flow Rate</a></li>
+<li class="chapter" data-level="16.13" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#stop-rate"><i class="fa fa-check"></i><b>16.13</b> Stop Rate</a></li>
+<li class="chapter" data-level="16.14" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#vehicle-hours-traveled-vht"><i class="fa fa-check"></i><b>16.14</b> Vehicle-Hours-Traveled (VHT)</a></li>
+<li class="chapter" data-level="16.15" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#vehicle-miles-traveled-vmt"><i class="fa fa-check"></i><b>16.15</b> Vehicle-Miles-Traveled (VMT)</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html"><i class="fa fa-check"></i><b>17</b> Calibration</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#introduction-2"><i class="fa fa-check"></i><b>17.1</b> Introduction</a></li>
+<li class="chapter" data-level="17.2" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#network-calibration"><i class="fa fa-check"></i><b>17.2</b> Network Calibration</a></li>
+<li class="chapter" data-level="17.3" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#vehicle-movement-model-calibration"><i class="fa fa-check"></i><b>17.3</b> Vehicle Movement Model Calibration</a>
+<ul>
+<li class="chapter" data-level="17.3.1" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#signalized-intersections"><i class="fa fa-check"></i><b>17.3.1</b> Signalized intersections</a></li>
+<li class="chapter" data-level="17.3.2" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#two-lane-highways"><i class="fa fa-check"></i><b>17.3.2</b> Two-lane highways</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html"><i class="fa fa-check"></i><b>18</b> Simulation Animation</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#initiating-simulation-animation-mode"><i class="fa fa-check"></i><b>18.1</b> Initiating Simulation Animation Mode</a></li>
+<li class="chapter" data-level="18.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#animation-playback-controls"><i class="fa fa-check"></i><b>18.2</b> Animation Playback Controls</a>
+<ul>
+<li class="chapter" data-level="18.2.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#startpausestop"><i class="fa fa-check"></i><b>18.2.1</b> Start/Pause/Stop</a></li>
+<li class="chapter" data-level="18.2.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#forwardreverse"><i class="fa fa-check"></i><b>18.2.2</b> Forward/Reverse</a></li>
+<li class="chapter" data-level="18.2.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#animation-speed"><i class="fa fa-check"></i><b>18.2.3</b> Animation Speed</a></li>
+<li class="chapter" data-level="18.2.4" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#simulation-time"><i class="fa fa-check"></i><b>18.2.4</b> Simulation Time</a></li>
+</ul></li>
+<li class="chapter" data-level="18.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#display-options"><i class="fa fa-check"></i><b>18.3</b> Display Options</a>
+<ul>
+<li class="chapter" data-level="18.3.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#show-vehicle-information"><i class="fa fa-check"></i><b>18.3.1</b> Show Vehicle Information</a></li>
+<li class="chapter" data-level="18.3.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#vehicle-properties"><i class="fa fa-check"></i><b>18.3.2</b> Vehicle Properties</a></li>
+<li class="chapter" data-level="18.3.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#signal-controllers"><i class="fa fa-check"></i><b>18.3.3</b> Signal Controllers</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Simulation Logic and Vehicle Movement Models</b></span></li>
+<li class="chapter" data-level="19" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html"><i class="fa fa-check"></i><b>19</b> Simulation Logic Flow</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#first-vehicle-entry"><i class="fa fa-check"></i><b>19.1</b> First Vehicle Entry</a></li>
+<li class="chapter" data-level="19.2" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#simulation-time-loop"><i class="fa fa-check"></i><b>19.2</b> Simulation Time Loop</a>
+<ul>
+<li class="chapter" data-level="19.2.1" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#create-new-vehicle"><i class="fa fa-check"></i><b>19.2.1</b> Create new vehicle</a></li>
+<li class="chapter" data-level="19.2.2" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#update-status-of-control-points"><i class="fa fa-check"></i><b>19.2.2</b> Update Status of Control Points</a></li>
+<li class="chapter" data-level="19.2.3" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#update-vehicle-properties"><i class="fa fa-check"></i><b>19.2.3</b> Update Vehicle Properties</a></li>
+<li class="chapter" data-level="19.2.4" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#check-detector-status"><i class="fa fa-check"></i><b>19.2.4</b> Check Detector Status</a></li>
+</ul></li>
+<li class="chapter" data-level="19.3" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#end-of-simulation-run"><i class="fa fa-check"></i><b>19.3</b> End of Simulation Run</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html"><i class="fa fa-check"></i><b>20</b> Vehicle Generation</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#vehicle-entry-headway-distribution"><i class="fa fa-check"></i><b>20.1</b> Vehicle Entry Headway Distribution</a></li>
+<li class="chapter" data-level="20.2" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-entry-lane"><i class="fa fa-check"></i><b>20.2</b> Set Vehicle Entry Lane</a></li>
+<li class="chapter" data-level="20.3" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-driver-type"><i class="fa fa-check"></i><b>20.3</b> Set Vehicle Driver Type</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html"><i class="fa fa-check"></i><b>21</b> Leader/Follower Status</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html#variable-definitions"><i class="fa fa-check"></i><b>21.1</b> Variable Definitions</a></li>
+<li class="chapter" data-level="21.2" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html#logic-conditions"><i class="fa fa-check"></i><b>21.2</b> Logic Conditions</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html"><i class="fa fa-check"></i><b>22</b> Vehicle Movement Logic</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#longitudinal-motion"><i class="fa fa-check"></i><b>22.1</b> Longitudinal Motion</a>
+<ul>
+<li class="chapter" data-level="22.1.1" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#AccelMode"><i class="fa fa-check"></i><b>22.1.1</b> Acceleration Mode</a></li>
+<li class="chapter" data-level="22.1.2" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#queue-status"><i class="fa fa-check"></i><b>22.1.2</b> Queue Status</a></li>
+</ul></li>
+<li class="chapter" data-level="22.2" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#lane-changing"><i class="fa fa-check"></i><b>22.2</b> Lane Changing</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html"><i class="fa fa-check"></i><b>23</b> Acceleration Mode</a>
+<ul>
+<li class="chapter" data-level="23.1" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#unimpedednormal"><i class="fa fa-check"></i><b>23.1</b> UnimpededNormal</a></li>
+<li class="chapter" data-level="23.2" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#carfollow"><i class="fa fa-check"></i><b>23.2</b> CarFollow</a></li>
+<li class="chapter" data-level="23.3" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stoppingforqueue"><i class="fa fa-check"></i><b>23.3</b> StoppingForQueue</a></li>
+<li class="chapter" data-level="23.4" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stoppingforcontrol"><i class="fa fa-check"></i><b>23.4</b> StoppingForControl</a></li>
+<li class="chapter" data-level="23.5" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stopped"><i class="fa fa-check"></i><b>23.5</b> Stopped</a></li>
+<li class="chapter" data-level="23.6" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#MaxAccel"><i class="fa fa-check"></i><b>23.6</b> MaxAccel</a></li>
+<li class="chapter" data-level="23.7" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#MaxDecel"><i class="fa fa-check"></i><b>23.7</b> Max Decel</a></li>
+<li class="chapter" data-level="23.8" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#desired-accel"><i class="fa fa-check"></i><b>23.8</b> Desired Accel</a></li>
+<li class="chapter" data-level="23.9" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#desired-decel"><i class="fa fa-check"></i><b>23.9</b> Desired Decel</a></li>
+<li class="chapter" data-level="23.10" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#downstreamlinkspeedchange"><i class="fa fa-check"></i><b>23.10</b> DownstreamLinkSpeedChange</a></li>
+<li class="chapter" data-level="23.11" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#slowingfordowngrade"><i class="fa fa-check"></i><b>23.11</b> SlowingForDowngrade</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html"><i class="fa fa-check"></i><b>24</b> Desired Speed</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#horizontal-curves"><i class="fa fa-check"></i><b>24.1</b> Horizontal Curves</a></li>
+<li class="chapter" data-level="24.2" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#tangents"><i class="fa fa-check"></i><b>24.2</b> Tangents</a>
+<ul>
+<li class="chapter" data-level="24.2.1" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#heavy-vehicles"><i class="fa fa-check"></i><b>24.2.1</b> Heavy Vehicles</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="ChapterCarFollow.html"><a href="ChapterCarFollow.html"><i class="fa fa-check"></i><b>25</b> Car Following</a></li>
+<li class="chapter" data-level="26" data-path="ChapterMaxAccel.html"><a href="ChapterMaxAccel.html"><i class="fa fa-check"></i><b>26</b> Maximum Acceleration</a></li>
+<li class="chapter" data-level="27" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html"><i class="fa fa-check"></i><b>27</b> Lane Changing</a>
+<ul>
+<li class="chapter" data-level="27.1" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#MandatoryLaneChanging"><i class="fa fa-check"></i><b>27.1</b> Mandatory Lane Changing</a></li>
+<li class="chapter" data-level="27.2" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#DiscretionaryLaneChanging"><i class="fa fa-check"></i><b>27.2</b> Discretionary Lane Changing</a></li>
+<li class="chapter" data-level="27.3" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#anticipatory-lane-changing"><i class="fa fa-check"></i><b>27.3</b> Anticipatory Lane Changing</a></li>
+<li class="chapter" data-level="27.4" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#vehicle-lane-change-modes"><i class="fa fa-check"></i><b>27.4</b> Vehicle Lane Change Modes</a></li>
+</ul></li>
+<li class="chapter" data-level="28" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html"><i class="fa fa-check"></i><b>28</b> Two-Lane Highway Modeling</a>
+<ul>
+<li class="chapter" data-level="28.1" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-modes"><i class="fa fa-check"></i><b>28.1</b> Passing Modes</a></li>
+<li class="chapter" data-level="28.2" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-in-oncoming-lane-1"><i class="fa fa-check"></i><b>28.2</b> Passing in Oncoming Lane</a></li>
+<li class="chapter" data-level="28.3" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-in-a-passing-lane-section"><i class="fa fa-check"></i><b>28.3</b> Passing in a Passing Lane Section</a></li>
+</ul></li>
+<li class="chapter" data-level="29" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html"><i class="fa fa-check"></i><b>29</b> Emissions and Fuel Consumption</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html#EmissionsVSP"><i class="fa fa-check"></i><b>29.1</b> Vehicle-Specific Power (VSP) Emission</a></li>
+<li class="chapter" data-level="29.2" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html#obd-based-emissionsfuel-use-calculations"><i class="fa fa-check"></i><b>29.2</b> OBD-based emissions/fuel use calculations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/swash17/SwashSim" target="blank">View Book Source</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ChapterTwoLaneHwyModeling" class="section level1 hasAnchor" number="28">
+<h1><span class="header-section-number">28</span> Two-Lane Highway Modeling<a href="ChapterTwoLaneHwyModeling.html#ChapterTwoLaneHwyModeling" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Detail about the logic used for two-lane highway passing maneuvers is provided here. Additional information is provided in <span class="citation">Li and Washburn (<a href="references.html#ref-li_implementing_2011">2011</a>)</span>.</p>
+<div id="passing-modes" class="section level2 hasAnchor" number="28.1">
+<h2><span class="header-section-number">28.1</span> Passing Modes<a href="ChapterTwoLaneHwyModeling.html#passing-modes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>There are multiple passing modes that a vehicle may be in, as follows:</p>
+<ul>
+<li>Not Passing</li>
+<li>Passing Oncoming Initial</li>
+<li>Passing Oncoming Normal</li>
+<li>Passing Oncoming Abort Min</li>
+<li>Passing Oncoming Abort Med</li>
+<li>Passing Oncoming Abort Max</li>
+<li>Passing Oncoming Expedite Min</li>
+<li>Passing Oncoming Expedite Med</li>
+<li>Passing Oncoming Expedite Max</li>
+<li>Passing Lane Initial</li>
+<li>Passing Lane Normal</li>
+<li>Passing Lane Abort</li>
+<li>Passing Lane Expedite</li>
+<li>Passing Oncoming Cooperation Min</li>
+<li>Passing Oncoming Cooperation Med</li>
+<li>Passing Oncoming Cooperation Max</li>
+</ul>
+<p>Definitions forthcoming.</p>
+</div>
+<div id="passing-in-oncoming-lane-1" class="section level2 hasAnchor" number="28.2">
+<h2><span class="header-section-number">28.2</span> Passing in Oncoming Lane<a href="ChapterTwoLaneHwyModeling.html#passing-in-oncoming-lane-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The most distinguishing feature of traffic operations on two-lane highways is passing in the oncoming lane (when passing lanes are not present). Therefore, this passing maneuver is constrained by not only the amount of opposing-lane distance used in the execution of a passing maneuver, but also the sight distance and clear-distance (or gap size) a follower requires before attempting a passing maneuver. The former issue depends on road design and markings of a no-passing zone, while the latter issue depends on traffic demands. The following subsections describe the various components of logic employed to determine when and how a vehicle will perform a passing maneuver in the oncoming lane.</p>
+<p>When will a vehicle attempt to pass a vehicle in front of it?</p>
+<p><strong>1. Determine if the subject vehicle is in a following mode</strong></p>
+<p>Currently, the program defines a vehicle as being in a following mode when the time headway between it and the vehicle immediately in front of it is equal to or less than or equal to 2.5 s—this is currently the logic the HCM (<span class="citation">Transportation Research Board and National Academies of Sciences, Engineering, and Medicine (<a href="references.html#ref-hcm">2022</a>)</span>) uses to approximate % Followers. The value of 2.5 s, however, can be changed by the analyst in the settings. Additionally, the trailing vehicle must be traveling at a speed at least equal to the speed of the leading vehicle. If the subject vehicle is determined to be in a following mode, then the following steps are carried out to determine if the following vehicle will attempt a passing maneuver.</p>
+<p><strong>2. Determine tolerable speed</strong></p>
+<p>If it is determined that a vehicle is in a following mode, then the tolerable speed for that vehicle is calculated. Tolerable speed is defined as the maximum speed at which the desire to pass for a following driver will be 100 percent. Tolerable speed varies for different driver types (See following equation), due to the different degree of aggressiveness for each driver type. Note that a driver’s desired speed is a function of free-flow speed and driver type. For example, a driver of type 1 will have a desired speed of 88% of the link free-flow speed, while a driver of type 10 will have a desired speed of 112% of the link free-flow speed (these percentages of free-flow speed can be modified by users in the <a href="ChapterDrivers.html#ChapterDrivers">Driver Settings</a>).</p>
+<p><span class="math display">\[TolerableSpee{d_i}=DesiredSpee{d_i}\times\frac{80+i}{100}\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\({TolerableSpeed_i} = \text{tolerable speed for driver type } i \text{ (mi/h)}\)</span>,<br />
+<span class="math inline">\({DesiredSpeed_i} = \text{desired speed for driver type } i \text{ (mi/h), and}\)</span><br />
+<span class="math inline">\(i = \text{driver type, a value between 1 and 10 for default settings.}\)</span></p>
+<p><strong>3. Determine the desire to pass</strong></p>
+<p>The main factor influencing a driver’s desire to pass is the difference between their actual travel speed and their desired speed. The degree of the following driver’s desire to pass is quantified as a number between 0 and 1, based on a non-linear function of the current speed of the subject vehicle. The initial desire to pass (<em>DTP</em>) value is given by</p>
+<p><span class="math display">\[
+DTP=\left\{\begin{array}{l}
+1 &amp;\mbox{if CurrentSpeed &lt; TolerableSpeed}\\
+0 &amp;\mbox{if CurrentSpeed $\geq$ DesiredSpeed}\\
+[0.95\times (DesiredSpeed-CurrentSpeed) \times\frac{1}{0.95 \times DesiredSpeed-TolerableSpeed}]^4 &amp;\mbox{elsewhere}
+\end{array}\right.
+\]</span></p>
+<p>The <em>DTP</em> is illustrated graphically in the figure below for one example driver.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TwoLaneDesireToPass"></span>
+<img src="Images/TwoLaneHwy/TwoLaneDesireToPass.png" alt="Desire To Pass for Example Driver" width="50%" />
+<p class="caption">
+Figure 28.1: Desire To Pass for Example Driver
+</p>
+</div>
+<p>The <em>DTP</em> value is adjusted by an impatience factor. For vehicles that have a positive <em>DTP</em>, but are in a following mode and have not yet initiated a passing maneuver, the impatience factor will incrementally increase the <em>DTP</em> value with each simulation time step; thus increasing the probability of a passing maneuver being initiated. The impatience factor is also a function of the driver type, with larger increments being associated with more aggressive drivers. The impatience factor is given by</p>
+<p><span class="math display">\[ImpatienceFactor=TSWTP\times ImpatienceValue \times \sqrt{DT}\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\({TSWTP} = \text{time spent wanting to pass (s)}\)</span>,<br />
+<span class="math inline">\({ImpatienceValue} = \text{degree of impatience in waiting to pass (default = 0.001), and}\)</span><br />
+<span class="math inline">\({DT} = \text{driver type, a value between 1 and 10 for default settings.}\)</span></p>
+<p>The <em>TSWTP</em> counter will initiate when a vehicle has a <em>DTP</em> value greater than zero and will reset when the vehicle completes a pass or its <em>DTP</em> value goes to zero.
+Finally, the <em>DTP</em> is also adjusted based on the length of the trailing vehicle and the length of the leading vehicle. A longer leading vehicle, such as a large truck, will increase the <em>DTP</em> value for the trailing vehicle. Conversely, the <em>DTP</em> value will be decreased for a longer trailing vehicle. The adjustment to the <em>DTP</em> value for the leading and trailing vehicle lengths is given by</p>
+<p><span class="math display">\[AdjDTP=(DTP+ImpatienceFactor)\times [1-(\frac{1}{14}-\frac{1}{SubjectVehLength})]\times \ln[\exp(1)-(\frac{1}{14}-\frac{1}{LeadVehLength})]\times\sqrt{\frac{LeadVehLength}{SubjectVehLength}}\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\({14} = \text{constant corresponding to shortest vehicle length (ft) used in SwashSim}.\)</span></p>
+<p>The adjusted <em>DTP</em> value is then compared to a generated uniform random number between 0 and 1. If the adjusted <em>DTP</em> value is less than the random number, the subject vehicle will continue to follow the leading vehicle. If the adjusted <em>DTP</em> value is greater than or equal to the random number, the subject vehicle will initiate a passing maneuver, subject to other constraints as described in the following section.</p>
+<p><strong>Constraints governing whether a pass will be initiated</strong></p>
+<p>If it has been determined that a vehicle wants to initiate a passing maneuver, the following issues are considered.</p>
+<p><strong>1. Is the vehicle in a passing-allowed section?</strong></p>
+<p>The program logic currently dictates that all passing maneuvers must be initiated in a passing-allowed section of the roadway (i.e., skip striping in the applicable direction).<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> However, it is possible for a passing maneuver to be completed in a no-passing-allowed section, consistent with the field observations from <span class="citation">Douglas W. Harwood et al. (<a href="references.html#ref-harwood_passing_2008">2008</a>)</span>. This is described in more detail under step 7.</p>
+<p><strong>2. Check whether a vehicle upstream of the subject vehicle is performing a passing maneuver</strong></p>
+<p>If the subject vehicle is currently in the process of being passed by another vehicle, the subject vehicle will not initiate its passing maneuver.</p>
+<p><strong>3. Check whether the maximum number of allowed passing maneuvers is currently in progress</strong></p>
+<p>The number of vehicles that can be simultaneously executing a passing maneuver in the oncoming lane is limited to three per each platoon of vehicles. Thus, the maximum number of vehicles that can be executing a passing maneuver along the defined length of highway is three times the number of platoons within that defined length of highway. A platoon is defined by a leading vehicle that is not in a following mode and trailing vehicles that are all considered to be in a following mode.</p>
+<p><strong>4. Check the number of vehicles that must be passed to complete the passing maneuver</strong></p>
+<p>A vehicle is prevented from starting a passing maneuver when, due to insufficient gaps for merging between the vehicles ahead, there are more than 5 vehicles that would need to be passed.</p>
+<p><strong>5. Determine the required passing sight distance</strong></p>
+<p>If the subject vehicle is allowed to initiate a passing maneuver per the above constraints, then the passing sight distance (<em>PSD</em>) will be calculated. <em>PSD</em> is the minimum distance necessary between the potential passing vehicle and an oncoming vehicle that will still allow the potential passing vehicle to safely initiate and complete a passing maneuver of a leading slower vehicle in the oncoming lane. If the horizontal and/or vertical alignment aspects of a highway do not provide unobstructed sight distance at least equal in length to the <em>PSD</em>, then the highway is typically striped with solid yellow center lines (i.e., no-passing allowed).<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> Both A policy on Geometric Design of Highways and Streets (<span class="citation">AASHTO (<a href="references.html#ref-GreenBook2004">2004</a>)</span>) and the Manual on Uniform Traffic Control Devices for Streets and Highways (MUTCD) (<span class="citation">FHWA (<a href="references.html#ref-MUTCD2003">2003</a>)</span>) provide minimum <em>PSD</em> values for design and marking. However, their respective recommended <em>PSD</em> values vary significantly, with the AASHTO-recommended values being considerably larger than the MUTCD-recommended values.</p>
+<p><span class="citation">Douglas W. Harwood et al. (<a href="references.html#ref-harwood_passing_2008">2008</a>)</span> proposed recommendations on the adequacy of current procedures and guidelines used to estimate minimum <em>PSD</em> requirements for highway design and pavement marking. The research involved a review of current practice, an extensive analysis of various alternative <em>PSD</em> models, and field studies of passing maneuvers on two-lane highways. Field studies conducted in Missouri and Pennsylvania, together with field data from Texas as part of another study (<span class="citation">Carlson, Miles, and Johnson (<a href="references.html#ref-carlson_daytime_2006">2006</a>)</span>), were used to characterize driver behavior and quantify traffic performance measures for passing maneuvers. Based on the literature review and the field study, <span class="citation">Douglas W. Harwood et al. (<a href="references.html#ref-harwood_passing_2008">2008</a>)</span> indicated that the <span class="citation">Glennon (<a href="references.html#ref-glennon_new_1988">1988</a>)</span> model and the <span class="citation">Hassan, Easa, and El Halim (<a href="references.html#ref-hassan_passing_1996">1996</a>)</span> are the most reasonable models. The <span class="citation">Glennon (<a href="references.html#ref-glennon_new_1988">1988</a>)</span> and <span class="citation">Hassan, Easa, and El Halim (<a href="references.html#ref-hassan_passing_1996">1996</a>)</span> models result in considerably shorter <em>PSD</em> values than the AASHTO-recommended values, much closer to the MUTCD-recommended values. The main reason for this is because the <span class="citation">Glennon (<a href="references.html#ref-glennon_new_1988">1988</a>)</span> and <span class="citation">Hassan, Easa, and El Halim (<a href="references.html#ref-hassan_passing_1996">1996</a>)</span> models consider that a passing vehicle can easily abort the passing maneuver before it reaches the critical position<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>; thus, contending that the necessary <em>PSD</em> really only needs to be considered from the critical position and not for the entire length of the passing maneuver. Furthermore, the <span class="citation">Douglas W. Harwood et al. (<a href="references.html#ref-harwood_passing_2008">2008</a>)</span> study argued that crash statistics for two-lane highways do not provide much support for the notion that the current practice for marking passing zones (based on the MUTCD criteria) is in need of revising.</p>
+<p>Based on the field data results of the <span class="citation">Douglas W. Harwood et al. (<a href="references.html#ref-harwood_passing_2008">2008</a>)</span> study, the authors recommend the following assumptions be used when applying the <span class="citation">Glennon (<a href="references.html#ref-glennon_new_1988">1988</a>)</span> and <span class="citation">Hassan, Easa, and El Halim (<a href="references.html#ref-hassan_passing_1996">1996</a>)</span> models:</p>
+<p><strong>1.</strong> The speeds of the passing and opposing vehicles are equal and represent the design speed of the highway.<br />
+<strong>2.</strong> The passed vehicle travels at uniform speed and the speed difference between the passing and passed vehicles is 12 mi/h.<br />
+<strong>3.</strong> The passing vehicle has sufficient acceleration capability to reach the specified speed difference relative to the passed vehicle by the time it reaches the critical position. (same as the assumption that each vehicle will travel at the constant speed after the critical position)<br />
+<strong>4.</strong> The lengths of the passing and passed vehicles are 19 ft.<br />
+<strong>5.</strong> The passing driver’s perception-reaction time in deciding to abort a passing vehicle is 1 s.<br />
+<strong>6.</strong> The deceleration rate used in aborting a pass is 11.1 ft/s<sup>2</sup>.<br />
+<strong>7.</strong> For a completed or aborted pass, the headway between the passing and passed vehicles is 1 s.<br />
+<strong>8.</strong> The minimum clearance headway between the passing and opposing vehicles at the point at which the passing vehicle returns to its normal lane is 1 s.</p>
+<p>Using these assumptions in the <span class="citation">Glennon (<a href="references.html#ref-glennon_new_1988">1988</a>)</span> and <span class="citation">Hassan, Easa, and El Halim (<a href="references.html#ref-hassan_passing_1996">1996</a>)</span> models results in <em>PSD</em> values similar to the MUTCD-recommended <em>PSD</em> values, as illustrated in the following figure.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TwoLanePSDcomparison"></span>
+<img src="Images/TwoLaneHwy/TwoLanePSDcomparison.png" alt="Comparison of PSD Values" width="50%" />
+<p class="caption">
+Figure 28.2: Comparison of PSD Values
+</p>
+</div>
+<p>Therefore, <span class="citation">Douglas W. Harwood et al. (<a href="references.html#ref-harwood_passing_2008">2008</a>)</span> recommended that AASHTO adopt the MUTCD <em>PSD</em> values for inclusion in the next edition of A policy on Geometric Design of Highways and Streets. These MUTCD values are justified since they are consistent with the values produced by the <span class="citation">Glennon (<a href="references.html#ref-glennon_new_1988">1988</a>)</span> and <span class="citation">Hassan, Easa, and El Halim (<a href="references.html#ref-hassan_passing_1996">1996</a>)</span> models when used with input values based on current field observations.</p>
+<p>The default <em>PSD</em> model used in SwashSim is the AASHTO model. However, it is also possible to use the MUTCD <em>PSD</em> values instead. The AASHTO <em>PSD</em> model is presented first, followed by the modifications necessary to implement the MUTCD <em>PSD</em> values.</p>
+<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;">
+<tr style="height:12.0pt; vertical-align:middle">
+<td nowrap style="width:50%;border:solid windowtext 1.0pt;padding:2.0pt 2.0pt 2.0pt 2.0pt;height:12.0pt">
+<p>
+<span style="line-height:100%"><b>Component of passing maneuver</b></span>
+</p>
+</td>
+<td nowrap colspan="4" style="width:50%;border:solid windowtext 1.0pt;border-left:none;padding:2.0pt 2.0pt 2.0pt 2.0pt;height:12.0pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%"><b>Speed range (mi/h)</b></span>
+</p>
+</td>
+</tr>
+<tr style="height:12.0pt">
+<td width="100%" nowrap style="width:50%;border:solid windowtext 1.0pt;border-top:none;">
+<p align="center" style="text-align:center">
+<span style="line-height:100%"></span>
+</p>
+</td>
+<td width="25%" nowrap style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">30-40</span>
+</p>
+</td>
+<td width="25%" nowrap style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">40-50</span>
+</p>
+</td>
+<td width="25%" nowrap style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">50-60</span>
+</p>
+</td>
+<td width="25%" nowrap style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">60-70</span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="234" nowrap style="width:175.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%"></span>
+</p>
+</td>
+<td width="372" nowrap colspan="4" style="width:279.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;">
+<p align="center" style="text-align:center">
+<span style="line-height:100%"><b>Average passing speed (mi/h)</b></span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="50%" nowrap style="width:175.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%"></span>
+</p>
+</td>
+<td width="25%" nowrap style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">34.9</span>
+</p>
+</td>
+<td width="25%" nowrap style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">43.8</span>
+</p>
+</td>
+<td width="25%" nowrap style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">52.6</span>
+</p>
+</td>
+<td width="25%" nowrap style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">62.0</span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="606" nowrap colspan="5" valign="top" style="width:454.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center">
+<span style="line-height:100%"><b>Initial maneuver</b></span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="50%" nowrap style="width:175.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p>
+<i><span style="line-height:100%">a</span></i> (ft/s/s)
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">1.40</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">1.43</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">1.47</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">1.50</span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="50%" nowrap style="width:175.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p>
+<i><span style="line-height:100%">t</i><sub>1</sub> (s)</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">3.6</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.0in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">4.0</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:63.0pt;border-top:none;
+  border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">4.3</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:.75in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">4.5</span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="234" nowrap style="width:175.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%"><i>d</i><sub>1</sub> (ft)</span>
+</p>
+</td>
+<td width="372" nowrap colspan="4" valign="top" style="width:279.0pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt">
+<p>
+<span style="line-height:100%;position:relative;
+  top:14.0pt"></span><span style="line-height:100%"><span style="position:relative;top:3.0pt"><span class="math inline">\(1.467{t_1}\left({v - m + \frac{{a{t_1}}}{2}} \right)\)</span></span>
+<span style="position:relative;top:3.0pt"></span></span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="606" nowrap colspan="5" valign="top" style="width:454.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center">
+<span style="line-height:100%"><b>Occupation of left lane</b></span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="234" nowrap style="width:175.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<i><span style="line-height:100%">t<sub>2</sub></i> (s)</span><sub></b></span></span></i></span></a>
+</p>
+</td>
+<td width="372" nowrap colspan="4" valign="top" style="width:279.0pt;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">9.9<sup>a</sup></span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="234" nowrap style="width:175.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<i><span style="line-height:100%">d</span></i><sub><span style="line-height:100%">2</span></sub> (ft)
+</p>
+</td>
+<td width="372" nowrap colspan="4" valign="top" style="width:279.0pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt">
+<p>
+<span style="line-height:100%"><span class="math inline">\(1.467v{t_2}\)</span></span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="100%" nowrap colspan="5" valign="top" style="width:454.5pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center">
+<span style="line-height:100%"><b>Clearance distance</b></span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="100%" nowrap valign="top" style="width:175.5pt;border:solid windowtext 1.0pt;border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p>
+<i><span style="line-height:100%">d</span></i><sub>3</sub> (ft)
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">100</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">180</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">250</span>
+</p>
+</td>
+<td width="25%" nowrap valign="top" style="width:1.25in;border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<span style="line-height:100%">300</span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="606" nowrap colspan="5" valign="top" style="width:454.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center">
+<span style="line-height:100%"><b>Opposing vehicle</b></span>
+</p>
+</td>
+</tr>
+<tr>
+<td width="234" nowrap valign="top" style="width:175.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt">
+<p align="center" style="text-align:center">
+<i><span style="line-height:100%">d</i><sub>4</sub></span>
+</p>
+</td>
+<td width="372" nowrap colspan="4" valign="top" style="width:279.0pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0in 5.75pt 0in 5.75pt">
+<p>
+<span style="line-height:100%">0.667 × <i>d</i><sub>2</sub></span>
+</p>
+</td>
+</tr>
+<tr style="height:9.95pt">
+<td width="234" nowrap valign="top" style="width:175.5pt;border:solid windowtext 1.0pt; border-top:none;padding:0in 5.75pt 0in 5.75pt;height:9.95pt">
+<p>
+<span style="line-height:100%">Minimum <i>PSD</i></span>
+</p>
+</td>
+<td width="372" nowrap colspan="4" valign="top" style="width:279.0pt;border-top:
+  none;border-left:none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.75pt 0in 5.75pt;height:9.95pt">
+<p>
+<i><span style="line-height:100%">d</span></i><sub>
+<span style="line-height:100%">1</span></sub><span style="line-height:100%"> + <i>d</i><sub>2</sub>
++ <i>d</i><sub>3</sub> + <i>d</i><sub>4</sub></span>
+</p>
+</td>
+</tr>
+</table>
+<p><sup>a</sup> The original AASHTO criteria included four separate values for <span class="math inline">\(t_2\)</span>, based on the passing vehicle speed. The <span class="citation">Douglas W. Harwood et al. (<a href="references.html#ref-harwood_passing_2008">2008</a>)</span> study did not “…provide any evidence to support the hypothesis that the left lane travel time increases with increasing passed vehicle speed. Therefore, it is recommended that a constant value of <span class="math inline">\(t_2\)</span>, independent of speed, should be used…”. The chosen value was the mean value of 9.9 seconds from their study.</p>
+<p>where:</p>
+<p><span class="math inline">\(d_1 = \text{initial maneuver—distance traveled from start of passing maneuver until passing vehicle encroaches upon oncoming lane (ft)}\)</span>,<br />
+<span class="math inline">\(t_1 = \text{time required for initial maneuver (s)}\)</span>,<br />
+<span class="math inline">\(a = \text{acceleration of passing vehicle when initiating passing maneuver (mi/h/s)}\)</span>,<br />
+<span class="math inline">\(v = \text{average speed of passing vehicle (mi/h)}\)</span>,<br />
+<span class="math inline">\(m = \text{difference in speed of passed vehicle and passing vehicle (mi/h)}\)</span>,<br />
+<span class="math inline">\(d_2 = \text{the distance traveled by the passing vehicle from the point of encroachment in the oncoming lane to the point of return to the normal lane (ft)}\)</span>,<br />
+<span class="math inline">\(t_2 = \text{time spent traveling in the oncoming lane (s)}\)</span>,<br />
+<span class="math inline">\(d_3 = \text{the shortest desirable distance between the front bumpers of the passing and opposing vehicle when the passing vehicle returns to the normal lane (ft), and}\)</span><br />
+<span class="math inline">\(d_4 = \text{the distance traveled by the opposing vehicle during the time the passing vehicle travels from the position of being directly abreast of the vehicle being passed to the return to the normal lane (ft)}\)</span>.</p>
+<p>The <em>PSD</em> distance components are illustrated in the following figure.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TwoLanePSDelements"></span>
+<img src="Images/TwoLaneHwy/TwoLanePSDelements.png" alt="Elements of Passing Sight Distance for Two-lane Highways (@GreenBook2004)" width="50%" />
+<p class="caption">
+Figure 28.3: Elements of Passing Sight Distance for Two-lane Highways (<span class="citation">AASHTO (<a href="references.html#ref-GreenBook2004">2004</a>)</span>)
+</p>
+</div>
+<p>For computational convenience, the same formulas used in the AASHTO <em>PSD</em> model are used for generating the MUTCD <em>PSD</em> values. To implement the MUTCD <em>PSD</em> values in SwashSim, the values shown in the table above should be revised as shown in the following Table. These values can be changed in the settings.</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p>
+<strong>Component of passing maneuver</strong>
+</p>
+</td>
+<td colspan="4">
+<p>
+<strong>Speed range (mi/h)</strong>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+ 
+</td>
+<td>
+<p>
+30-40
+</p>
+</td>
+<td>
+<p>
+40-50
+</p>
+</td>
+<td>
+<p>
+50-60
+</p>
+</td>
+<td>
+<p>
+60-70
+</p>
+</td>
+</tr>
+<tr>
+<td>
+ 
+</td>
+<td colspan="4">
+<p>
+<strong>Average passing speed (mi/h)</strong>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+ 
+</td>
+<td>
+<p>
+34.9
+</p>
+</td>
+<td>
+<p>
+43.8
+</p>
+</td>
+<td>
+<p>
+52.6
+</p>
+</td>
+<td>
+<p>
+62.0
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<p>
+<strong>Initial maneuver</strong>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+𝑡1 (s)
+</p>
+</td>
+<td>
+<p>
+3.0
+</p>
+</td>
+<td>
+<p>
+2.5
+</p>
+</td>
+<td>
+<p>
+2.0
+</p>
+</td>
+<td>
+<p>
+1.6
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<p>
+<strong>Occupation of left lane</strong>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+𝑡2 (s)
+</p>
+</td>
+<td>
+<p>
+5.9
+</p>
+</td>
+<td>
+<p>
+6.0
+</p>
+</td>
+<td>
+<p>
+6.2
+</p>
+</td>
+<td>
+<p>
+6.4
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<p>
+<strong>Clearance distance</strong>
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>
+𝑑3 (ft)
+</p>
+</td>
+<td>
+<p>
+80
+</p>
+</td>
+<td>
+<p>
+100
+</p>
+</td>
+<td>
+<p>
+120
+</p>
+</td>
+<td>
+<p>
+140
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>The following table shows the <em>PSD</em> values computed with the revised variable values as well as the actual MUTCD-recommended <em>PSD</em> values. The approximated MUTCD <em>PSD</em> values compare very favorably with the actual <em>PSD</em> values.</p>
+<table>
+<tbody>
+<tr>
+<td width="180">
+ 
+</td>
+<td colspan="7" width="335">
+<p>
+<strong>Design speed (mi/h)</strong>
+</p>
+</td>
+</tr>
+<tr>
+<td width="180">
+ 
+</td>
+<td width="49">
+<p>
+40
+</p>
+</td>
+<td width="53">
+<p>
+45
+</p>
+</td>
+<td width="46">
+<p>
+50
+</p>
+</td>
+<td width="36">
+<p>
+55
+</p>
+</td>
+<td width="44">
+<p>
+60
+</p>
+</td>
+<td width="48">
+<p>
+65
+</p>
+</td>
+<td width="60">
+<p>
+70
+</p>
+</td>
+</tr>
+<tr>
+<td width="180">
+<p>
+<strong>Modified AASHTO <em>PSD</em> (ft)</strong>
+</p>
+</td>
+<td width="49">
+<p>
+605
+</p>
+</td>
+<td width="53">
+<p>
+708
+</p>
+</td>
+<td width="46">
+<p>
+801
+</p>
+</td>
+<td width="36">
+<p>
+909
+</p>
+</td>
+<td width="44">
+<p>
+1000
+</p>
+</td>
+<td width="48">
+<p>
+1111
+</p>
+</td>
+<td width="60">
+<p>
+1202
+</p>
+</td>
+</tr>
+<tr>
+<td width="180">
+<p>
+<strong>MUTCD <em>PSD</em> (ft)</strong>
+</p>
+</td>
+<td width="49">
+<p>
+600
+</p>
+</td>
+<td width="53">
+<p>
+700
+</p>
+</td>
+<td width="46">
+<p>
+800
+</p>
+</td>
+<td width="36">
+<p>
+900
+</p>
+</td>
+<td width="44">
+<p>
+1000
+</p>
+</td>
+<td width="48">
+<p>
+1100
+</p>
+</td>
+<td width="60">
+<p>
+1200
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>6.</strong> Check length of passing zone and compare to the minimum passing zone length</p>
+<p>The length of the passing zone (as indicated by roadway markings) is compared to the minimum passing zone length (which is equal to <em>d</em><sub>1</sub> + <em>d</em><sub>2</sub> (See following flow chart)), as suggested by AASHTO). A vehicle will not initiate a passing maneuver unless the available passing zone length is equal to or greater than the minimum passing zone length. If the marked passing zone length is greater than the minimum passing zone length, then the following check is made.</p>
+<p><strong>7.</strong> Determine effective passing zone length and compare to the distance needed to complete the pass</p>
+<p>As mentioned earlier, it is possible for a vehicle to complete its passing maneuver in a section of roadway marked as no-passing allowed. The length of the available passing zone (from the current position of the passing vehicle) is initially determined from just the roadway markings. This value is then adjusted based on the permissible amount of distance beyond the marked passing zone allowed for the passing vehicle’s driver type. This results in an effective passing zone length, calculated as follows:</p>
+<p><span class="math display">\[
+IllegalPassDistPct=\left\{\begin{array}{l}
+MinPct &amp;\mbox{if Driver Type = 1}\\
+MaxPct &amp;\mbox{if Driver Type = 10}\\
+Linear Interpolation &amp;\mbox{otherwise}
+\end{array}\right.
+\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\({IllegalPassDistPct} = \text{allowable percentage of the total passing distance beyond the passing zone (as indicated by roadway markings),}\)</span>
+<span class="math inline">\({MinPct} = \text{allowable percentage of the total passing distance corresponding to vehicle of driver type 1 (default = 0), and}\)</span>
+<span class="math inline">\({MaxPct} = \text{allowable percentage of the total passing distance corresponding to vehicle of driver type 10 (default = 25).}\)</span></p>
+<p><span class="math display">\[DistAvailForPass=AvailPassZoneDist+AvailPassZoneDist \times\frac{IllegalPassDistPct}{100}\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\({DistAvailForPass} = \text{the total amount of distance available for passing, based on roadway markings and allowable distance downstream of marked passing zone, and}\)</span>
+<span class="math inline">\({AvailPassZoneDist} = \text{length of marked passing zone available at beginning of passing maneuver.}\)</span></p>
+<p>The distance needed to complete the pass (<span class="math inline">\(DNTCP\)</span>), which before the passing maneuver is initiated is equal to the <em>PSD</em>, is compared to the distance available for the pass (i.e., effective passing zone length). If the <span class="math inline">\(DNTCP\)</span> is less than the <em>PSD</em>, then the passing maneuver can be initiated.</p>
+<p><strong>How a potential passer executes its passing maneuver?</strong></p>
+<p>If all the requirements discussed in the previous section are satisfied for a potential passing vehicle, it will initiate the passing maneuver. The general logic of executing a passing maneuver is divided into three stages, as illustrated in the following flowchart.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TwoLanePassingManueverProcess"></span>
+<img src="Images/TwoLaneHwy/TwoLanePassingManueverProcess.png" alt="General Passing Manuever Process" width="50%" />
+<p class="caption">
+Figure 28.4: General Passing Manuever Process
+</p>
+</div>
+<p><strong>Stage 1:</strong> Initiate passing in the normal lane</p>
+<p>At the beginning of a passing maneuver, the potential passer starts to accelerate at the acceleration rate based on its own speed according to the first Table. At the same time, the potential passer moves over to the opposing lane.</p>
+<p><strong>Stage2:</strong> Passing in the opposing lane</p>
+<p>After the potential passer moves into the opposing lane, it will keep on accelerating until it reaches a speed 12 mi/h (this value can be changed in the settings) greater than the speed of the vehicle being passed.<a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a> Meanwhile, the variable <span class="math inline">\(DNTCP\)</span> (distance needed to complete pass) is compared to the variable <span class="math inline">\(DTC\)</span><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> (distance to collision with the oncoming vehicle) every time step (see the following figure for an illustration of these variables).</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:TwoLaneDNTCPandDTC"></span>
+<img src="Images/TwoLaneHwy/TwoLaneDNTCPandDTC.png" alt="Illustration of DNTCP and DTC" width="50%" />
+<p class="caption">
+Figure 28.5: Illustration of DNTCP and DTC
+</p>
+</div>
+<p>As mentioned previously, before the passing maneuver is initiated, the <span class="math inline">\(DNTCP\)</span> is equal to the <em>PSD</em>. However, once the passing maneuver is in progress, the <span class="math inline">\(DNTCP\)</span> is continually changing (generally decreasing). For calculating <span class="math inline">\(DNTCP\)</span>, the time needed to complete passing (<span class="math inline">\(TNTCP\)</span>) is first calculated. Since the potential passer will stop accelerating when its speed is 12 mi/h (i.e., 17.6 ft/s) greater than the vehicle being passed, the value of <span class="math inline">\(TNTCP\)</span> is calculated by</p>
+<p><span class="math display">\[
+TNTCP=\left\{\begin{array}{l}\frac{-[{v_1}(t)-{v_2}(t)]}{({a_1}-{a_2})}+\frac{\sqrt{[{v_1}(t)-{v_2}(t)]^2-2({a_1}-{a_2})(VehPo{s_1}-VehPo{s_2}-ClearGap)}}{({a_1}-{a_2})},t&lt;\frac{{v_2}(0)+17.6-{v_1}(0)}{{a_1}}+{t_0}\\
+\frac{[{v_1}(t)-{v_2}(t)]}{{a_2}}-\frac{\sqrt{[{v_1}(t)-{v_2}(t)]^2+2{a_2}(VehPo{s_1}-VehPo{s_2}-ClearGap)}}{{a_2}},t \ge \frac{{v_2}(0)+17.6-{v_1}(0)}{{a_1}}+{t_0}
+\end{array}\right.
+\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\({TNTCP} = \text{time needed to complete pass (s),}\)</span><br />
+<span class="math inline">\({t_0} = \text{time step when the passing maneuver initiates (s),}\)</span><br />
+<span class="math inline">\({t} = \text{current time step (s),}\)</span><br />
+<span class="math inline">\({v_1}(t) = \text{speed of the passing vehicle at time step } t \text{ (ft/s),}\)</span><br />
+<span class="math inline">\({v_2}(t) = \text{speed of the vehicle being passed at time step } t \text{ (ft/s),}\)</span><br />
+<span class="math inline">\({v_1}(0) = \text{initial speed of the passing vehicle (ft/s),}\)</span><br />
+<span class="math inline">\({v_2}(0) = \text{initial speed of the vehicle being passed (ft/s),}\)</span><br />
+<span class="math inline">\({a_1} = \text{acceleration of the passing vehicle (ft/s}^2),\)</span><br />
+<span class="math inline">\({a_2} = \text{acceleration of the vehicle being passed (ft/s}^2),\)</span><br />
+<span class="math inline">\(VehPo{s_1} = \text{position of the passing vehicle relative to the upstream end of the segment at time step } t \text{ (ft), and}\)</span><br />
+<span class="math inline">\(VehPo{s_2} = \text{position of the vehicle being passed relative to the upstream end of the segment at time step } t \text{ (ft).}\)</span></p>
+<p>Note that <span class="math inline">\(a_1\)</span> is assumed to be a constant, while <span class="math inline">\(a_2\)</span> is assumed to be 0, during the passing maneuver; thus, the calculation of <span class="math inline">\(TNTCP\)</span> can be simplified as</p>
+<p><span class="math display">\[
+TNTCP=\left\{\begin{array}{l}
+\frac{-[{v_1}(t)-{v_2}(t)]}{{a_1}}+\frac{\sqrt{[{v_1}(t)-{v_2}(t)]^2-2{a_1}(VehPo{s_1}-VehPo{s_2}-ClearGap)}}{{a_1}},t-{t_0}&lt;\frac{{v_2}(0)+17.6-{v_1}(0)}{{a_1}}\\
+\frac{ClearGap-(VehPo{s_1}-VehPo{s_2})}{17.6},t-{t_0}\ge\frac{{v_2}(0)+17.6-{v_1}(0)}{{a_1}}
+\end{array}\right.
+\]</span></p>
+<p>Once the <span class="math inline">\(TNTCP\)</span> is obtained, the <span class="math inline">\(DNTCP\)</span> can be calculated by</p>
+<p><span class="math display">\[
+DNTCP=\left\{\begin{array}{l}
+{v_1}(t)TNTCP+0.5{a_1}{(TNTCP)^2},t-{t_0}&lt;\frac{{v_2}(0)+17.6-{v_1}(0)}{{a_1}}\\
+{v_1}(t)TNTCP,t-{t_0}\ge\frac{{v_2}(0)+17.6-{v_1}(0)}{{a_1}}
+\end{array}\right.
+\]</span></p>
+<p>For the computation of <span class="math inline">\(DTC\)</span>, the time to collision with the oncoming vehicle (<span class="math inline">\(TTC\)</span>) is first calculated, given by</p>
+<p><span class="math display">\[
+TTC=\left\{\begin{array}{l}
+\frac{-[{v_1}(t)+{v_3}(t)]}{({a_1}+{a_3})}+\frac{{\sqrt{{[{v_1}(t)+{v_3}(t)]}^2}+2({a_1}+{a_3})(VehPo{s_1}-VehPo{s_3})}}{({a_1}+{a_3})},t&lt;\frac{{{v_2}(0)+17.6-{v_1}(0)}}{{a_1}}+{t_0}\\
+\frac{-[{v_1}(t)+{v_3}(t)]}{{a_3}}+\frac{\sqrt{[{v_1}(t)+{v_3}(t)]}^2+2{a_3}(VehPo{s_1}-VehPo{s_3})}{{a_3}},t\ge\frac{{v_2}(0)+17.6-{v_1}(0)}{{a_1}}+{t_0}
+\end{array}\right.
+\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\({TTC} = \text{time to collision with the oncoming vehicle (s),}\)</span><br />
+<span class="math inline">\({v_3}(t) = \text{speed of the oncoming vehicle at time step } t \text{ (ft/s),}\)</span><br />
+<span class="math inline">\({a_3} = \text{acceleration of the oncoming vehicle (ft/s}^2 \text{), and}\)</span><br />
+<span class="math inline">\(VehPo{s_3} = \text{position of the oncoming vehicle relative to the upstream end of the segment at time step } t \text{ (ft)}\)</span>.</p>
+<p>Therefore, the <span class="math inline">\(DTC\)</span> can be calculated by</p>
+<p><span class="math display">\[
+DTC=\left\{\begin{array}{l}
+{v_1}(t)TTC+0.5{a_1}{(TTC)^2},t-{t_0}&lt;\frac{{{v_2}(0)+17.6-{v_1}(0)}}{{{a_1}}}\\
+{v_1}(t)TTC,t-{t_0}\ge\frac{{{v_2}(0)+17.6-{v_1}(0)}}{{{a_1}}}
+\end{array}\right.
+\]</span></p>
+<p>At every time step of the simulation, the value of <span class="math inline">\(DNTCP\)</span> is compared to the value of <span class="math inline">\(DTC\)</span>. The result of this comparison leads to the following different situations that must be considered.</p>
+<p><em>(1) DNTCP &lt; DTC</em>
+If the <span class="math inline">\(DNTCP\)</span> is less than the <span class="math inline">\(DTC\)</span>, the passer will continue its passing maneuver as planned. Another issue related to the completion of passing is the gap size in front of the vehicle being passed, which is included in the calculation of <span class="math inline">\(DNTCP\)</span>. The passer requires a certain gap size to be able to return to the normal lane in order to complete passing. The default value for this gap size (i.e., ClearGap in above figure, Illustration of DNTCP and DTC) is 75 ft, but can be revised in the parameter settings. The passing vehicle only accepts the gap in front of the vehicle being passed if it is greater than or equal to the minimum gap.</p>
+<p><em>(2) DNTCP ≥ DTC</em>
+If the <span class="math inline">\(DNTCP\)</span> is greater than or equal to the <span class="math inline">\(DTC\)</span>, the decision on whether the passing vehicle will continue or abort its passing maneuver is dependent on the relative position of the passing vehicle to the passed vehicle. If the passing vehicle has reached the critical position, the passing vehicle will continue its passing maneuver. If the passing vehicle has not reached the critical position, it will abort the passing maneuver. <strong>A study by <span class="citation">Douglas W. Harwood and Glennon (<a href="references.html#ref-harwood_framework_1976">1976</a>)</span> defined the critical position as the point at which the sight distances required to abort the pass and to complete the pass are equal.</strong> Two studies, one by <span class="citation">Van Valkenburg and Michael (<a href="references.html#ref-van_valkenburg_criteria_1971">1971</a>)</span> and one by <span class="citation">Weaver and Glennon (<a href="references.html#ref-weaver_design_1972">1972</a>)</span> independently recognized a key position of a passing maneuver occurs at the point where the passing driver can no longer safely abort the pass and is, therefore, committed to complete it. However, no unanimously accepted definition of the critical position currently exists. <span class="citation">Douglas W. Harwood et al. (<a href="references.html#ref-harwood_passing_2008">2008</a>)</span> suggests that the critical position can be considered to be the point when the passing vehicle and vehicle being passed are directly abreast of one another. This is the definition applied in the SwashSim logic.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>The passer has not reached the critical position<br />
+If the passing vehicle has not yet reached the critical position when <span class="math inline">\(DNTCP\)</span> is greater than <span class="math inline">\(DTC\)</span>, it will abort the passing maneuver. The process of returning to the normal lane is similar to that of completing a passing maneuver. The gap behind the vehicle being passed will be checked for the return. The minimum gap here is also set as three times the length of the passing vehicle, and the passing vehicle will only accept a gap greater than or equal to the minimum gap.</p></li>
+<li><p>The passer has reached the critical position<br />
+If the passer has reached the critical position when <span class="math inline">\(DNTCP\)</span> is greater than <span class="math inline">\(DTC\)</span>, the passer will continue with completing the passing maneuver. In order to accommodate this without collision, the passing vehicle will speed up and/or the oncoming vehicle will decelerate. The specific amount of acceleration by the passing vehicle and/or deceleration by the oncoming vehicle is a function of the current acceleration rate of each vehicle, the passing vehicle’s acceleration capabilities, the oncoming vehicle’s deceleration capabilities, and the current <span class="math inline">\(DTC\)</span> value.</p></li>
+</ol>
+<p><strong>Stage 3:</strong> Return to the normal lane</p>
+<p>For a passing maneuver being completed, the passer will return to the normal lane in front of the vehicle being passed when the gap is sufficient. For an aborted passing maneuver, the passer will return to the normal lane behind the vehicle being passed if there is a sufficient gap. The existing mandatory lane changing logic in SwashSim is utilized for this situation.
+Under certain conditions, the passing vehicle will consider passing more than one vehicle. Specifically, if the passing vehicle’s speed is greater than the speed of the vehicle in front of the current vehicle being passed, and the gap in front of the current vehicle being passed is insufficient, the passing vehicle will attempt to pass the vehicle in front of the current vehicle being passed, subject to the logic and constraints as previously discussed.</p>
+</div>
+<div id="passing-in-a-passing-lane-section" class="section level2 hasAnchor" number="28.3">
+<h2><span class="header-section-number">28.3</span> Passing in a Passing Lane Section<a href="ChapterTwoLaneHwyModeling.html#passing-in-a-passing-lane-section" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A passing lane is defined as a lane added to improve passing opportunities in one direction of travel on a conventional two-lane highway. <strong>Although it may vary by jurisdiction, the logic implemented in this simulation program assumes that slower vehicles will move to the right lane in a passing lane section and the passing vehicles will pass on the left (usually this is indicated by a sign such as ‘Keep Right Unless Passing’).</strong> Ideally, each driver will drive following the guidance. However, it is recognized that this does not always happen; thus, the developed logic allows for the possibility of an impeding vehicle not moving over.</p>
+<p>For each vehicle in a passing-lane section (hereafter referred to as the subject vehicle), the logic first checks the headway between this subject vehicle and the vehicle immediately behind, and then checks the headway between this subject vehicle and the vehicle immediately ahead. If the subject vehicle has a vehicle behind it in following mode (i.e., headway <span class="math inline">\(\leq\)</span> follower headway threshold) and is not in following mode itself, the willingness to move over (<em>WTMO</em>) to the non-passing lane of the passing lane section for the subject vehicle will be considered. The value of <em>WTMO</em> is determined as follows:</p>
+<p><span class="math display">\[
+WTMO=\left\{\begin{array}{l}
+0 &amp;\mbox{if SVS &gt; (FFS+5)}\\
+\frac{FFS+5-SVS}{15} &amp;\mbox{if (FFS - 10) &lt; SVS &lt; (FFS + 5)}\\
+1 &amp;\mbox{if SVS &lt; (FFS-10)}\end{array}\right.
+\]</span></p>
+<p>where:</p>
+<p><span class="math inline">\({WTMO} = \text{willingness to move over (unitless),}\)</span><br />
+<span class="math inline">\({SVS} = \text{subject vehicle speed (mi/h), and}\)</span><br />
+<span class="math inline">\({FFS} = \text{free-flow speed (mi/h)}\)</span></p>
+<p>This parameter will be adjusted by dividing by the square root of driver type if the length of the subject vehicle is less than 40 ft (the length of a single-unit truck), otherwise it remains as the original value (not dividing by the square root of driver type results in a higher probability to move over for trucks). The adjusted willingness to move over is compared to a generated uniform random number between 0 and 1, and if it is greater than the random number the subject vehicle will move over to the non-passing lane; otherwise, it will stay in the passing lane.</p>
+<p>The existing SwashSim logic is utilized for determining when a vehicle will move from the lane being dropped at the end of the passing lane section back to the continuous lane. Generally, the discretionary lane change logic will apply for vehicles in this lane (either slow vehicles that moved out of the way, or faster vehicles that are trying pass slower vehicles that did not move over, or vice versa if the passing lane is the one that drops) until such a vehicle gets near to the end of the lane being dropped, in which case the mandatory lane change logic will be applied.</p>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="2">
+<li id="fn2"><p>For computational efficiency reasons, this check is actually performed before the desire to pass calculations.<a href="ChapterTwoLaneHwyModeling.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>SwashSim does not compute available passing sight distance based on the specified roadway geometry; thus, it is necessary for the user to explicitly identify the allowable passing zones along the length of the highway.<a href="ChapterTwoLaneHwyModeling.html#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Although definitions for the critical position vary, it can generally be considered to be the case when the passing vehicle and the vehicle being passed are abreast of one another.<a href="ChapterTwoLaneHwyModeling.html#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Based on NCHRP Report 605 harwood_passing_2008<a href="ChapterTwoLaneHwyModeling.html#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>The <span class="math inline">\(DTC\)</span> will be infinite when no oncoming vehicle is present<a href="ChapterTwoLaneHwyModeling.html#fnref6" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ChapterLaneChanging.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ChapterEmissions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/swash17/SwashSim/edit/master/50-VehMoveModelsTwoLaneHwy.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["SwashSim Documentation.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toc_depth": 0
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>References | SwashSim-Documentation.knit</title>
+  <meta name="description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="References | SwashSim-Documentation.knit" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="References | SwashSim-Documentation.knit" />
+  
+  <meta name="twitter:description" content="Documentation for the SwashSim Microscopic Traffic Simulation Program" />
+  
+
+<meta name="author" content="" />
+
+
+<meta name="date" content="2024-08-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ChapterEmissions.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">SwashSim Documentation</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section" id="toc-section"></a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#document-organization"><i class="fa fa-check"></i>Document Organization</a></li>
+<li class="chapter" data-level="" data-path="preface.html"><a href="preface.html#about-the-developer"><i class="fa fa-check"></i>About the Developer</a></li>
+</ul></li>
+<li class="part"><span><b>I Getting Started</b></span></li>
+<li class="chapter" data-level="1" data-path="ChapterIntro.html"><a href="ChapterIntro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#swashsim-overview"><i class="fa fa-check"></i><b>1.1</b> SwashSim Overview</a></li>
+<li class="chapter" data-level="1.2" data-path="ChapterIntro.html"><a href="ChapterIntro.html#SupportingResources"><i class="fa fa-check"></i><b>1.2</b> Supporting Resources and Tools</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#example-projects"><i class="fa fa-check"></i><b>1.2.1</b> Example Projects</a></li>
+<li class="chapter" data-level="1.2.2" data-path="ChapterIntro.html"><a href="ChapterIntro.html#tutorial-videos"><i class="fa fa-check"></i><b>1.2.2</b> Tutorial Videos</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="ChapterIntro.html"><a href="ChapterIntro.html#program-installation"><i class="fa fa-check"></i><b>1.3</b> Program Installation</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="ChapterIntro.html"><a href="ChapterIntro.html#system-requirements"><i class="fa fa-check"></i><b>1.3.1</b> System Requirements</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html"><i class="fa fa-check"></i><b>2</b> User Interface Overview</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#starting-the-program"><i class="fa fa-check"></i><b>2.1</b> Starting the Program</a></li>
+<li class="chapter" data-level="2.2" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#starting-a-new-project"><i class="fa fa-check"></i><b>2.2</b> Starting a New Project</a></li>
+<li class="chapter" data-level="2.3" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#opening-a-project"><i class="fa fa-check"></i><b>2.3</b> Opening a Project</a></li>
+<li class="chapter" data-level="2.4" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#saving-a-project"><i class="fa fa-check"></i><b>2.4</b> Saving a Project</a></li>
+<li class="chapter" data-level="2.5" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#screensmodules"><i class="fa fa-check"></i><b>2.5</b> Screens/Modules</a></li>
+<li class="chapter" data-level="2.6" data-path="ChapterUIoverview.html"><a href="ChapterUIoverview.html#network-file-treeview"><i class="fa fa-check"></i><b>2.6</b> Network File Treeview</a></li>
+</ul></li>
+<li class="part"><span><b>II Creating a Simulation Project</b></span></li>
+<li class="chapter" data-level="3" data-path="overview.html"><a href="overview.html"><i class="fa fa-check"></i><b>3</b> Overview</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="overview.html"><a href="overview.html#Settings"><i class="fa fa-check"></i><b>3.1</b> Settings</a></li>
+<li class="chapter" data-level="3.2" data-path="overview.html"><a href="overview.html#ProjectProperties"><i class="fa fa-check"></i><b>3.2</b> Project Properties</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ChapterDrivers.html"><a href="ChapterDrivers.html"><i class="fa fa-check"></i><b>4</b> Drivers</a></li>
+<li class="chapter" data-level="5" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html"><i class="fa fa-check"></i><b>5</b> Vehicles</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-fleet-types"><i class="fa fa-check"></i><b>5.1</b> Vehicle Fleet Types</a></li>
+<li class="chapter" data-level="5.2" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-models"><i class="fa fa-check"></i><b>5.2</b> Vehicle Models</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-model-definitions"><i class="fa fa-check"></i><b>5.2.1</b> Vehicle Model Definitions</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html"><i class="fa fa-check"></i><b>6</b> Network Structure</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#overview-1"><i class="fa fa-check"></i><b>6.1</b> Overview</a></li>
+<li class="chapter" data-level="6.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#node-properties"><i class="fa fa-check"></i><b>6.2</b> Node Properties</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#xy-coordinates"><i class="fa fa-check"></i><b>6.2.1</b> X/Y Coordinates</a></li>
+<li class="chapter" data-level="6.2.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#entry-node-inputs"><i class="fa fa-check"></i><b>6.2.2</b> Entry Node Inputs</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#common-link-properties"><i class="fa fa-check"></i><b>6.3</b> Common Link Properties</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-node-id"><i class="fa fa-check"></i><b>6.3.1</b> Upstream/Downstream Node ID</a></li>
+<li class="chapter" data-level="6.3.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#length"><i class="fa fa-check"></i><b>6.3.2</b> Length</a></li>
+<li class="chapter" data-level="6.3.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#orientation-angle"><i class="fa fa-check"></i><b>6.3.3</b> Orientation Angle</a></li>
+<li class="chapter" data-level="6.3.4" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#horizontal-curvature"><i class="fa fa-check"></i><b>6.3.4</b> Horizontal Curvature</a></li>
+<li class="chapter" data-level="6.3.5" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#grade"><i class="fa fa-check"></i><b>6.3.5</b> Grade</a></li>
+<li class="chapter" data-level="6.3.6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#free-flow-speed"><i class="fa fa-check"></i><b>6.3.6</b> Free-Flow Speed</a></li>
+<li class="chapter" data-level="6.3.7" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#downstream-vehicle-turning-percentages"><i class="fa fa-check"></i><b>6.3.7</b> Downstream Vehicle Turning Percentages</a></li>
+<li class="chapter" data-level="6.3.8" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-connecting-link-ids"><i class="fa fa-check"></i><b>6.3.8</b> Upstream/downstream connecting link ID’s</a></li>
+<li class="chapter" data-level="6.3.9" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#upstreamdownstream-connecting-lane-ids"><i class="fa fa-check"></i><b>6.3.9</b> Upstream/downstream connecting lane ID’s</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#two-lane-highway-only-link-properties"><i class="fa fa-check"></i><b>6.4</b> Two-lane highway-only Link Properties</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passing-in-oncoming-lane"><i class="fa fa-check"></i><b>6.4.1</b> Passing in Oncoming Lane</a></li>
+<li class="chapter" data-level="6.4.2" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passingclimbing-lane-direction"><i class="fa fa-check"></i><b>6.4.2</b> Passing/Climbing Lane Direction</a></li>
+<li class="chapter" data-level="6.4.3" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#passingclimbing-lane-rule"><i class="fa fa-check"></i><b>6.4.3</b> Passing/Climbing Lane Rule</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#lane-data"><i class="fa fa-check"></i><b>6.5</b> Lane Data</a>
+<ul>
+<li class="chapter" data-level="6.5.1" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#lane-objects"><i class="fa fa-check"></i><b>6.5.1</b> Lane Objects</a></li>
+</ul></li>
+<li class="chapter" data-level="6.6" data-path="ChapterNetworkStructure.html"><a href="ChapterNetworkStructure.html#ConnectingLinksLanes"><i class="fa fa-check"></i><b>6.6</b> Upstream/Downstream Connecting Link/Lane IDs Example</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html"><i class="fa fa-check"></i><b>7</b> Freeway Quick Editor</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#main-input-screen"><i class="fa fa-check"></i><b>7.1</b> Main Input Screen</a></li>
+<li class="chapter" data-level="7.2" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#segment-input-fields"><i class="fa fa-check"></i><b>7.2</b> Segment Input Fields</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#detectors"><i class="fa fa-check"></i><b>7.2.1</b> Detectors</a></li>
+<li class="chapter" data-level="7.2.2" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#entering-traffic-data"><i class="fa fa-check"></i><b>7.2.2</b> Entering Traffic Data</a></li>
+<li class="chapter" data-level="7.2.3" data-path="ChapterFreewayQuickEditor.html"><a href="ChapterFreewayQuickEditor.html#exiting-traffic-data"><i class="fa fa-check"></i><b>7.2.3</b> Exiting Traffic Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html"><i class="fa fa-check"></i><b>8</b> Two-Lane Highway Quick Editor</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#main-input-screen-1"><i class="fa fa-check"></i><b>8.1</b> Main Input Screen</a></li>
+<li class="chapter" data-level="8.2" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#segment-input-fields-1"><i class="fa fa-check"></i><b>8.2</b> Segment Input Fields</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#upstreamdownstream-node-id-1"><i class="fa fa-check"></i><b>8.2.1</b> Upstream/Downstream Node ID</a></li>
+<li class="chapter" data-level="8.2.2" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#x-coord-startx-coord-end-and-y-coord-starty-coord-end"><i class="fa fa-check"></i><b>8.2.2</b> X Coord Start/X Coord End and Y Coord Start/Y Coord End</a></li>
+<li class="chapter" data-level="8.2.3" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#length-1"><i class="fa fa-check"></i><b>8.2.3</b> Length</a></li>
+<li class="chapter" data-level="8.2.4" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#horizontal-curve-specific-inputs"><i class="fa fa-check"></i><b>8.2.4</b> Horizontal Curve Specific Inputs</a></li>
+<li class="chapter" data-level="8.2.5" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#section-1"><i class="fa fa-check"></i><b>8.2.5</b> 2 + 1 Section</a></li>
+<li class="chapter" data-level="8.2.6" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#control-point-xcontrol-point-y"><i class="fa fa-check"></i><b>8.2.6</b> Control Point X/Control Point Y</a></li>
+<li class="chapter" data-level="8.2.7" data-path="TwoLaneHighwayQuickEditor.html"><a href="TwoLaneHighwayQuickEditor.html#entering-traffic-data-1"><i class="fa fa-check"></i><b>8.2.7</b> Entering Traffic Data</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html"><i class="fa fa-check"></i><b>9</b> Custom Network Editor</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#node-data-screen"><i class="fa fa-check"></i><b>9.1</b> Node Data Screen</a></li>
+<li class="chapter" data-level="9.2" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#link-data-screen"><i class="fa fa-check"></i><b>9.2</b> Link Data Screen</a>
+<ul>
+<li class="chapter" data-level="9.2.1" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#lane-data-1"><i class="fa fa-check"></i><b>9.2.1</b> Lane Data</a></li>
+<li class="chapter" data-level="9.2.2" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#CustomNetworkTrafficData"><i class="fa fa-check"></i><b>9.2.2</b> Traffic Data</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="ChapterCustomNetwork.html"><a href="ChapterCustomNetwork.html#map-manipulation-functions-and-display-options"><i class="fa fa-check"></i><b>9.3</b> Map Manipulation Functions and Display Options</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html"><i class="fa fa-check"></i><b>10</b> Signalized Intersections</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#traffic-control-screen"><i class="fa fa-check"></i><b>10.1</b> Traffic Control Screen</a></li>
+<li class="chapter" data-level="10.2" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#pretimed-signal-phasing-and-timing-inputs"><i class="fa fa-check"></i><b>10.2</b> Pretimed Signal Phasing and Timing Inputs</a>
+<ul>
+<li class="chapter" data-level="10.2.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#phase-control-and-detector-assignments"><i class="fa fa-check"></i><b>10.2.1</b> Phase Control and Detector Assignments</span></a></li>
+<li class="chapter" data-level="10.2.2" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#coordination-settings"><i class="fa fa-check"></i><b>10.2.2</b> Coordination Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#actuated-signal-control"><i class="fa fa-check"></i><b>10.3</b> Actuated Signal Control</a>
+<ul>
+<li class="chapter" data-level="10.3.1" data-path="ChapterSignalizedIntersections.html"><a href="ChapterSignalizedIntersections.html#actuated-signal-controller-file-setup"><i class="fa fa-check"></i><b>10.3.1</b> Actuated Signal Controller File Setup</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html"><i class="fa fa-check"></i><b>11</b> Unsignalized Intersections</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#overview-2"><i class="fa fa-check"></i><b>11.1</b> Overview</a></li>
+<li class="chapter" data-level="11.2" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#gap-acceptance"><i class="fa fa-check"></i><b>11.2</b> Gap Acceptance</a></li>
+<li class="chapter" data-level="11.3" data-path="ChapterUnsignalized.html"><a href="ChapterUnsignalized.html#limitations"><i class="fa fa-check"></i><b>11.3</b> Limitations</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html"><i class="fa fa-check"></i><b>12</b> Ramp Metering</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#introduction"><i class="fa fa-check"></i><b>12.1</b> Introduction</a></li>
+<li class="chapter" data-level="12.2" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#pretimed"><i class="fa fa-check"></i><b>12.2</b> Pretimed</a></li>
+<li class="chapter" data-level="12.3" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#demandcapacity"><i class="fa fa-check"></i><b>12.3</b> Demand/Capacity</a></li>
+<li class="chapter" data-level="12.4" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#alinea"><i class="fa fa-check"></i><b>12.4</b> ALINEA</a></li>
+<li class="chapter" data-level="12.5" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#fuzzy-logic"><i class="fa fa-check"></i><b>12.5</b> Fuzzy Logic</a>
+<ul>
+<li class="chapter" data-level="12.5.1" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#inputs-aggregated-performance-measures"><i class="fa fa-check"></i><b>12.5.1</b> Inputs (Aggregated Performance Measures)</a></li>
+<li class="chapter" data-level="12.5.2" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#inference"><i class="fa fa-check"></i><b>12.5.2</b> Inference</a></li>
+<li class="chapter" data-level="12.5.3" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#output-ramp-metering"><i class="fa fa-check"></i><b>12.5.3</b> Output (Ramp Metering)</a></li>
+</ul></li>
+<li class="chapter" data-level="12.6" data-path="ChapterRampMetering.html"><a href="ChapterRampMetering.html#limitations-1"><i class="fa fa-check"></i><b>12.6</b> Limitations</a></li>
+</ul></li>
+<li class="part"><span><b>III Running a Simulation Project</b></span></li>
+<li class="chapter" data-level="13" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html"><i class="fa fa-check"></i><b>13</b> Running the Simulation</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#single-scenario-run-settings"><i class="fa fa-check"></i><b>13.1</b> Single-Scenario Run Settings</a>
+<ul>
+<li class="chapter" data-level="13.1.1" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#warm-up-time"><i class="fa fa-check"></i><b>13.1.1</b> Warm-up Time</a></li>
+<li class="chapter" data-level="13.1.2" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#simulation-duration"><i class="fa fa-check"></i><b>13.1.2</b> Simulation Duration</a></li>
+<li class="chapter" data-level="13.1.3" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#random-number-seeds"><i class="fa fa-check"></i><b>13.1.3</b> Random Number Seeds</a></li>
+<li class="chapter" data-level="13.1.4" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#number-of-replications"><i class="fa fa-check"></i><b>13.1.4</b> Number of Replications</a></li>
+<li class="chapter" data-level="13.1.5" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#output-options"><i class="fa fa-check"></i><b>13.1.5</b> Output Options</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="SimulationControlPanel.html"><a href="SimulationControlPanel.html#multi-scenario-run-settings"><i class="fa fa-check"></i><b>13.2</b> Multi-Scenario Run Settings</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html"><i class="fa fa-check"></i><b>14</b> Route Assignment</a>
+<ul>
+<li class="chapter" data-level="14.1" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#introduction-1"><i class="fa fa-check"></i><b>14.1</b> Introduction</a></li>
+<li class="chapter" data-level="14.2" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#link-performance-function"><i class="fa fa-check"></i><b>14.2</b> Link Performance Function</a></li>
+<li class="chapter" data-level="14.3" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#user-equilibrium-route-assignment"><i class="fa fa-check"></i><b>14.3</b> User Equilibrium Route Assignment</a></li>
+<li class="chapter" data-level="14.4" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#xxe"><i class="fa fa-check"></i><b>14.4</b> XXE</a></li>
+<li class="chapter" data-level="14.5" data-path="ChapterRouteAssignment.html"><a href="ChapterRouteAssignment.html#user-equilibrium-path-flow"><i class="fa fa-check"></i><b>14.5</b> User Equilibrium Path Flow</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="SimOutputData.html"><a href="SimOutputData.html"><i class="fa fa-check"></i><b>15</b> Simulation Output Data</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="SimOutputData.html"><a href="SimOutputData.html#vehicle-headway-data"><i class="fa fa-check"></i><b>15.1</b> Vehicle Headway Data</a></li>
+<li class="chapter" data-level="15.2" data-path="SimOutputData.html"><a href="SimOutputData.html#link-performance-measure-data"><i class="fa fa-check"></i><b>15.2</b> Link Performance Measure Data</a></li>
+<li class="chapter" data-level="15.3" data-path="SimOutputData.html"><a href="SimOutputData.html#detector-vehicle-actuation-data"><i class="fa fa-check"></i><b>15.3</b> Detector Vehicle Actuation Data</a></li>
+<li class="chapter" data-level="15.4" data-path="SimOutputData.html"><a href="SimOutputData.html#detector-aggregate-measures-data"><i class="fa fa-check"></i><b>15.4</b> Detector Aggregate Measures Data</a></li>
+<li class="chapter" data-level="15.5" data-path="SimOutputData.html"><a href="SimOutputData.html#vehicle-time-step-data"><i class="fa fa-check"></i><b>15.5</b> Vehicle Time Step Data</a></li>
+<li class="chapter" data-level="15.6" data-path="SimOutputData.html"><a href="SimOutputData.html#signal-time-step-data"><i class="fa fa-check"></i><b>15.6</b> Signal Time Step Data</a></li>
+<li class="chapter" data-level="15.7" data-path="SimOutputData.html"><a href="SimOutputData.html#ramp-metering-data"><i class="fa fa-check"></i><b>15.7</b> Ramp Metering Data</a></li>
+<li class="chapter" data-level="15.8" data-path="SimOutputData.html"><a href="SimOutputData.html#lane-change-data"><i class="fa fa-check"></i><b>15.8</b> Lane Change Data</a></li>
+<li class="chapter" data-level="15.9" data-path="SimOutputData.html"><a href="SimOutputData.html#platoon-data"><i class="fa fa-check"></i><b>15.9</b> Platoon Data</a></li>
+<li class="chapter" data-level="15.10" data-path="SimOutputData.html"><a href="SimOutputData.html#emissions-and-fuel-consumption-data"><i class="fa fa-check"></i><b>15.10</b> Emissions and Fuel Consumption Data</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html"><i class="fa fa-check"></i><b>16</b> Performance Measures</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#average-entry-headway"><i class="fa fa-check"></i><b>16.1</b> Average Entry Headway</a></li>
+<li class="chapter" data-level="16.2" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#flow-rate"><i class="fa fa-check"></i><b>16.2</b> Flow Rate</a></li>
+<li class="chapter" data-level="16.3" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#average-speed"><i class="fa fa-check"></i><b>16.3</b> Average Speed</a></li>
+<li class="chapter" data-level="16.4" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#density"><i class="fa fa-check"></i><b>16.4</b> Density</a></li>
+<li class="chapter" data-level="16.5" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#percent-followers"><i class="fa fa-check"></i><b>16.5</b> Percent Followers</a></li>
+<li class="chapter" data-level="16.6" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#follower-density"><i class="fa fa-check"></i><b>16.6</b> Follower Density</a></li>
+<li class="chapter" data-level="16.7" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#acceleration-noise"><i class="fa fa-check"></i><b>16.7</b> Acceleration Noise</a></li>
+<li class="chapter" data-level="16.8" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#travel-time"><i class="fa fa-check"></i><b>16.8</b> Travel Time</a></li>
+<li class="chapter" data-level="16.9" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#running-time"><i class="fa fa-check"></i><b>16.9</b> Running Time</a></li>
+<li class="chapter" data-level="16.10" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#delay"><i class="fa fa-check"></i><b>16.10</b> Delay</a></li>
+<li class="chapter" data-level="16.11" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#queue-length"><i class="fa fa-check"></i><b>16.11</b> Queue Length</a></li>
+<li class="chapter" data-level="16.12" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#saturation-flow-rate"><i class="fa fa-check"></i><b>16.12</b> Saturation Flow Rate</a></li>
+<li class="chapter" data-level="16.13" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#stop-rate"><i class="fa fa-check"></i><b>16.13</b> Stop Rate</a></li>
+<li class="chapter" data-level="16.14" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#vehicle-hours-traveled-vht"><i class="fa fa-check"></i><b>16.14</b> Vehicle-Hours-Traveled (VHT)</a></li>
+<li class="chapter" data-level="16.15" data-path="ChapterPerformanceMeasures.html"><a href="ChapterPerformanceMeasures.html#vehicle-miles-traveled-vmt"><i class="fa fa-check"></i><b>16.15</b> Vehicle-Miles-Traveled (VMT)</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html"><i class="fa fa-check"></i><b>17</b> Calibration</a>
+<ul>
+<li class="chapter" data-level="17.1" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#introduction-2"><i class="fa fa-check"></i><b>17.1</b> Introduction</a></li>
+<li class="chapter" data-level="17.2" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#network-calibration"><i class="fa fa-check"></i><b>17.2</b> Network Calibration</a></li>
+<li class="chapter" data-level="17.3" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#vehicle-movement-model-calibration"><i class="fa fa-check"></i><b>17.3</b> Vehicle Movement Model Calibration</a>
+<ul>
+<li class="chapter" data-level="17.3.1" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#signalized-intersections"><i class="fa fa-check"></i><b>17.3.1</b> Signalized intersections</a></li>
+<li class="chapter" data-level="17.3.2" data-path="ChapterCalibration.html"><a href="ChapterCalibration.html#two-lane-highways"><i class="fa fa-check"></i><b>17.3.2</b> Two-lane highways</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html"><i class="fa fa-check"></i><b>18</b> Simulation Animation</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#initiating-simulation-animation-mode"><i class="fa fa-check"></i><b>18.1</b> Initiating Simulation Animation Mode</a></li>
+<li class="chapter" data-level="18.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#animation-playback-controls"><i class="fa fa-check"></i><b>18.2</b> Animation Playback Controls</a>
+<ul>
+<li class="chapter" data-level="18.2.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#startpausestop"><i class="fa fa-check"></i><b>18.2.1</b> Start/Pause/Stop</a></li>
+<li class="chapter" data-level="18.2.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#forwardreverse"><i class="fa fa-check"></i><b>18.2.2</b> Forward/Reverse</a></li>
+<li class="chapter" data-level="18.2.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#animation-speed"><i class="fa fa-check"></i><b>18.2.3</b> Animation Speed</a></li>
+<li class="chapter" data-level="18.2.4" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#simulation-time"><i class="fa fa-check"></i><b>18.2.4</b> Simulation Time</a></li>
+</ul></li>
+<li class="chapter" data-level="18.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#display-options"><i class="fa fa-check"></i><b>18.3</b> Display Options</a>
+<ul>
+<li class="chapter" data-level="18.3.1" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#show-vehicle-information"><i class="fa fa-check"></i><b>18.3.1</b> Show Vehicle Information</a></li>
+<li class="chapter" data-level="18.3.2" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#vehicle-properties"><i class="fa fa-check"></i><b>18.3.2</b> Vehicle Properties</a></li>
+<li class="chapter" data-level="18.3.3" data-path="ChapterSimAnimation.html"><a href="ChapterSimAnimation.html#signal-controllers"><i class="fa fa-check"></i><b>18.3.3</b> Signal Controllers</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>IV Simulation Logic and Vehicle Movement Models</b></span></li>
+<li class="chapter" data-level="19" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html"><i class="fa fa-check"></i><b>19</b> Simulation Logic Flow</a>
+<ul>
+<li class="chapter" data-level="19.1" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#first-vehicle-entry"><i class="fa fa-check"></i><b>19.1</b> First Vehicle Entry</a></li>
+<li class="chapter" data-level="19.2" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#simulation-time-loop"><i class="fa fa-check"></i><b>19.2</b> Simulation Time Loop</a>
+<ul>
+<li class="chapter" data-level="19.2.1" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#create-new-vehicle"><i class="fa fa-check"></i><b>19.2.1</b> Create new vehicle</a></li>
+<li class="chapter" data-level="19.2.2" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#update-status-of-control-points"><i class="fa fa-check"></i><b>19.2.2</b> Update Status of Control Points</a></li>
+<li class="chapter" data-level="19.2.3" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#update-vehicle-properties"><i class="fa fa-check"></i><b>19.2.3</b> Update Vehicle Properties</a></li>
+<li class="chapter" data-level="19.2.4" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#check-detector-status"><i class="fa fa-check"></i><b>19.2.4</b> Check Detector Status</a></li>
+</ul></li>
+<li class="chapter" data-level="19.3" data-path="ChapterSimLogic.html"><a href="ChapterSimLogic.html#end-of-simulation-run"><i class="fa fa-check"></i><b>19.3</b> End of Simulation Run</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html"><i class="fa fa-check"></i><b>20</b> Vehicle Generation</a>
+<ul>
+<li class="chapter" data-level="20.1" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#vehicle-entry-headway-distribution"><i class="fa fa-check"></i><b>20.1</b> Vehicle Entry Headway Distribution</a></li>
+<li class="chapter" data-level="20.2" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-entry-lane"><i class="fa fa-check"></i><b>20.2</b> Set Vehicle Entry Lane</a></li>
+<li class="chapter" data-level="20.3" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-driver-type"><i class="fa fa-check"></i><b>20.3</b> Set Vehicle Driver Type</a></li>
+</ul></li>
+<li class="chapter" data-level="21" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html"><i class="fa fa-check"></i><b>21</b> Leader/Follower Status</a>
+<ul>
+<li class="chapter" data-level="21.1" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html#variable-definitions"><i class="fa fa-check"></i><b>21.1</b> Variable Definitions</a></li>
+<li class="chapter" data-level="21.2" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html#logic-conditions"><i class="fa fa-check"></i><b>21.2</b> Logic Conditions</a></li>
+</ul></li>
+<li class="chapter" data-level="22" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html"><i class="fa fa-check"></i><b>22</b> Vehicle Movement Logic</a>
+<ul>
+<li class="chapter" data-level="22.1" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#longitudinal-motion"><i class="fa fa-check"></i><b>22.1</b> Longitudinal Motion</a>
+<ul>
+<li class="chapter" data-level="22.1.1" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#AccelMode"><i class="fa fa-check"></i><b>22.1.1</b> Acceleration Mode</a></li>
+<li class="chapter" data-level="22.1.2" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#queue-status"><i class="fa fa-check"></i><b>22.1.2</b> Queue Status</a></li>
+</ul></li>
+<li class="chapter" data-level="22.2" data-path="ChapterVehMoveLogic.html"><a href="ChapterVehMoveLogic.html#lane-changing"><i class="fa fa-check"></i><b>22.2</b> Lane Changing</a></li>
+</ul></li>
+<li class="chapter" data-level="23" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html"><i class="fa fa-check"></i><b>23</b> Acceleration Mode</a>
+<ul>
+<li class="chapter" data-level="23.1" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#unimpedednormal"><i class="fa fa-check"></i><b>23.1</b> UnimpededNormal</a></li>
+<li class="chapter" data-level="23.2" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#carfollow"><i class="fa fa-check"></i><b>23.2</b> CarFollow</a></li>
+<li class="chapter" data-level="23.3" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stoppingforqueue"><i class="fa fa-check"></i><b>23.3</b> StoppingForQueue</a></li>
+<li class="chapter" data-level="23.4" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stoppingforcontrol"><i class="fa fa-check"></i><b>23.4</b> StoppingForControl</a></li>
+<li class="chapter" data-level="23.5" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#stopped"><i class="fa fa-check"></i><b>23.5</b> Stopped</a></li>
+<li class="chapter" data-level="23.6" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#MaxAccel"><i class="fa fa-check"></i><b>23.6</b> MaxAccel</a></li>
+<li class="chapter" data-level="23.7" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#MaxDecel"><i class="fa fa-check"></i><b>23.7</b> Max Decel</a></li>
+<li class="chapter" data-level="23.8" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#desired-accel"><i class="fa fa-check"></i><b>23.8</b> Desired Accel</a></li>
+<li class="chapter" data-level="23.9" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#desired-decel"><i class="fa fa-check"></i><b>23.9</b> Desired Decel</a></li>
+<li class="chapter" data-level="23.10" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#downstreamlinkspeedchange"><i class="fa fa-check"></i><b>23.10</b> DownstreamLinkSpeedChange</a></li>
+<li class="chapter" data-level="23.11" data-path="ChapterAccelMode.html"><a href="ChapterAccelMode.html#slowingfordowngrade"><i class="fa fa-check"></i><b>23.11</b> SlowingForDowngrade</a></li>
+</ul></li>
+<li class="chapter" data-level="24" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html"><i class="fa fa-check"></i><b>24</b> Desired Speed</a>
+<ul>
+<li class="chapter" data-level="24.1" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#horizontal-curves"><i class="fa fa-check"></i><b>24.1</b> Horizontal Curves</a></li>
+<li class="chapter" data-level="24.2" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#tangents"><i class="fa fa-check"></i><b>24.2</b> Tangents</a>
+<ul>
+<li class="chapter" data-level="24.2.1" data-path="ChapterDesiredSpeed.html"><a href="ChapterDesiredSpeed.html#heavy-vehicles"><i class="fa fa-check"></i><b>24.2.1</b> Heavy Vehicles</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="25" data-path="ChapterCarFollow.html"><a href="ChapterCarFollow.html"><i class="fa fa-check"></i><b>25</b> Car Following</a></li>
+<li class="chapter" data-level="26" data-path="ChapterMaxAccel.html"><a href="ChapterMaxAccel.html"><i class="fa fa-check"></i><b>26</b> Maximum Acceleration</a></li>
+<li class="chapter" data-level="27" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html"><i class="fa fa-check"></i><b>27</b> Lane Changing</a>
+<ul>
+<li class="chapter" data-level="27.1" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#MandatoryLaneChanging"><i class="fa fa-check"></i><b>27.1</b> Mandatory Lane Changing</a></li>
+<li class="chapter" data-level="27.2" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#DiscretionaryLaneChanging"><i class="fa fa-check"></i><b>27.2</b> Discretionary Lane Changing</a></li>
+<li class="chapter" data-level="27.3" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#anticipatory-lane-changing"><i class="fa fa-check"></i><b>27.3</b> Anticipatory Lane Changing</a></li>
+<li class="chapter" data-level="27.4" data-path="ChapterLaneChanging.html"><a href="ChapterLaneChanging.html#vehicle-lane-change-modes"><i class="fa fa-check"></i><b>27.4</b> Vehicle Lane Change Modes</a></li>
+</ul></li>
+<li class="chapter" data-level="28" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html"><i class="fa fa-check"></i><b>28</b> Two-Lane Highway Modeling</a>
+<ul>
+<li class="chapter" data-level="28.1" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-modes"><i class="fa fa-check"></i><b>28.1</b> Passing Modes</a></li>
+<li class="chapter" data-level="28.2" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-in-oncoming-lane-1"><i class="fa fa-check"></i><b>28.2</b> Passing in Oncoming Lane</a></li>
+<li class="chapter" data-level="28.3" data-path="ChapterTwoLaneHwyModeling.html"><a href="ChapterTwoLaneHwyModeling.html#passing-in-a-passing-lane-section"><i class="fa fa-check"></i><b>28.3</b> Passing in a Passing Lane Section</a></li>
+</ul></li>
+<li class="chapter" data-level="29" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html"><i class="fa fa-check"></i><b>29</b> Emissions and Fuel Consumption</a>
+<ul>
+<li class="chapter" data-level="29.1" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html#EmissionsVSP"><i class="fa fa-check"></i><b>29.1</b> Vehicle-Specific Power (VSP) Emission</a></li>
+<li class="chapter" data-level="29.2" data-path="ChapterEmissions.html"><a href="ChapterEmissions.html#obd-based-emissionsfuel-use-calculations"><i class="fa fa-check"></i><b>29.2</b> OBD-based emissions/fuel use calculations</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/swash17/SwashSim" target="blank">View Book Source</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="references" class="section level1 unnumbered hasAnchor">
+<h1>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-GreenBook2004" class="csl-entry">
+AASHTO. 2004. <em>A Policy on Geometric Design of Highways and Streets</em>. 5th ed. Washington, D.C.: American Association of State Highway; Transportation Officials.
+</div>
+<div id="ref-beckmann_studies_1957" class="csl-entry">
+Beckmann, Martin, C. B. Mcguire, and Christopher B. Winsten. 1957. <span>“Studies in the <span>Economics</span> of <span>Transportation</span>.”</span> <em>The Economic Journal</em> 67 (265): 116–18. <a href="https://doi.org/10.2307/2227641">https://doi.org/10.2307/2227641</a>.
+</div>
+<div id="ref-bonneson_development_2007" class="csl-entry">
+Bonneson, J, M Pratt, and J Miles. 2007. <em>Development of <span>Guidelines</span> for <span>Establishing</span> <span>Effective</span> <span>Curve</span> <span>Advisory</span> <span>Speeds</span></em>. Vol. 0–5439–1. Texas A&amp;M Transportation Institute. <a href="https://tti.tamu.edu/tti-publication/development-of-guidelines-for-establishing-effective-curve-advisory-speeds/">https://tti.tamu.edu/tti-publication/development-of-guidelines-for-establishing-effective-curve-advisory-speeds/</a>.
+</div>
+<div id="ref-carlson_daytime_2006" class="csl-entry">
+Carlson, Paul J., Jeffrey D. Miles, and Patricia K. Johnson. 2006. <span>“Daytime <span>High</span>-<span>Speed</span> <span>Passing</span> <span>Maneuvers</span> <span>Observed</span> on <span>Rural</span> <span>Two</span>-<span>Lane</span>, <span>Two</span>-<span>Way</span> <span>Highway</span>: <span>Findings</span> and <span>Implications</span>.”</span> <em>Transportation Research Record</em> 1961 (1): 9–15. <a href="https://doi.org/10.1177/0361198106196100102">https://doi.org/10.1177/0361198106196100102</a>.
+</div>
+<div id="ref-cohen_application_2002-1" class="csl-entry">
+Cohen, Stephen L. 2002a. <span>“Application of <span>Car</span>-<span>Following</span> <span>Systems</span> in <span>Microscopic</span> <span>Time</span>-<span>Scan</span> <span>Simulation</span> <span>Models</span>.”</span> <em>Transportation Research Record</em> 1802 (1): 239–47. <a href="https://doi.org/10.3141/1802-27">https://doi.org/10.3141/1802-27</a>.
+</div>
+<div id="ref-cohen_application_2002" class="csl-entry">
+———. 2002b. <span>“Application of <span>Car</span>-<span>Following</span> <span>Systems</span> to <span>Queue</span> <span>Discharge</span> <span>Problem</span> at <span>Signalized</span> <span>Intersections</span>.”</span> <em>Transportation Research Record</em> 1802 (1): 205–13. <a href="https://doi.org/10.3141/1802-23">https://doi.org/10.3141/1802-23</a>.
+</div>
+<div id="ref-courage_development_2002" class="csl-entry">
+Courage, Kenneth G., Scott S. Washburn, and Jin-Tae Kim. 2002. <span>“Development of an <span>XML</span>-<span>Based</span> <span>Specification</span> for <span>Traffic</span> <span>Model</span> <span>Data</span> <span>Exchange</span>.”</span> <em>Transportation Research Record</em> 1804: 144–50. <a href="https://doi.org/10.3141/1804-19">https://doi.org/10.3141/1804-19</a>.
+</div>
+<div id="ref-dafermos_traffic_1969" class="csl-entry">
+Dafermos, Stella C., and Frederick T. Sparrow. 1969. <span>“Traffic <span>Assignment</span> <span>Problem</span> for a <span>General</span> <span>Network</span>.”</span> <em>Journal of Research of the National Bureau of Standards, Section B: Mathematical Sciences</em> 73B (2): 91–118. <a href="https://doi.org/10.6028/jres.073B.010">https://doi.org/10.6028/jres.073B.010</a>.
+</div>
+<div id="ref-MUTCD2003" class="csl-entry">
+FHWA. 2003. <em>Manual on Uniform Traffic Control Devices</em>. 2003rd ed. Washington, D.C.: <span>US Department of Transportation, Federal Highway Administation</span>; FHWA.
+</div>
+<div id="ref-frank_algorithm_1956" class="csl-entry">
+Frank, Marguerite, and Philip Wolfe. 1956. <span>“An Algorithm for Quadratic Programming.”</span> <em>Naval Research Logistics Quarterly</em> 3 (1-2): 95–110. <a href="https://doi.org/10.1002/nav.3800030109">https://doi.org/10.1002/nav.3800030109</a>.
+</div>
+<div id="ref-frey_fuel_2008" class="csl-entry">
+Frey, H. Christopher, Kaishan Zhang, and Nagui M. Rouphail. 2008. <span>“Fuel <span>Use</span> and <span>Emissions</span> <span>Comparisons</span> for <span>Alternative</span> <span>Routes</span>, <span>Time</span> of <span>Day</span>, <span>Road</span> <span>Grade</span>, and <span>Vehicles</span> <span>Based</span> on <span>In</span>-<span>Use</span> <span>Measurements</span>.”</span> <em>Environmental Science &amp; Technology</em> 42 (7): 2483–89. <a href="https://doi.org/10.1021/es702493v">https://doi.org/10.1021/es702493v</a>.
+</div>
+<div id="ref-glennon_new_1988" class="csl-entry">
+Glennon, John C. 1988. <span>“New and Improved Model of Passing Sight Distance on Two-Lane Highways.”</span> <em>Transportation Research Record</em> 1195: 132–37.
+</div>
+<div id="ref-harwood_passing_2008" class="csl-entry">
+Harwood, Douglas W., David K. Gilmore, K. R. Richard, J. M. Dunn, and Carlos Sun. 2008. <em>Passing <span>Sight</span> <span>Distance</span> <span>Criteria</span></em>. Vol. NCHRP Report 605. National <span>Cooperative</span> <span>Highway</span> <span>Research</span> <span>Program</span>. Washington, D.C.: Transportation Research Board. <a href="https://doi.org/10.17226/23278">https://doi.org/10.17226/23278</a>.
+</div>
+<div id="ref-harwood_framework_1976" class="csl-entry">
+Harwood, Douglas W, and John C Glennon. 1976. <span>“Framework for <span>Design</span> and <span>Operation</span> of <span>Passing</span> <span>Zones</span> on <span>Two</span>-<span>Lane</span> <span>Highways</span>.”</span> <em>Transportation Research Record</em> 601: 45–50.
+</div>
+<div id="ref-hassan_passing_1996" class="csl-entry">
+Hassan, Yasser, Said M. Easa, and A. O. Abd El Halim. 1996. <span>“Passing Sight Distance on Two-Lane Highways: <span>Review</span> and Revision.”</span> <em>Transportation Research Part A: Policy and Practice</em> 30 (6): 453–67. <a href="https://doi.org/10.1016/0965-8564(95)00032-1">https://doi.org/10.1016/0965-8564(95)00032-1</a>.
+</div>
+<div id="ref-hu_comparison_2016" class="csl-entry">
+Hu, Jiangchuan, H. Christopher Frey, and Scott S. Washburn. 2016. <span>“Comparison of <span>Vehicle</span>-<span>Specific</span> <span>Fuel</span> <span>Use</span> and <span>Emissions</span> <span>Models</span> <span>Based</span> on <span>Externally</span> and <span>Internally</span> <span>Observable</span> <span>Activity</span> <span>Data</span>.”</span> <em>Transportation Research Record</em> 2570 (1): 30–38. <a href="https://doi.org/10.3141/2570-04">https://doi.org/10.3141/2570-04</a>.
+</div>
+<div id="ref-li_implementing_2011" class="csl-entry">
+Li, Jing, and Scott S. Washburn. 2011. <span>“Implementing <span>Two</span>-Lane <span>Highway</span> <span>Simulation</span> <span>Modeling</span> into <span>CORSIM</span>.”</span> <em>Procedia - Social and Behavioral Sciences</em>, 6th <span>International</span> <span>Symposium</span> on <span>Highway</span> <span>Capacity</span> and <span>Quality</span> of <span>Service</span>, 16 (January): 293–305. <a href="https://doi.org/10.1016/j.sbspro.2011.04.451">https://doi.org/10.1016/j.sbspro.2011.04.451</a>.
+</div>
+<div id="ref-mannering_principles_2019" class="csl-entry">
+Mannering, Fred L., and Scott S. Washburn. 2019. <em>Principles of <span>Highway</span> <span>Engineering</span> and <span>Traffic</span> <span>Analysis</span>, 7th <span>Edition</span></em>. 7th Edition. Wiley. <a href="https://www.wiley.com/en-us/Principles+of+Highway+Engineering+and+Traffic+Analysis%2C+7th+Edition-p-9781119493969">https://www.wiley.com/en-us/Principles+of+Highway+Engineering+and+Traffic+Analysis%2C+7th+Edition-p-9781119493969</a>.
+</div>
+<div id="ref-ozkul_advanced_2014" class="csl-entry">
+Ozkul, Seckin. 2014. <em>Advanced <span>Vehicle</span> <span>Dynamics</span> <span>Modeling</span> <span>Approach</span> in <span>Traffic</span> <span>Microsimulation</span> with <span>Emphasis</span> on <span>Commercial</span> <span>Truck</span> <span>Performance</span> and <span>On</span>-<span>Board</span>-<span>Diagnostics</span> <span>Data</span></em>. Vol. Dissertation. University of Florida.
+</div>
+<div id="ref-papageorgiou_alinea_1991" class="csl-entry">
+Papageorgiou, Markos, Habib Hadj-Salem, and Jean-Marc Blosseville. 1991. <span>“<span>ALINEA</span>: <span>A</span> <span>Local</span> <span>Feedback</span> <span>Control</span> <span>Law</span> for <span>On</span>-<span>Ramp</span> <span>Metering</span>.”</span> <em>Transportation Research Record</em> 1320: 58–64.
+</div>
+<div id="ref-bureau_of_public_roads_traffic_1964" class="csl-entry">
+Public Roads, Bureau of. 1964. <em>Traffic <span>Assignment</span> <span>Manual</span></em>. Washington, DC: US Department of Commerce, Urban Planning Division.
+</div>
+<div id="ref-hcm" class="csl-entry">
+Transportation Research Board and National Academies of Sciences, Engineering, and Medicine. 2022. <em>Highway Capacity Manual 7th Edition: A Guide for Multimodal Mobility Analysis</em>. Washington, DC: The National Academies Press. <a href="https://doi.org/10.17226/26432">https://doi.org/10.17226/26432</a>.
+</div>
+<div id="ref-van_valkenburg_criteria_1971" class="csl-entry">
+Van Valkenburg, G. W., and Harold L. Michael. 1971. <span>“Criteria for <span>No</span>-<span>Passing</span> <span>Zones</span>.”</span> <em>Highway Research Record</em>, no. 366. <a href="https://trid.trb.org/View/116952">https://trid.trb.org/View/116952</a>.
+</div>
+<div id="ref-wardrop_theoretical_1952" class="csl-entry">
+Wardrop, J. G. 1952. <span>“Some <span>Theoretical</span> <span>Aspects</span> of <span>Road</span> <span>Traffic</span> <span>Research</span>.”</span> In, Part Ii, VoL 1, 2:325–62. Institution of Civil Engineers. <a href="https://doi.org/10.1680/ipeds.1952.11259">https://doi.org/10.1680/ipeds.1952.11259</a>.
+</div>
+<div id="ref-washburn_impact_2010" class="csl-entry">
+Washburn, Scott S., and Carlos O. Cruz-Casas. 2010. <span>“Impact of <span>Trucks</span> on <span>Signalized</span> <span>Intersection</span> <span>Capacity</span>.”</span> <em>Computer-Aided Civil and Infrastructure Engineering</em> 25 (6): 452–67. <a href="https://doi.org/10.1111/j.1467-8667.2010.00651.x">https://doi.org/10.1111/j.1467-8667.2010.00651.x</a>.
+</div>
+<div id="ref-washburn_emissions_2015" class="csl-entry">
+Washburn, Scott S., H. Christopher Frey, Nagui M. Rouphail, Jack Hulsberg, and Jiangchuan Hu. 2015. <em>Emissions <span>Modeling</span> and <span>Integration</span> into <span>Microsimulation</span> <span>Modeling</span></em>. Southeastern Transportation Research, Innovation, Development; Education Center, University of Florida.
+</div>
+<div id="ref-washburn_-board-diagnostics_2017" class="csl-entry">
+Washburn, Scott S., H. Christopher Frey, Nagui Rouphail, and Innovation Southeastern Transportation Research Development and Education Center (STRIDE). 2017. <span>“On-<span>Board</span>-<span>Diagnostics</span> (<span>OBD</span>) <span>Data</span> <span>Integration</span> into <span>Traffic</span> <span>Microsimulation</span> for <span>Vehicle</span>-<span>Specific</span> <span>Fuel</span> <span>Use</span> &amp; <span>Emissions</span> <span>Modeling</span> &amp; <span>In</span>-<span>Vehicle</span> <span>App</span> <span>Testing</span>.”</span> 2013-034. <a href="https://rosap.ntl.bts.gov/view/dot/36694">https://rosap.ntl.bts.gov/view/dot/36694</a>.
+</div>
+<div id="ref-washburn_heavy_2013" class="csl-entry">
+Washburn, Scott S., and Seckin Ozkul. 2013. <em>Heavy <span>Vehicle</span> <span>Effects</span> on <span>Florida</span> <span>Freeways</span> and <span>Multilane</span> <span>Highways</span></em>. Florida Department of Transportation, Tallahassee, FL.
+</div>
+<div id="ref-washburn_improved_2018" class="csl-entry">
+Washburn, Scott S., Donald Watson, Zilin Bian, Tapio Luttinen, Ahmed Al-Kaisy, Amirhossein Jafari, Richard Dowling, and Aaron Elias. 2018. <em>Improved <span>Analysis</span> of <span>Two</span>-<span>Lane</span> <span>Highway</span> <span>Capacity</span> and <span>Operational</span> <span>Performance</span></em>. Washington, D.C.: Transportation Research Board. <a href="https://doi.org/10.17226/25179">https://doi.org/10.17226/25179</a>.
+</div>
+<div id="ref-washburn_impact_2014" class="csl-entry">
+Washburn, Scott S., Donald Watson, and Ziqi Song. 2014. <em>Impact of <span>Lane</span> <span>Closures</span> on <span>Roadway</span> <span>Capacity</span>: <span>Phase</span> 2</em>. Vol. Final Report. Florida Department of Transportation. Tallahassee, FL.
+</div>
+<div id="ref-weaver_design_1972" class="csl-entry">
+Weaver, Graeme D., and John C. Glennon. 1972. <span>“Design and <span>Striping</span> for <span>Safe</span> <span>Passing</span> <span>Operations</span>.”</span> <em>Highway Research Record</em>, no. 390. <a href="https://trid.trb.org/View/117018">https://trid.trb.org/View/117018</a>.
+</div>
+<div id="ref-yu_genetic_2009" class="csl-entry">
+Yu, Xue Feng. 2009. <span>“Genetic Fuzzy Logic Approach to Local Ramp Metering Control Using Microscopic Traffic Simulation : A Thesis Presented in Partial Fulfillment of the Requirements for the Degree of <span>Master</span> of <span>Engineering</span> in <span>Mechatronics</span> at <span>Massey</span> <span>University</span>, <span>Auckland</span>, <span>New</span> <span>Zealand</span>.”</span> PhD thesis, Massey University. <a href="http://hdl.handle.net/10179/1146">http://hdl.handle.net/10179/1146</a>.
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ChapterEmissions.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/swash17/SwashSim/edit/master/70-References.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["SwashSim Documentation.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+},
+"toc_depth": 0
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
