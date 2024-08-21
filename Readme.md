@@ -13,7 +13,7 @@ Note that SwashSim only runs on the Windows operating system and 64-bit CPU arch
 
 To obtain the installation files for SwashSim, please contact Dr. Washburn (swash@ce.ufl.edu).
 
-<a href="https://swashsim.miraheze.org">SwashSim Documentation (Wiki)</a>
+<a href="https://swash17.github.io/SwashSim/">SwashSim User Guide</a>
 
 Example project files are available on <a href="https://github.com/swash17/SwashSim/tree/master/Projects">GitHub.</a>
 
