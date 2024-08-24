@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SwashSim_Project Type="TwoLaneHighway">
-  <FileName>2plus1_short.ssim</FileName>
-  <FacilityName />
+<SwashSim_Project Type="Custom">
+  <FileName>C:\Users\swash\OneDrive\SwashSim\_GitHub\Projects\SignalizedIntersections\Gnv_Univ_Lemerand\Univ_Lemerand.ssim</FileName>
+  <FacilityName>Univ_Lemerand Project</FacilityName>
   <FacilityStart />
   <FacilityEnd />
   <Location />
   <AnalysisDir />
-  <AnalysisPeriod />
-  <AnalysisDate>2024-04-01T17:00:00</AnalysisDate>
+  <AnalysisPeriod>10:00 - 11:00</AnalysisPeriod>
+  <AnalysisDate>2018-05-03T12:40:22</AnalysisDate>
   <AnalystName />
   <Agency />
   <UserNotes />
@@ -17,22 +17,23 @@
   <RouteChoiceMethod>Random</RouteChoiceMethod>
   <DataFilePaths>
     <VehiclesFolder>Vehicles\</VehiclesFolder>
-    <NetworkData>2plus1_short.nwf</NetworkData>
-    <OutputDataFolder />
+    <NetworkData>Projects\Signalized Intersections\Gnv_Univ_Lemerand\Univ_Lemerand.nwf</NetworkData>
+    <SignalData>Projects\SignalizedIntersections\Gnv_Univ_Lemerand\Univ_Lemerand_SignalData.xml</SignalData>
+    <OutputDataFolder>Projects\Signalized Intersections\Gnv_Univ_Lemerand</OutputDataFolder>
   </DataFilePaths>
   <SimSettings>
     <RunType>SingleRun</RunType>
-    <WarmupTime>600</WarmupTime>
-    <Duration>900</Duration>
-    <NumReplications>1</NumReplications>
+    <WarmupTime>0</WarmupTime>
+    <Duration>300</Duration>
+    <NumReplications>0</NumReplications>
     <NumTimeSteps>0</NumTimeSteps>
     <DetectorAggregationIntervalSeconds>30</DetectorAggregationIntervalSeconds>
     <TimeStep>0.1</TimeStep>
     <RandSeeds>
-      <int>4575</int>
-      <int>1411</int>
-      <int>8454</int>
-      <int>813</int>
+      <int>2943</int>
+      <int>479</int>
+      <int>4331</int>
+      <int>9524</int>
     </RandSeeds>
     <VehNetworkLocationEnabled>true</VehNetworkLocationEnabled>
     <VehSizesWeightsEnabled>true</VehSizesWeightsEnabled>

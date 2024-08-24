@@ -10,12 +10,10 @@
         <Label>Scenarios 1,3,5,7,9,11,13,15,17,19,21,23</Label>
         <ControlAlgorithm>Pretimed</ControlAlgorithm>
         <GreenIntervalSec>2</GreenIntervalSec>
+        <UpdateIntervalSec>30</UpdateIntervalSec>
         <MeteringRateMinVehPerHour>240</MeteringRateMinVehPerHour>
         <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
-        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
-        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
-        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
-        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <UseQueueDetection>false</UseQueueDetection>
         <Phases>
           <Phase id="1">
             <Label>EB On-Ramp Direct</Label>
@@ -93,7 +91,7 @@
                 <Id>1</Id>
                 <Function>RampMeterPresence</Function>
                 <Label>EB Loop On ramp Presence Q Det</Label>
-                <LinkPositionPct>15</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
               <Detector>
                 <SignalControllerId>1</SignalControllerId>
@@ -103,7 +101,7 @@
                 <Id>1</Id>
                 <Function>RampMeterQueueIntermediate</Function>
                 <Label>EB Loop On-Ramp</Label>
-                <LinkPositionPct>57</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
               <Detector>
                 <SignalControllerId>1</SignalControllerId>
@@ -113,7 +111,7 @@
                 <Id>1</Id>
                 <Function>RampMeterQueueAdvance</Function>
                 <Label>EB Loop On-Ramp</Label>
-                <LinkPositionPct>50</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
             </Detectors>
           </Phase>
@@ -123,12 +121,10 @@
         <Label>Scenarios 2,4,6,8,10,12,14,16,18,20,22,24</Label>
         <ControlAlgorithm>Pretimed</ControlAlgorithm>
         <GreenIntervalSec>2</GreenIntervalSec>
+        <UpdateIntervalSec>30</UpdateIntervalSec>
         <MeteringRateMinVehPerHour>550</MeteringRateMinVehPerHour>
         <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
-        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
-        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
-        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
-        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <UseQueueDetection>false</UseQueueDetection>
         <Phases>
           <Phase id="1">
             <Label>EB On-Ramp Direct</Label>
@@ -206,7 +202,7 @@
                 <Id>1</Id>
                 <Function>RampMeterPresence</Function>
                 <Label>EB Loop On ramp Presence Q Det</Label>
-                <LinkPositionPct>15</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
               <Detector>
                 <SignalControllerId>1</SignalControllerId>
@@ -216,7 +212,7 @@
                 <Id>1</Id>
                 <Function>RampMeterQueueIntermediate</Function>
                 <Label>EB Loop On-Ramp</Label>
-                <LinkPositionPct>57</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
               <Detector>
                 <SignalControllerId>1</SignalControllerId>
@@ -226,7 +222,7 @@
                 <Id>1</Id>
                 <Function>RampMeterQueueAdvance</Function>
                 <Label>EB Loop On-Ramp</Label>
-                <LinkPositionPct>50</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
             </Detectors>
           </Phase>
@@ -244,12 +240,10 @@
         <Label>Scenarios 1,3,5,7,9,11,13,15,17,19,21,23</Label>
         <ControlAlgorithm>Pretimed</ControlAlgorithm>
         <GreenIntervalSec>2</GreenIntervalSec>
+        <UpdateIntervalSec>30</UpdateIntervalSec>
         <MeteringRateMinVehPerHour>240</MeteringRateMinVehPerHour>
         <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
-        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
-        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
-        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
-        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <UseQueueDetection>false</UseQueueDetection>
         <Phases>
           <Phase id="1">
             <Label>WB On-Ramp Direct</Label>
@@ -327,7 +321,7 @@
                 <Id>1</Id>
                 <Function>RampMeterPresence</Function>
                 <Label>WB Loop on Ramp Presence Q det</Label>
-                <LinkPositionPct>10</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
               <Detector>
                 <SignalControllerId>2</SignalControllerId>
@@ -337,7 +331,7 @@
                 <Id>1</Id>
                 <Function>RampMeterQueueIntermediate</Function>
                 <Label>WB Loop On-Ramp</Label>
-                <LinkPositionPct>52</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
               <Detector>
                 <SignalControllerId>2</SignalControllerId>
@@ -347,7 +341,7 @@
                 <Id>1</Id>
                 <Function>RampMeterQueueAdvance</Function>
                 <Label>WB Loop On-Ramp</Label>
-                <LinkPositionPct>50</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
             </Detectors>
           </Phase>
@@ -357,12 +351,10 @@
         <Label>Scenarios 2,4,6,8,10,12,14,16,18,20,22,24</Label>
         <ControlAlgorithm>Pretimed</ControlAlgorithm>
         <GreenIntervalSec>2</GreenIntervalSec>
+        <UpdateIntervalSec>30</UpdateIntervalSec>
         <MeteringRateMinVehPerHour>550</MeteringRateMinVehPerHour>
         <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
-        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
-        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
-        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
-        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <UseQueueDetection>false</UseQueueDetection>
         <Phases>
           <Phase id="1">
             <Label>WB On-Ramp Direct</Label>
@@ -440,7 +432,7 @@
                 <Id>1</Id>
                 <Function>RampMeterPresence</Function>
                 <Label>WB Loop on Ramp Presence Q det</Label>
-                <LinkPositionPct>10</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
               <Detector>
                 <SignalControllerId>2</SignalControllerId>
@@ -450,7 +442,7 @@
                 <Id>1</Id>
                 <Function>RampMeterQueueIntermediate</Function>
                 <Label>WB Loop On-Ramp</Label>
-                <LinkPositionPct>52</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
               <Detector>
                 <SignalControllerId>2</SignalControllerId>
@@ -460,7 +452,7 @@
                 <Id>1</Id>
                 <Function>RampMeterQueueAdvance</Function>
                 <Label>WB Loop On-Ramp</Label>
-                <LinkPositionPct>50</LinkPositionPct>
+                <LinkPositionPct>0</LinkPositionPct>
               </Detector>
             </Detectors>
           </Phase>

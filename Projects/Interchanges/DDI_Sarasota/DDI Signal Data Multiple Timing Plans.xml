@@ -2786,14 +2786,13 @@
         <Label>Scenarios 1,3,5,7,9,11,13,15,17,19,21,23</Label>
         <ControlAlgorithm>Pretimed</ControlAlgorithm>
         <GreenIntervalSec>2</GreenIntervalSec>
+        <UpdateIntervalSec>30</UpdateIntervalSec>
         <MeteringRateMinVehPerHour>240</MeteringRateMinVehPerHour>
         <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
-        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
-        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
-        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
-        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <UseQueueDetection>false</UseQueueDetection>
         <Phases>
           <Phase id="1">
+            <Label />
             <MeteringRateProportion>0.5</MeteringRateProportion>
             <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
             <TotalTimeSec>30</TotalTimeSec>
@@ -2883,6 +2882,7 @@
             </Detectors>
           </Phase>
           <Phase id="2">
+            <Label />
             <MeteringRateProportion>0.5</MeteringRateProportion>
             <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
             <TotalTimeSec>30</TotalTimeSec>
@@ -2977,14 +2977,13 @@
         <Label>Scenarios 2,4,6,8,10,12,14,16,18,20,22,24</Label>
         <ControlAlgorithm>Pretimed</ControlAlgorithm>
         <GreenIntervalSec>2</GreenIntervalSec>
+        <UpdateIntervalSec>30</UpdateIntervalSec>
         <MeteringRateMinVehPerHour>550</MeteringRateMinVehPerHour>
         <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
-        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
-        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
-        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
-        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <UseQueueDetection>false</UseQueueDetection>
         <Phases>
           <Phase id="1">
+            <Label />
             <MeteringRateProportion>0.5</MeteringRateProportion>
             <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
             <TotalTimeSec>30</TotalTimeSec>
@@ -3074,6 +3073,7 @@
             </Detectors>
           </Phase>
           <Phase id="2">
+            <Label />
             <MeteringRateProportion>0.5</MeteringRateProportion>
             <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
             <TotalTimeSec>30</TotalTimeSec>
@@ -3178,14 +3178,13 @@
         <Label>Scenarios 1,3,5,7,9,11,13,15,17,19,21,23</Label>
         <ControlAlgorithm>Pretimed</ControlAlgorithm>
         <GreenIntervalSec>2</GreenIntervalSec>
+        <UpdateIntervalSec>30</UpdateIntervalSec>
         <MeteringRateMinVehPerHour>240</MeteringRateMinVehPerHour>
         <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
-        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
-        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
-        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
-        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <UseQueueDetection>false</UseQueueDetection>
         <Phases>
           <Phase id="1">
+            <Label />
             <MeteringRateProportion>0.5</MeteringRateProportion>
             <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
             <TotalTimeSec>30</TotalTimeSec>
@@ -3275,6 +3274,7 @@
             </Detectors>
           </Phase>
           <Phase id="2">
+            <Label />
             <MeteringRateProportion>0.5</MeteringRateProportion>
             <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
             <TotalTimeSec>30</TotalTimeSec>
@@ -3369,14 +3369,13 @@
         <Label>Scenarios 2,4,6,8,10,12,14,16,18,20,22,24</Label>
         <ControlAlgorithm>Pretimed</ControlAlgorithm>
         <GreenIntervalSec>2</GreenIntervalSec>
+        <UpdateIntervalSec>30</UpdateIntervalSec>
         <MeteringRateMinVehPerHour>550</MeteringRateMinVehPerHour>
         <MeteringRateMaxVehPerHour>900</MeteringRateMaxVehPerHour>
-        <OccThreshIntQueueDetStart>35</OccThreshIntQueueDetStart>
-        <OccThreshIntQueueDetEnd>25</OccThreshIntQueueDetEnd>
-        <OccThreshAdvQueueDetStart>30</OccThreshAdvQueueDetStart>
-        <OccThreshAdvQueueDetEnd>25</OccThreshAdvQueueDetEnd>
+        <UseQueueDetection>false</UseQueueDetection>
         <Phases>
           <Phase id="1">
+            <Label />
             <MeteringRateProportion>0.5</MeteringRateProportion>
             <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
             <TotalTimeSec>30</TotalTimeSec>
@@ -3466,6 +3465,7 @@
             </Detectors>
           </Phase>
           <Phase id="2">
+            <Label />
             <MeteringRateProportion>0.5</MeteringRateProportion>
             <MeteringRateVehPerHour>120</MeteringRateVehPerHour>
             <TotalTimeSec>30</TotalTimeSec>

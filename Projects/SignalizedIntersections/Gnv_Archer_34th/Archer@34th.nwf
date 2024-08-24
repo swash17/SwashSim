@@ -2,7 +2,7 @@
 <SwashSim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <NumLinks>36</NumLinks>
   <NumNodes>48</NumNodes>
-  <NumEntryNodes>0</NumEntryNodes>
+  <NumEntryNodes>4</NumEntryNodes>
   <NumVehControlPoints>0</NumVehControlPoints>
   <NumDetectors>0</NumDetectors>
   <Nodes>
@@ -28,10 +28,6 @@
           <float>2.1252143</float>
         </MinEntryHeadwayPerLane>
         <EnteringFleetTypePercentages>
-          <float>60</float>
-          <float>40</float>
-          <float>0</float>
-          <float>0</float>
           <float>50</float>
           <float>40</float>
           <float>5</float>
@@ -48,22 +44,16 @@
           <float>10</float>
           <float>8</float>
           <float>5</float>
-          <float>5</float>
-          <float>8</float>
-          <float>10</float>
-          <float>12</float>
-          <float>15</float>
-          <float>15</float>
-          <float>12</float>
-          <float>10</float>
-          <float>8</float>
-          <float>5</float>
         </EnteringDriverTypePercentages>
         <BiasSlowerVehiclesToRight>true</BiasSlowerVehiclesToRight>
         <ProbabilityOfRandomLaneAssignment>0</ProbabilityOfRandomLaneAssignment>
         <PropColdStartVehicles>0.1</PropColdStartVehicles>
         <CumulativePathOptionsPercentages />
-        <PathNodes />
+        <PathNodes>
+          <ArrayOfUnsignedShort>
+            <unsignedShort>0</unsignedShort>
+          </ArrayOfUnsignedShort>
+        </PathNodes>
       </VehEntryInputs>
       <DownstreamNodeId>1</DownstreamNodeId>
       <DownstreamLinkListIndex>0</DownstreamLinkListIndex>
@@ -214,10 +204,6 @@
           <float>2.1252143</float>
         </MinEntryHeadwayPerLane>
         <EnteringFleetTypePercentages>
-          <float>60</float>
-          <float>40</float>
-          <float>0</float>
-          <float>0</float>
           <float>50</float>
           <float>40</float>
           <float>5</float>
@@ -234,22 +220,16 @@
           <float>10</float>
           <float>8</float>
           <float>5</float>
-          <float>5</float>
-          <float>8</float>
-          <float>10</float>
-          <float>12</float>
-          <float>15</float>
-          <float>15</float>
-          <float>12</float>
-          <float>10</float>
-          <float>8</float>
-          <float>5</float>
         </EnteringDriverTypePercentages>
         <BiasSlowerVehiclesToRight>true</BiasSlowerVehiclesToRight>
         <ProbabilityOfRandomLaneAssignment>0</ProbabilityOfRandomLaneAssignment>
         <PropColdStartVehicles>0.1</PropColdStartVehicles>
         <CumulativePathOptionsPercentages />
-        <PathNodes />
+        <PathNodes>
+          <ArrayOfUnsignedShort>
+            <unsignedShort>0</unsignedShort>
+          </ArrayOfUnsignedShort>
+        </PathNodes>
       </VehEntryInputs>
       <DownstreamNodeId>12</DownstreamNodeId>
       <DownstreamLinkListIndex>0</DownstreamLinkListIndex>
@@ -390,10 +370,6 @@
           <float>2.1252143</float>
         </MinEntryHeadwayPerLane>
         <EnteringFleetTypePercentages>
-          <float>60</float>
-          <float>40</float>
-          <float>0</float>
-          <float>0</float>
           <float>50</float>
           <float>40</float>
           <float>5</float>
@@ -410,22 +386,16 @@
           <float>10</float>
           <float>8</float>
           <float>5</float>
-          <float>5</float>
-          <float>8</float>
-          <float>10</float>
-          <float>12</float>
-          <float>15</float>
-          <float>15</float>
-          <float>12</float>
-          <float>10</float>
-          <float>8</float>
-          <float>5</float>
         </EnteringDriverTypePercentages>
         <BiasSlowerVehiclesToRight>true</BiasSlowerVehiclesToRight>
         <ProbabilityOfRandomLaneAssignment>0</ProbabilityOfRandomLaneAssignment>
         <PropColdStartVehicles>0.1</PropColdStartVehicles>
         <CumulativePathOptionsPercentages />
-        <PathNodes />
+        <PathNodes>
+          <ArrayOfUnsignedShort>
+            <unsignedShort>0</unsignedShort>
+          </ArrayOfUnsignedShort>
+        </PathNodes>
       </VehEntryInputs>
       <DownstreamNodeId>22</DownstreamNodeId>
       <DownstreamLinkListIndex>0</DownstreamLinkListIndex>
@@ -566,10 +536,6 @@
           <float>2.1252143</float>
         </MinEntryHeadwayPerLane>
         <EnteringFleetTypePercentages>
-          <float>60</float>
-          <float>40</float>
-          <float>0</float>
-          <float>0</float>
           <float>50</float>
           <float>40</float>
           <float>5</float>
@@ -586,22 +552,16 @@
           <float>10</float>
           <float>8</float>
           <float>5</float>
-          <float>5</float>
-          <float>8</float>
-          <float>10</float>
-          <float>12</float>
-          <float>15</float>
-          <float>15</float>
-          <float>12</float>
-          <float>10</float>
-          <float>8</float>
-          <float>5</float>
         </EnteringDriverTypePercentages>
         <BiasSlowerVehiclesToRight>true</BiasSlowerVehiclesToRight>
         <ProbabilityOfRandomLaneAssignment>0</ProbabilityOfRandomLaneAssignment>
         <PropColdStartVehicles>0.1</PropColdStartVehicles>
         <CumulativePathOptionsPercentages />
-        <PathNodes />
+        <PathNodes>
+          <ArrayOfUnsignedShort>
+            <unsignedShort>0</unsignedShort>
+          </ArrayOfUnsignedShort>
+        </PathNodes>
       </VehEntryInputs>
       <DownstreamNodeId>32</DownstreamNodeId>
       <DownstreamLinkListIndex>0</DownstreamLinkListIndex>
@@ -713,839 +673,8 @@
   </Nodes>
   <Links>
     <Link>
-      <Id>40804</Id>
-      <TableDisplayIndex>0</TableDisplayIndex>
-      <NodeIdUp>40</NodeIdUp>
-      <NodeIdDown>804</NodeIdDown>
-      <Type>ArterialExit</Type>
-      <CurveType>Linear</CurveType>
-      <TurnDir>Straight</TurnDir>
-      <PassingDesignation>NotAllowed</PassingDesignation>
-      <PassingLaneRule>None</PassingLaneRule>
-      <Length>50.219517</Length>
-      <OrientationAngleDegrees>35.272423</OrientationAngleDegrees>
-      <OrientationAngleRadians>0.6156199</OrientationAngleRadians>
-      <GradePct>0</GradePct>
-      <GradeDegrees>0</GradeDegrees>
-      <GradeNormalComponent>0</GradeNormalComponent>
-      <CurveRadiusFt>0</CurveRadiusFt>
-      <CentralAngleDeg>0</CentralAngleDeg>
-      <SuperElevation>0</SuperElevation>
-      <UsePctTurnsByFleet>false</UsePctTurnsByFleet>
-      <UseLaneSpecificTurnPcts>false</UseLaneSpecificTurnPcts>
-      <PctTurnsAtLinkEnd>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-      </PctTurnsAtLinkEnd>
-      <TurnPctMultiplierByLaneRight>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-      </TurnPctMultiplierByLaneRight>
-      <TurnPctMultiplierByLaneLeft>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-      </TurnPctMultiplierByLaneLeft>
-      <UseODmatrix>false</UseODmatrix>
-      <TurnPctMatrix>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-      </TurnPctMatrix>
-      <PerfMeas>
-        <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
-        <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
-        <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
-        <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
-        <NumberOfFollowers>0</NumberOfFollowers>
-        <PercentFollowers>0</PercentFollowers>
-        <FollowerDensity>0</FollowerDensity>
-        <Platoons />
-      </PerfMeas>
-      <PctLeft>0</PctLeft>
-      <PctThrough>0</PctThrough>
-      <PctRight>0</PctRight>
-      <LeftTurnLaneIdMin>3</LeftTurnLaneIdMin>
-      <RightTurnLaneIdMax>0</RightTurnLaneIdMax>
-      <TotalLanes>3</TotalLanes>
-      <DownstreamLinkIds>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-      </DownstreamLinkIds>
-      <UpstreamLinkIds>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>1940</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-      </UpstreamLinkIds>
-      <BezCurve />
-      <Lanes>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>1</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50.219517</Length>
-          <Width>12</Width>
-          <PositionStartX>659.3239</PositionStartX>
-          <PositionStartY>-417.50754</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>700.3239</PositionEndX>
-          <PositionEndY>-446.50754</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>655.85913</float>
-              <float>-422.40604</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>662.7887</float>
-              <float>-412.60904</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>696.85913</float>
-              <float>-451.40604</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>703.7887</float>
-              <float>-441.60904</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>1</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>2</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50.219517</Length>
-          <Width>12</Width>
-          <PositionStartX>652.39435</PositionStartX>
-          <PositionStartY>-427.3045</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>693.39435</PositionEndX>
-          <PositionEndY>-456.3045</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>648.92957</float>
-              <float>-432.203</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>655.85913</float>
-              <float>-422.406</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>689.92957</float>
-              <float>-461.203</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>696.85913</float>
-              <float>-451.406</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>2</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>3</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50.219517</Length>
-          <Width>12</Width>
-          <PositionStartX>645.4648</PositionStartX>
-          <PositionStartY>-437.1015</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>686.4648</PositionEndX>
-          <PositionEndY>-466.1015</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>642</float>
-              <float>-442</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>648.92957</float>
-              <float>-432.203</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>683</float>
-              <float>-471</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>689.92957</float>
-              <float>-461.203</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>3</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-      </Lanes>
-      <FFSmethod>Measured</FFSmethod>
-      <FreeFlowSpeed>66</FreeFlowSpeed>
-      <CompassDirection>EB</CompassDirection>
-      <XCoordinateStart>642</XCoordinateStart>
-      <XCoordinateEnd>683</XCoordinateEnd>
-      <YCoordinateStart>-442</YCoordinateStart>
-      <YCoordinateEnd>-471</YCoordinateEnd>
-      <XCoordinateControlPoint>0</XCoordinateControlPoint>
-      <YCoordinateControlPoint>0</YCoordinateControlPoint>
-      <LatitudeStart>0</LatitudeStart>
-      <LatitudeEnd>0</LatitudeEnd>
-      <LongitudeStart>0</LongitudeStart>
-      <LongitudeEnd>0</LongitudeEnd>
-    </Link>
-    <Link>
-      <Id>31803</Id>
-      <TableDisplayIndex>1</TableDisplayIndex>
-      <NodeIdUp>31</NodeIdUp>
-      <NodeIdDown>803</NodeIdDown>
-      <Type>ArterialExit</Type>
-      <CurveType>Linear</CurveType>
-      <TurnDir>Straight</TurnDir>
-      <PassingDesignation>NotAllowed</PassingDesignation>
-      <PassingLaneRule>None</PassingLaneRule>
-      <Length>50</Length>
-      <OrientationAngleDegrees>90</OrientationAngleDegrees>
-      <OrientationAngleRadians>1.5707963</OrientationAngleRadians>
-      <GradePct>0</GradePct>
-      <GradeDegrees>0</GradeDegrees>
-      <GradeNormalComponent>0</GradeNormalComponent>
-      <CurveRadiusFt>0</CurveRadiusFt>
-      <CentralAngleDeg>0</CentralAngleDeg>
-      <SuperElevation>0</SuperElevation>
-      <UsePctTurnsByFleet>false</UsePctTurnsByFleet>
-      <UseLaneSpecificTurnPcts>false</UseLaneSpecificTurnPcts>
-      <PctTurnsAtLinkEnd>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-      </PctTurnsAtLinkEnd>
-      <TurnPctMultiplierByLaneRight>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-      </TurnPctMultiplierByLaneRight>
-      <TurnPctMultiplierByLaneLeft>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-      </TurnPctMultiplierByLaneLeft>
-      <UseODmatrix>false</UseODmatrix>
-      <TurnPctMatrix>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-      </TurnPctMatrix>
-      <PerfMeas>
-        <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
-        <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
-        <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
-        <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
-        <NumberOfFollowers>0</NumberOfFollowers>
-        <PercentFollowers>0</PercentFollowers>
-        <FollowerDensity>0</FollowerDensity>
-        <Platoons />
-      </PerfMeas>
-      <PctLeft>0</PctLeft>
-      <PctThrough>0</PctThrough>
-      <PctRight>0</PctRight>
-      <LeftTurnLaneIdMin>3</LeftTurnLaneIdMin>
-      <RightTurnLaneIdMax>0</RightTurnLaneIdMax>
-      <TotalLanes>3</TotalLanes>
-      <DownstreamLinkIds>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-      </DownstreamLinkIds>
-      <UpstreamLinkIds>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>3031</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-      </UpstreamLinkIds>
-      <BezCurve />
-      <Lanes>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>1</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50</Length>
-          <Width>12</Width>
-          <PositionStartX>-45</PositionStartX>
-          <PositionStartY>-501</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>-45</PositionEndX>
-          <PositionEndY>-551</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>-51</float>
-              <float>-501</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-39</float>
-              <float>-501</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-51</float>
-              <float>-551</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-39</float>
-              <float>-551</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>1</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>2</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50</Length>
-          <Width>12</Width>
-          <PositionStartX>-57</PositionStartX>
-          <PositionStartY>-501</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>-57</PositionEndX>
-          <PositionEndY>-551</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>-63</float>
-              <float>-501</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-51</float>
-              <float>-501</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-63</float>
-              <float>-551</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-51</float>
-              <float>-551</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>2</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>3</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50</Length>
-          <Width>12</Width>
-          <PositionStartX>-69</PositionStartX>
-          <PositionStartY>-501</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>-69</PositionEndX>
-          <PositionEndY>-551</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>-75</float>
-              <float>-501</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-63</float>
-              <float>-501</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-75</float>
-              <float>-551</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-63</float>
-              <float>-551</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>3</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-      </Lanes>
-      <FFSmethod>Measured</FFSmethod>
-      <FreeFlowSpeed>66</FreeFlowSpeed>
-      <CompassDirection>EB</CompassDirection>
-      <XCoordinateStart>-75</XCoordinateStart>
-      <XCoordinateEnd>-75</XCoordinateEnd>
-      <YCoordinateStart>-501</YCoordinateStart>
-      <YCoordinateEnd>-551</YCoordinateEnd>
-      <XCoordinateControlPoint>0</XCoordinateControlPoint>
-      <YCoordinateControlPoint>0</YCoordinateControlPoint>
-      <LatitudeStart>0</LatitudeStart>
-      <LatitudeEnd>0</LatitudeEnd>
-      <LongitudeStart>0</LongitudeStart>
-      <LongitudeEnd>0</LongitudeEnd>
-    </Link>
-    <Link>
-      <Id>21802</Id>
-      <TableDisplayIndex>2</TableDisplayIndex>
-      <NodeIdUp>21</NodeIdUp>
-      <NodeIdDown>802</NodeIdDown>
-      <Type>ArterialExit</Type>
-      <CurveType>Linear</CurveType>
-      <TurnDir>Straight</TurnDir>
-      <PassingDesignation>NotAllowed</PassingDesignation>
-      <PassingLaneRule>None</PassingLaneRule>
-      <Length>50</Length>
-      <OrientationAngleDegrees>270</OrientationAngleDegrees>
-      <OrientationAngleRadians>4.712389</OrientationAngleRadians>
-      <GradePct>0</GradePct>
-      <GradeDegrees>0</GradeDegrees>
-      <GradeNormalComponent>0</GradeNormalComponent>
-      <CurveRadiusFt>0</CurveRadiusFt>
-      <CentralAngleDeg>0</CentralAngleDeg>
-      <SuperElevation>0</SuperElevation>
-      <UsePctTurnsByFleet>false</UsePctTurnsByFleet>
-      <UseLaneSpecificTurnPcts>false</UseLaneSpecificTurnPcts>
-      <PctTurnsAtLinkEnd>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>100</float>
-          <float>0</float>
-        </ArrayOfFloat>
-      </PctTurnsAtLinkEnd>
-      <TurnPctMultiplierByLaneRight>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-      </TurnPctMultiplierByLaneRight>
-      <TurnPctMultiplierByLaneLeft>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-        <float>1</float>
-      </TurnPctMultiplierByLaneLeft>
-      <UseODmatrix>false</UseODmatrix>
-      <TurnPctMatrix>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-        <ArrayOfFloat>
-          <float>0</float>
-          <float>0</float>
-          <float>0</float>
-        </ArrayOfFloat>
-      </TurnPctMatrix>
-      <PerfMeas>
-        <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
-        <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
-        <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
-        <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
-        <NumberOfFollowers>0</NumberOfFollowers>
-        <PercentFollowers>0</PercentFollowers>
-        <FollowerDensity>0</FollowerDensity>
-        <Platoons />
-      </PerfMeas>
-      <PctLeft>0</PctLeft>
-      <PctThrough>0</PctThrough>
-      <PctRight>0</PctRight>
-      <LeftTurnLaneIdMin>3</LeftTurnLaneIdMin>
-      <RightTurnLaneIdMax>0</RightTurnLaneIdMax>
-      <TotalLanes>3</TotalLanes>
-      <DownstreamLinkIds>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-      </DownstreamLinkIds>
-      <UpstreamLinkIds>
-        <unsignedInt>0</unsignedInt>
-        <unsignedInt>2021</unsignedInt>
-        <unsignedInt>0</unsignedInt>
-      </UpstreamLinkIds>
-      <BezCurve />
-      <Lanes>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>1</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50</Length>
-          <Width>12</Width>
-          <PositionStartX>-135</PositionStartX>
-          <PositionStartY>740</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>-135</PositionEndX>
-          <PositionEndY>790</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>-129</float>
-              <float>740</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-141</float>
-              <float>740</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-129</float>
-              <float>790</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-141</float>
-              <float>790</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>1</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>2</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50</Length>
-          <Width>12</Width>
-          <PositionStartX>-123</PositionStartX>
-          <PositionStartY>740</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>-123</PositionEndX>
-          <PositionEndY>790</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>-117</float>
-              <float>740</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-129</float>
-              <float>740</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-117</float>
-              <float>790</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-129</float>
-              <float>790</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>2</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-        <LaneData>
-          <Type>Regular</Type>
-          <Id>3</Id>
-          <IdRight>0</IdRight>
-          <IdLeft>0</IdLeft>
-          <LengthPctLink>0</LengthPctLink>
-          <Length>50</Length>
-          <Width>12</Width>
-          <PositionStartX>-111</PositionStartX>
-          <PositionStartY>740</PositionStartY>
-          <PositionStartZ>0</PositionStartZ>
-          <PositionEndX>-111</PositionEndX>
-          <PositionEndY>790</PositionEndY>
-          <PositionEndZ>0</PositionEndZ>
-          <LaneBoundaryCoordinates>
-            <ArrayOfFloat>
-              <float>-105</float>
-              <float>740</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-117</float>
-              <float>740</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-105</float>
-              <float>790</float>
-            </ArrayOfFloat>
-            <ArrayOfFloat>
-              <float>-117</float>
-              <float>790</float>
-            </ArrayOfFloat>
-          </LaneBoundaryCoordinates>
-          <AllowedTurnMovements>
-            <MovementDirectionCode>Through</MovementDirectionCode>
-          </AllowedTurnMovements>
-          <AllowedVehFleetTypes />
-          <ConnectingLaneIdsDownstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsDownstream>
-          <ConnectingLaneIdsUpstream>
-            <unsignedByte>0</unsignedByte>
-            <unsignedByte>3</unsignedByte>
-            <unsignedByte>0</unsignedByte>
-          </ConnectingLaneIdsUpstream>
-          <ControlPoints />
-          <Detectors />
-        </LaneData>
-      </Lanes>
-      <FFSmethod>Measured</FFSmethod>
-      <FreeFlowSpeed>66</FreeFlowSpeed>
-      <CompassDirection>EB</CompassDirection>
-      <XCoordinateStart>-105</XCoordinateStart>
-      <XCoordinateEnd>-105</XCoordinateEnd>
-      <YCoordinateStart>740</YCoordinateStart>
-      <YCoordinateEnd>790</YCoordinateEnd>
-      <XCoordinateControlPoint>0</XCoordinateControlPoint>
-      <YCoordinateControlPoint>0</YCoordinateControlPoint>
-      <LatitudeStart>0</LatitudeStart>
-      <LatitudeEnd>0</LatitudeEnd>
-      <LongitudeStart>0</LongitudeStart>
-      <LongitudeEnd>0</LongitudeEnd>
-    </Link>
-    <Link>
       <Id>11801</Id>
-      <TableDisplayIndex>3</TableDisplayIndex>
+      <TableDisplayIndex>0</TableDisplayIndex>
       <NodeIdUp>11</NodeIdUp>
       <NodeIdDown>801</NodeIdDown>
       <Type>ArterialExit</Type>
@@ -1821,6 +950,837 @@
       <LongitudeEnd>0</LongitudeEnd>
     </Link>
     <Link>
+      <Id>21802</Id>
+      <TableDisplayIndex>1</TableDisplayIndex>
+      <NodeIdUp>21</NodeIdUp>
+      <NodeIdDown>802</NodeIdDown>
+      <Type>ArterialExit</Type>
+      <CurveType>Linear</CurveType>
+      <TurnDir>Straight</TurnDir>
+      <PassingDesignation>NotAllowed</PassingDesignation>
+      <PassingLaneRule>None</PassingLaneRule>
+      <Length>50</Length>
+      <OrientationAngleDegrees>270</OrientationAngleDegrees>
+      <OrientationAngleRadians>4.712389</OrientationAngleRadians>
+      <GradePct>0</GradePct>
+      <GradeDegrees>0</GradeDegrees>
+      <GradeNormalComponent>0</GradeNormalComponent>
+      <CurveRadiusFt>0</CurveRadiusFt>
+      <CentralAngleDeg>0</CentralAngleDeg>
+      <SuperElevation>0</SuperElevation>
+      <UsePctTurnsByFleet>false</UsePctTurnsByFleet>
+      <UseLaneSpecificTurnPcts>false</UseLaneSpecificTurnPcts>
+      <PctTurnsAtLinkEnd>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+      </PctTurnsAtLinkEnd>
+      <TurnPctMultiplierByLaneRight>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+      </TurnPctMultiplierByLaneRight>
+      <TurnPctMultiplierByLaneLeft>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+      </TurnPctMultiplierByLaneLeft>
+      <UseODmatrix>false</UseODmatrix>
+      <TurnPctMatrix>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+      </TurnPctMatrix>
+      <PerfMeas>
+        <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
+        <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
+        <FlowRateVehPerHr>0</FlowRateVehPerHr>
+        <TotalLaneChanges>0</TotalLaneChanges>
+        <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
+        <NumberOfFollowers>0</NumberOfFollowers>
+        <PercentFollowers>0</PercentFollowers>
+        <FollowerDensity>0</FollowerDensity>
+        <Platoons />
+      </PerfMeas>
+      <PctLeft>0</PctLeft>
+      <PctThrough>0</PctThrough>
+      <PctRight>0</PctRight>
+      <LeftTurnLaneIdMin>3</LeftTurnLaneIdMin>
+      <RightTurnLaneIdMax>0</RightTurnLaneIdMax>
+      <TotalLanes>3</TotalLanes>
+      <DownstreamLinkIds>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </DownstreamLinkIds>
+      <UpstreamLinkIds>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>2021</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </UpstreamLinkIds>
+      <BezCurve />
+      <Lanes>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>1</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50</Length>
+          <Width>12</Width>
+          <PositionStartX>-135</PositionStartX>
+          <PositionStartY>740</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>-135</PositionEndX>
+          <PositionEndY>790</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>-129</float>
+              <float>740</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-141</float>
+              <float>740</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-129</float>
+              <float>790</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-141</float>
+              <float>790</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>1</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>2</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50</Length>
+          <Width>12</Width>
+          <PositionStartX>-123</PositionStartX>
+          <PositionStartY>740</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>-123</PositionEndX>
+          <PositionEndY>790</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>-117</float>
+              <float>740</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-129</float>
+              <float>740</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-117</float>
+              <float>790</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-129</float>
+              <float>790</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>2</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>3</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50</Length>
+          <Width>12</Width>
+          <PositionStartX>-111</PositionStartX>
+          <PositionStartY>740</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>-111</PositionEndX>
+          <PositionEndY>790</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>-105</float>
+              <float>740</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-117</float>
+              <float>740</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-105</float>
+              <float>790</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-117</float>
+              <float>790</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>3</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+      </Lanes>
+      <FFSmethod>Measured</FFSmethod>
+      <FreeFlowSpeed>66</FreeFlowSpeed>
+      <CompassDirection>EB</CompassDirection>
+      <XCoordinateStart>-105</XCoordinateStart>
+      <XCoordinateEnd>-105</XCoordinateEnd>
+      <YCoordinateStart>740</YCoordinateStart>
+      <YCoordinateEnd>790</YCoordinateEnd>
+      <XCoordinateControlPoint>0</XCoordinateControlPoint>
+      <YCoordinateControlPoint>0</YCoordinateControlPoint>
+      <LatitudeStart>0</LatitudeStart>
+      <LatitudeEnd>0</LatitudeEnd>
+      <LongitudeStart>0</LongitudeStart>
+      <LongitudeEnd>0</LongitudeEnd>
+    </Link>
+    <Link>
+      <Id>31803</Id>
+      <TableDisplayIndex>2</TableDisplayIndex>
+      <NodeIdUp>31</NodeIdUp>
+      <NodeIdDown>803</NodeIdDown>
+      <Type>ArterialExit</Type>
+      <CurveType>Linear</CurveType>
+      <TurnDir>Straight</TurnDir>
+      <PassingDesignation>NotAllowed</PassingDesignation>
+      <PassingLaneRule>None</PassingLaneRule>
+      <Length>50</Length>
+      <OrientationAngleDegrees>90</OrientationAngleDegrees>
+      <OrientationAngleRadians>1.5707963</OrientationAngleRadians>
+      <GradePct>0</GradePct>
+      <GradeDegrees>0</GradeDegrees>
+      <GradeNormalComponent>0</GradeNormalComponent>
+      <CurveRadiusFt>0</CurveRadiusFt>
+      <CentralAngleDeg>0</CentralAngleDeg>
+      <SuperElevation>0</SuperElevation>
+      <UsePctTurnsByFleet>false</UsePctTurnsByFleet>
+      <UseLaneSpecificTurnPcts>false</UseLaneSpecificTurnPcts>
+      <PctTurnsAtLinkEnd>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+      </PctTurnsAtLinkEnd>
+      <TurnPctMultiplierByLaneRight>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+      </TurnPctMultiplierByLaneRight>
+      <TurnPctMultiplierByLaneLeft>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+      </TurnPctMultiplierByLaneLeft>
+      <UseODmatrix>false</UseODmatrix>
+      <TurnPctMatrix>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+      </TurnPctMatrix>
+      <PerfMeas>
+        <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
+        <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
+        <FlowRateVehPerHr>0</FlowRateVehPerHr>
+        <TotalLaneChanges>0</TotalLaneChanges>
+        <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
+        <NumberOfFollowers>0</NumberOfFollowers>
+        <PercentFollowers>0</PercentFollowers>
+        <FollowerDensity>0</FollowerDensity>
+        <Platoons />
+      </PerfMeas>
+      <PctLeft>0</PctLeft>
+      <PctThrough>0</PctThrough>
+      <PctRight>0</PctRight>
+      <LeftTurnLaneIdMin>3</LeftTurnLaneIdMin>
+      <RightTurnLaneIdMax>0</RightTurnLaneIdMax>
+      <TotalLanes>3</TotalLanes>
+      <DownstreamLinkIds>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </DownstreamLinkIds>
+      <UpstreamLinkIds>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>3031</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </UpstreamLinkIds>
+      <BezCurve />
+      <Lanes>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>1</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50</Length>
+          <Width>12</Width>
+          <PositionStartX>-45</PositionStartX>
+          <PositionStartY>-501</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>-45</PositionEndX>
+          <PositionEndY>-551</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>-51</float>
+              <float>-501</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-39</float>
+              <float>-501</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-51</float>
+              <float>-551</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-39</float>
+              <float>-551</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>1</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>2</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50</Length>
+          <Width>12</Width>
+          <PositionStartX>-57</PositionStartX>
+          <PositionStartY>-501</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>-57</PositionEndX>
+          <PositionEndY>-551</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>-63</float>
+              <float>-501</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-51</float>
+              <float>-501</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-63</float>
+              <float>-551</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-51</float>
+              <float>-551</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>2</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>3</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50</Length>
+          <Width>12</Width>
+          <PositionStartX>-69</PositionStartX>
+          <PositionStartY>-501</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>-69</PositionEndX>
+          <PositionEndY>-551</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>-75</float>
+              <float>-501</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-63</float>
+              <float>-501</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-75</float>
+              <float>-551</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>-63</float>
+              <float>-551</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>3</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+      </Lanes>
+      <FFSmethod>Measured</FFSmethod>
+      <FreeFlowSpeed>66</FreeFlowSpeed>
+      <CompassDirection>EB</CompassDirection>
+      <XCoordinateStart>-75</XCoordinateStart>
+      <XCoordinateEnd>-75</XCoordinateEnd>
+      <YCoordinateStart>-501</YCoordinateStart>
+      <YCoordinateEnd>-551</YCoordinateEnd>
+      <XCoordinateControlPoint>0</XCoordinateControlPoint>
+      <YCoordinateControlPoint>0</YCoordinateControlPoint>
+      <LatitudeStart>0</LatitudeStart>
+      <LatitudeEnd>0</LatitudeEnd>
+      <LongitudeStart>0</LongitudeStart>
+      <LongitudeEnd>0</LongitudeEnd>
+    </Link>
+    <Link>
+      <Id>40804</Id>
+      <TableDisplayIndex>3</TableDisplayIndex>
+      <NodeIdUp>40</NodeIdUp>
+      <NodeIdDown>804</NodeIdDown>
+      <Type>ArterialExit</Type>
+      <CurveType>Linear</CurveType>
+      <TurnDir>Straight</TurnDir>
+      <PassingDesignation>NotAllowed</PassingDesignation>
+      <PassingLaneRule>None</PassingLaneRule>
+      <Length>50.219517</Length>
+      <OrientationAngleDegrees>35.272423</OrientationAngleDegrees>
+      <OrientationAngleRadians>0.6156199</OrientationAngleRadians>
+      <GradePct>0</GradePct>
+      <GradeDegrees>0</GradeDegrees>
+      <GradeNormalComponent>0</GradeNormalComponent>
+      <CurveRadiusFt>0</CurveRadiusFt>
+      <CentralAngleDeg>0</CentralAngleDeg>
+      <SuperElevation>0</SuperElevation>
+      <UsePctTurnsByFleet>false</UsePctTurnsByFleet>
+      <UseLaneSpecificTurnPcts>false</UseLaneSpecificTurnPcts>
+      <PctTurnsAtLinkEnd>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>100</float>
+          <float>0</float>
+        </ArrayOfFloat>
+      </PctTurnsAtLinkEnd>
+      <TurnPctMultiplierByLaneRight>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+      </TurnPctMultiplierByLaneRight>
+      <TurnPctMultiplierByLaneLeft>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+        <float>1</float>
+      </TurnPctMultiplierByLaneLeft>
+      <UseODmatrix>false</UseODmatrix>
+      <TurnPctMatrix>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+        <ArrayOfFloat>
+          <float>0</float>
+          <float>0</float>
+          <float>0</float>
+        </ArrayOfFloat>
+      </TurnPctMatrix>
+      <PerfMeas>
+        <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
+        <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
+        <FlowRateVehPerHr>0</FlowRateVehPerHr>
+        <TotalLaneChanges>0</TotalLaneChanges>
+        <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
+        <NumberOfFollowers>0</NumberOfFollowers>
+        <PercentFollowers>0</PercentFollowers>
+        <FollowerDensity>0</FollowerDensity>
+        <Platoons />
+      </PerfMeas>
+      <PctLeft>0</PctLeft>
+      <PctThrough>0</PctThrough>
+      <PctRight>0</PctRight>
+      <LeftTurnLaneIdMin>3</LeftTurnLaneIdMin>
+      <RightTurnLaneIdMax>0</RightTurnLaneIdMax>
+      <TotalLanes>3</TotalLanes>
+      <DownstreamLinkIds>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </DownstreamLinkIds>
+      <UpstreamLinkIds>
+        <unsignedInt>0</unsignedInt>
+        <unsignedInt>1940</unsignedInt>
+        <unsignedInt>0</unsignedInt>
+      </UpstreamLinkIds>
+      <BezCurve />
+      <Lanes>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>1</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50.219517</Length>
+          <Width>12</Width>
+          <PositionStartX>659.3239</PositionStartX>
+          <PositionStartY>-417.50754</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>700.3239</PositionEndX>
+          <PositionEndY>-446.50754</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>655.85913</float>
+              <float>-422.40604</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>662.7887</float>
+              <float>-412.60904</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>696.85913</float>
+              <float>-451.40604</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>703.7887</float>
+              <float>-441.60904</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>1</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>2</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50.219517</Length>
+          <Width>12</Width>
+          <PositionStartX>652.39435</PositionStartX>
+          <PositionStartY>-427.3045</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>693.39435</PositionEndX>
+          <PositionEndY>-456.3045</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>648.92957</float>
+              <float>-432.203</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>655.85913</float>
+              <float>-422.406</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>689.92957</float>
+              <float>-461.203</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>696.85913</float>
+              <float>-451.406</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>2</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+        <LaneData>
+          <Type>Regular</Type>
+          <Id>3</Id>
+          <IdRight>0</IdRight>
+          <IdLeft>0</IdLeft>
+          <LengthPctLink>0</LengthPctLink>
+          <Length>50.219517</Length>
+          <Width>12</Width>
+          <PositionStartX>645.4648</PositionStartX>
+          <PositionStartY>-437.1015</PositionStartY>
+          <PositionStartZ>0</PositionStartZ>
+          <PositionEndX>686.4648</PositionEndX>
+          <PositionEndY>-466.1015</PositionEndY>
+          <PositionEndZ>0</PositionEndZ>
+          <LaneBoundaryCoordinates>
+            <ArrayOfFloat>
+              <float>642</float>
+              <float>-442</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>648.92957</float>
+              <float>-432.203</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>683</float>
+              <float>-471</float>
+            </ArrayOfFloat>
+            <ArrayOfFloat>
+              <float>689.92957</float>
+              <float>-461.203</float>
+            </ArrayOfFloat>
+          </LaneBoundaryCoordinates>
+          <AllowedTurnMovements>
+            <MovementDirectionCode>Through</MovementDirectionCode>
+          </AllowedTurnMovements>
+          <AllowedVehFleetTypes />
+          <ConnectingLaneIdsDownstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsDownstream>
+          <ConnectingLaneIdsUpstream>
+            <unsignedByte>0</unsignedByte>
+            <unsignedByte>3</unsignedByte>
+            <unsignedByte>0</unsignedByte>
+          </ConnectingLaneIdsUpstream>
+          <ControlPoints />
+          <Detectors />
+        </LaneData>
+      </Lanes>
+      <FFSmethod>Measured</FFSmethod>
+      <FreeFlowSpeed>66</FreeFlowSpeed>
+      <CompassDirection>EB</CompassDirection>
+      <XCoordinateStart>642</XCoordinateStart>
+      <XCoordinateEnd>683</XCoordinateEnd>
+      <YCoordinateStart>-442</YCoordinateStart>
+      <YCoordinateEnd>-471</YCoordinateEnd>
+      <XCoordinateControlPoint>0</XCoordinateControlPoint>
+      <YCoordinateControlPoint>0</YCoordinateControlPoint>
+      <LatitudeStart>0</LatitudeStart>
+      <LatitudeEnd>0</LatitudeEnd>
+      <LongitudeStart>0</LongitudeStart>
+      <LongitudeEnd>0</LongitudeEnd>
+    </Link>
+    <Link>
       <Id>2021</Id>
       <TableDisplayIndex>4</TableDisplayIndex>
       <NodeIdUp>20</NodeIdUp>
@@ -1910,7 +1870,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>7</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -2187,7 +2147,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>2</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -2464,7 +2424,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>11</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -3021,7 +2981,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>31</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -3298,7 +3258,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>8</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -3575,7 +3535,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>41</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -3653,7 +3613,7 @@
               <Control>Signalized</Control>
               <LinkId>46</LinkId>
               <LaneId>1</LaneId>
-              <DisplayIndication>Green</DisplayIndication>
+              <DisplayIndication>Red</DisplayIndication>
               <PositionLaneFeet>59.812344</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -3721,7 +3681,7 @@
               <Control>Signalized</Control>
               <LinkId>46</LinkId>
               <LaneId>2</LaneId>
-              <DisplayIndication>Green</DisplayIndication>
+              <DisplayIndication>Red</DisplayIndication>
               <PositionLaneFeet>59.812344</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -3789,7 +3749,7 @@
               <Control>Signalized</Control>
               <LinkId>46</LinkId>
               <LaneId>3</LaneId>
-              <DisplayIndication>Green</DisplayIndication>
+              <DisplayIndication>Red</DisplayIndication>
               <PositionLaneFeet>59.812344</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -4045,7 +4005,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>5</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -4729,7 +4689,7 @@
               <Control>Signalized</Control>
               <LinkId>58</LinkId>
               <LaneId>1</LaneId>
-              <DisplayIndication>Green</DisplayIndication>
+              <DisplayIndication>Red</DisplayIndication>
               <PositionLaneFeet>70.63637</PositionLaneFeet>
               <PositionLanePct>67</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -4849,7 +4809,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>125</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -5225,7 +5185,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>60</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -6010,7 +5970,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>7</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -6287,7 +6247,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>22</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -7121,7 +7081,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>92</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -7200,7 +7160,7 @@
               <Control>Signalized</Control>
               <LinkId>1415</LinkId>
               <LaneId>1</LaneId>
-              <DisplayIndication>Red</DisplayIndication>
+              <DisplayIndication>Green</DisplayIndication>
               <PositionLaneFeet>254.8</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -7268,7 +7228,7 @@
               <Control>Signalized</Control>
               <LinkId>1415</LinkId>
               <LaneId>2</LaneId>
-              <DisplayIndication>Red</DisplayIndication>
+              <DisplayIndication>Green</DisplayIndication>
               <PositionLaneFeet>254.8</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -7336,7 +7296,7 @@
               <Control>Signalized</Control>
               <LinkId>1415</LinkId>
               <LaneId>3</LaneId>
-              <DisplayIndication>Red</DisplayIndication>
+              <DisplayIndication>Green</DisplayIndication>
               <PositionLaneFeet>254.8</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -7592,7 +7552,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>16</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -8934,7 +8894,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>1</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -9211,7 +9171,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>13</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -9488,7 +9448,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>91</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -9567,7 +9527,7 @@
               <Control>Signalized</Control>
               <LinkId>2425</LinkId>
               <LaneId>1</LaneId>
-              <DisplayIndication>Red</DisplayIndication>
+              <DisplayIndication>Green</DisplayIndication>
               <PositionLaneFeet>401.80002</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -9635,7 +9595,7 @@
               <Control>Signalized</Control>
               <LinkId>2425</LinkId>
               <LaneId>2</LaneId>
-              <DisplayIndication>Red</DisplayIndication>
+              <DisplayIndication>Green</DisplayIndication>
               <PositionLaneFeet>401.80002</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -9703,7 +9663,7 @@
               <Control>Signalized</Control>
               <LinkId>2425</LinkId>
               <LaneId>3</LaneId>
-              <DisplayIndication>Red</DisplayIndication>
+              <DisplayIndication>Green</DisplayIndication>
               <PositionLaneFeet>401.80002</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -9959,7 +9919,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>22</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -10643,7 +10603,7 @@
               <Control>Signalized</Control>
               <LinkId>3639</LinkId>
               <LaneId>1</LaneId>
-              <DisplayIndication>Green</DisplayIndication>
+              <DisplayIndication>Red</DisplayIndication>
               <PositionLaneFeet>53.88071</PositionLaneFeet>
               <PositionLanePct>67</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -11320,7 +11280,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>5</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -11597,7 +11557,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>11</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -11675,7 +11635,7 @@
               <Control>Signalized</Control>
               <LinkId>3537</LinkId>
               <LaneId>1</LaneId>
-              <DisplayIndication>Green</DisplayIndication>
+              <DisplayIndication>Red</DisplayIndication>
               <PositionLaneFeet>38.05632</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -11743,7 +11703,7 @@
               <Control>Signalized</Control>
               <LinkId>3537</LinkId>
               <LaneId>2</LaneId>
-              <DisplayIndication>Green</DisplayIndication>
+              <DisplayIndication>Red</DisplayIndication>
               <PositionLaneFeet>38.05632</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -11811,7 +11771,7 @@
               <Control>Signalized</Control>
               <LinkId>3537</LinkId>
               <LaneId>3</LaneId>
-              <DisplayIndication>Green</DisplayIndication>
+              <DisplayIndication>Red</DisplayIndication>
               <PositionLaneFeet>38.05632</PositionLaneFeet>
               <PositionLanePct>98</PositionLanePct>
               <ControllerId>1</ControllerId>
@@ -12067,7 +12027,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>103</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -12443,7 +12403,7 @@
         <AverageSpeedFtPerSec>0</AverageSpeedFtPerSec>
         <AverageSpeedMiPerHr>0</AverageSpeedMiPerHr>
         <FlowRateVehPerHr>0</FlowRateVehPerHr>
-        <TotalLaneChanges>0</TotalLaneChanges>
+        <TotalLaneChanges>30</TotalLaneChanges>
         <FollowerHeadwayThresholdSeconds>2.5</FollowerHeadwayThresholdSeconds>
         <NumberOfFollowers>0</NumberOfFollowers>
         <PercentFollowers>0</PercentFollowers>
@@ -13741,7 +13701,14 @@
   </Links>
   <VehEntryData />
   <LinkIndexesWithDetectors />
-  <LinkIndexesWithControlPoints />
+  <LinkIndexesWithControlPoints>
+    <int>9</int>
+    <int>11</int>
+    <int>18</int>
+    <int>24</int>
+    <int>26</int>
+    <int>29</int>
+  </LinkIndexesWithControlPoints>
   <DiagnosticsText>
     <Capacity>16</Capacity>
     <Length>0</Length>

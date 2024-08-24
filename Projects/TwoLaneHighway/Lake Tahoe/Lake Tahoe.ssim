@@ -1,53 +1,435 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SwashSim ProjectType="TwoLaneHighway">
-  <Project>
-    <FileName>Lake Tahoe.ssim</FileName>
-    <FacilityName />
-    <FileNameNetwork>Lake Tahoe.nwf</FileNameNetwork>
-    <FileNameDriverParms>DataFiles_ModelParms\DriverParms.xml</FileNameDriverParms>
-    <FileNameLaneChangeParms>DataFiles_ModelParms\LaneChangeParameters.xml</FileNameLaneChangeParms>
-    <FileNameVehicleMoveParms>DataFiles_ModelParms\VehicleMovementParms.xml</FileNameVehicleMoveParms>
-    <FileNameCarFollowModelParms>DataFiles_ModelParms\CarFollowModelParms.xml</FileNameCarFollowModelParms>
-    <FileNameVehicleBase>DataFiles_Vehicles\VehiclesBase.xml</FileNameVehicleBase>
-    <FileNameVehicleDimensions>DataFiles_Vehicles\VehiclesDimensions.xml</FileNameVehicleDimensions>
-    <FileNameVehicleEngines>DataFiles_Vehicles\Engines.xml</FileNameVehicleEngines>
-    <FileNameVehicleTransmissions>DataFiles_Vehicles\Transmissions.xml</FileNameVehicleTransmissions>
+<?xml version="1.0" encoding="utf-8"?>
+<SwashSim_Project Type="TwoLaneHighway">
+  <FileName>Lake Tahoe.ssim</FileName>
+  <FacilityName />
+  <FacilityStart />
+  <FacilityEnd />
+  <Location />
+  <AnalysisDir />
+  <AnalysisPeriod />
+  <AnalysisDate>2024-04-02T16:00:00</AnalysisDate>
+  <AnalystName />
+  <Agency />
+  <UserNotes />
+  <TotalTimePeriods>0</TotalTimePeriods>
+  <ActiveTimePeriod>0</ActiveTimePeriod>
+  <TimePeriodDurationMinutes>0</TimePeriodDurationMinutes>
+  <RouteChoiceMethod>Random</RouteChoiceMethod>
+  <DataFilePaths>
+    <VehiclesFolder>Vehicles\</VehiclesFolder>
+    <NetworkData>Lake Tahoe.nwf</NetworkData>
     <OutputDataFolder />
-    <RouteAssignmentMethod>Random</RouteAssignmentMethod>
-    <IncludeTruckPlatooning>false</IncludeTruckPlatooning>
-    <Location />
-    <FacilityStart />
-    <FacilityEnd />
-    <AnalysisDirection />
-    <AnalysisPeriod />
-    <Analyst />
-    <Date>4/2/2024 4:00:00 PM</Date>
-    <Agency />
-    <Comment />
-    <Program>SwashSim</Program>
-  </Project>
-  <SimulationSettings>
-    <WarmupTimeSeconds>600</WarmupTimeSeconds>
-    <DurationSeconds>900</DurationSeconds>
+  </DataFilePaths>
+  <SimSettings>
+    <RunType>SingleRun</RunType>
+    <WarmupTime>600</WarmupTime>
+    <Duration>900</Duration>
     <NumReplications>0</NumReplications>
+    <NumTimeSteps>0</NumTimeSteps>
     <DetectorAggregationIntervalSeconds>30</DetectorAggregationIntervalSeconds>
-    <RandSeed1>5949</RandSeed1>
-    <RandSeed2>9274</RandSeed2>
-    <RandSeed3>22</RandSeed3>
-    <RandSeed4>3573</RandSeed4>
+    <TimeStep>0.1</TimeStep>
+    <RandSeeds>
+      <int>5949</int>
+      <int>9274</int>
+      <int>22</int>
+      <int>3573</int>
+    </RandSeeds>
+    <VehNetworkLocationEnabled>true</VehNetworkLocationEnabled>
+    <VehSizesWeightsEnabled>true</VehSizesWeightsEnabled>
+    <VehEnginePropertiesEnabled>true</VehEnginePropertiesEnabled>
+    <VehTransmissionPropertiesEnabled>true</VehTransmissionPropertiesEnabled>
+    <EmissionsEnabled>false</EmissionsEnabled>
+    <ObdEnabled>false</ObdEnabled>
     <CheckTruckPercentages>false</CheckTruckPercentages>
-    <MaxTruckPctErrorValue>0.0</MaxTruckPctErrorValue>
-    <MaxTruckPctErrorProp>0.0</MaxTruckPctErrorProp>
-    <DetectorSummaryOutput>false</DetectorSummaryOutput>
-    <DetectorActuationOutput>false</DetectorActuationOutput>
-    <VehicleRouteDataOutput>false</VehicleRouteDataOutput>
-    <HeadwayDataOutput>false</HeadwayDataOutput>
-    <LaneChangeDataOutput>false</LaneChangeDataOutput>
-    <PlatoonDataOutput>false</PlatoonDataOutput>
-    <RampMeteringData>false</RampMeteringData>
-    <SignalTSDOutput>false</SignalTSDOutput>
-    <LinkPerformanceData>false</LinkPerformanceData>
-    <QueueDataOutput>false</QueueDataOutput>
-    <VehicleTSDOutput>false</VehicleTSDOutput>
-  </SimulationSettings>
-</SwashSim>
+    <MaxTruckPctErrorValue>0</MaxTruckPctErrorValue>
+    <MaxTruckPctErrorProp>0</MaxTruckPctErrorProp>
+    <Output>
+      <VehTimeStepData>false</VehTimeStepData>
+      <VehRouteData>false</VehRouteData>
+      <SignalTimeStepData>false</SignalTimeStepData>
+      <LinkPerformanceData>false</LinkPerformanceData>
+      <DetectorSummaryData>false</DetectorSummaryData>
+      <DetectorActuationData>false</DetectorActuationData>
+      <LaneChangeData>false</LaneChangeData>
+      <PlatoonData>false</PlatoonData>
+      <HeadwayData>false</HeadwayData>
+      <LinkQueueData>false</LinkQueueData>
+      <EmissionsFuelData>false</EmissionsFuelData>
+      <RampMeteringData>false</RampMeteringData>
+      <TsdOutputLinkIDs />
+      <QueueOutputLinkIDs />
+      <LinkResultsLinkIDs />
+    </Output>
+  </SimSettings>
+  <Drivers>
+    <DriverType ID="1">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>5</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>0.91</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>0.875</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>0.95</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>3.5</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-9.5</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="2">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>8</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>0.93</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>0.9</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>0.96</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>3.6</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-9.599999</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="3">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>10</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>0.95</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>0.925</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>0.97</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>3.7</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-9.700001</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="4">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>12</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>0.97</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>0.95</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>0.98</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>3.8</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-9.8</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="5">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>15</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>1</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>0.975</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>0.99</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>3.9</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-9.9</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="6">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>15</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>1.025</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>1</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>1</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>4</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-10</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="7">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>12</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>1.05</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>1.05</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>1.01</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>4.2</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-10.1</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="8">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>10</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>1.075</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>1.075</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>1.02</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>4.3</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-10.2</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="9">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>8</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>1.1</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>1.1</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>1.03</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>4.4</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-10.299999</DesiredDecelFtPerSec>
+    </DriverType>
+    <DriverType ID="10">
+      <Label>Human Driver</Label>
+      <PctInTrafficStream>5</PctInTrafficStream>
+      <Parameters>
+        <DesiredSpeedMultiplier>1.12</DesiredSpeedMultiplier>
+        <DesiredAccelMultiplier>1.125</DesiredAccelMultiplier>
+        <DesiredDecelMultiplier>1.04</DesiredDecelMultiplier>
+        <DesiredHeadwayMultiplier>1</DesiredHeadwayMultiplier>
+        <DesiredMaxVelocityFtPerSec>150</DesiredMaxVelocityFtPerSec>
+        <DesiredVelocityDeviationPct>2</DesiredVelocityDeviationPct>
+      </Parameters>
+      <DesiredAccelFtPerSec>4.5</DesiredAccelFtPerSec>
+      <DesiredDecelFtPerSec>-10.4</DesiredDecelFtPerSec>
+    </DriverType>
+  </Drivers>
+  <IncludedFleetTypes>
+    <FleetType ID="SmallAuto">
+      <Description>Small Automobile</Description>
+      <DesiredSpeedProportion>1</DesiredSpeedProportion>
+      <MaxDecel>-19</MaxDecel>
+      <DriverType>HumanDriver</DriverType>
+      <MinDriverType>1</MinDriverType>
+      <MaxDriverType>10</MaxDriverType>
+      <AnimationColor>Purple</AnimationColor>
+      <IncludedVehicles>
+        <VehicleModel ID="1" Name="Buick Century 1998" />
+        <VehicleModel ID="2" Name="Chevy Impala 2008" />
+        <VehicleModel ID="3" Name="Dodge Challenger SXT 2017" />
+        <VehicleModel ID="4" Name="Ford Mustang 1998" />
+        <VehicleModel ID="5" Name="Honda Civic 2009" />
+        <VehicleModel ID="6" Name="Honda Civic Si 2006" />
+        <VehicleModel ID="7" Name="Jeep Patriot 2012" />
+        <VehicleModel ID="8" Name="Mazda 3 Sedan 2019" />
+        <VehicleModel ID="9" Name="Mazda 6 2005" />
+        <VehicleModel ID="10" Name="Mini Cooper 3 2021" />
+        <VehicleModel ID="11" Name="Nissan Versa Hatch 2010" />
+        <VehicleModel ID="12" Name="Pontiac Grand Am 2004" />
+        <VehicleModel ID="13" Name="Porsche 911 Speedster 2019" />
+      </IncludedVehicles>
+    </FleetType>
+    <FleetType ID="LargeAuto">
+      <Description>Large Automobile</Description>
+      <DesiredSpeedProportion>1</DesiredSpeedProportion>
+      <MaxDecel>-19</MaxDecel>
+      <DriverType>HumanDriver</DriverType>
+      <MinDriverType>1</MinDriverType>
+      <MaxDriverType>10</MaxDriverType>
+      <AnimationColor>Red</AnimationColor>
+      <IncludedVehicles>
+        <VehicleModel ID="14" Name="Chevy S10 Blazer 1998" />
+        <VehicleModel ID="15" Name="Chevy Silverado 2002" />
+        <VehicleModel ID="16" Name="Chevy Tahoe 2004" />
+        <VehicleModel ID="17" Name="Ford F150 2011" />
+      </IncludedVehicles>
+    </FleetType>
+    <FleetType ID="SmallTruck">
+      <Description>Small Truck</Description>
+      <DesiredSpeedProportion>0.98</DesiredSpeedProportion>
+      <MaxDecel>-19</MaxDecel>
+      <DriverType>HumanDriver</DriverType>
+      <MinDriverType>3</MinDriverType>
+      <MaxDriverType>8</MaxDriverType>
+      <AnimationColor>Yellow</AnimationColor>
+      <IncludedVehicles>
+        <VehicleModel ID="18" Name="Single-Unit Truck" />
+      </IncludedVehicles>
+    </FleetType>
+    <FleetType ID="LargeTruck">
+      <Description>Large Truck</Description>
+      <DesiredSpeedProportion>0.95</DesiredSpeedProportion>
+      <MaxDecel>-19</MaxDecel>
+      <DriverType>HumanDriver</DriverType>
+      <MinDriverType>3</MinDriverType>
+      <MaxDriverType>8</MaxDriverType>
+      <AnimationColor>Lime</AnimationColor>
+      <IncludedVehicles>
+        <VehicleModel ID="19" Name="Intermediate Semi-Trailer Truck" />
+        <VehicleModel ID="20" Name="Interstate Semi-Trailer Truck" />
+        <VehicleModel ID="21" Name="Double Semi-Trailer Truck" />
+      </IncludedVehicles>
+    </FleetType>
+  </IncludedFleetTypes>
+  <CarFollowModelParms>
+    <CarFollowModel>ModifiedPitt</CarFollowModel>
+    <FollowerStatusBaseHeadwayThresholdSec>2.5</FollowerStatusBaseHeadwayThresholdSec>
+    <MinDistanceFollowerStatusFt>110</MinDistanceFollowerStatusFt>
+    <ModPittParms>
+      <KFactorSteadyFlow>0.75</KFactorSteadyFlow>
+      <KFactorQueueFlow>1.1</KFactorQueueFlow>
+      <StopGapFt>
+        <float>8</float>
+        <float>8</float>
+        <float>13</float>
+        <float>18</float>
+      </StopGapFt>
+    </ModPittParms>
+  </CarFollowModelParms>
+  <VehMovementParms>
+    <AccelDesired>4</AccelDesired>
+    <AccelEmergency>8</AccelEmergency>
+    <DecelMin>-5</DecelMin>
+    <DecelNormal>-10</DecelNormal>
+    <DecelEmergency>-19</DecelEmergency>
+  </VehMovementParms>
+  <LaneChangeParms>
+    <Discretionary>
+      <ImpedanceBuffer>3</ImpedanceBuffer>
+      <GapAcceptanceParameter>3</GapAcceptanceParameter>
+      <DriverTypeFactor>25</DriverTypeFactor>
+      <SafetyFactor>0.8</SafetyFactor>
+      <UrgencyThreshold>0.2</UrgencyThreshold>
+      <IntolerableSpeedMultiplier>0.8</IntolerableSpeedMultiplier>
+    </Discretionary>
+    <Mandatory>
+      <AccelMergeMinFtPerSec>2</AccelMergeMinFtPerSec>
+      <AccelMergeMedFtPerSec>5</AccelMergeMedFtPerSec>
+      <AccelMergeMaxFtPerSec>8</AccelMergeMaxFtPerSec>
+      <DecelMergeMinFtPerSec>-4</DecelMergeMinFtPerSec>
+      <DecelMergeMedFtPerSec>-8</DecelMergeMedFtPerSec>
+      <DecelMergeMaxFtPerSec>-12</DecelMergeMaxFtPerSec>
+      <AccelMergeCooperationMinFtPerSec>2</AccelMergeCooperationMinFtPerSec>
+      <AccelMergeCooperationMaxFtPerSec>5</AccelMergeCooperationMaxFtPerSec>
+      <DecelMergeCooperationMinFtPerSec>-5</DecelMergeCooperationMinFtPerSec>
+      <DecelMergeCooperationMaxFtPerSec>-10</DecelMergeCooperationMaxFtPerSec>
+      <MaximumSpeedReductionForMergeFtPerSec>44</MaximumSpeedReductionForMergeFtPerSec>
+      <MaximumSpeedReductionForMergeCooperationFtPerSec>29.333</MaximumSpeedReductionForMergeCooperationFtPerSec>
+    </Mandatory>
+    <TwoLanePassing>
+      <PassingLane>
+        <AccelInitial>3</AccelInitial>
+        <AccelExpedite>5</AccelExpedite>
+        <DecelAbort>-5</DecelAbort>
+        <RemainingTravelTimeThresholdForCourtesyLaneChange>12.5</RemainingTravelTimeThresholdForCourtesyLaneChange>
+        <MinRemainingTravelTimeThresholdForMandatoryLaneChange>6</MinRemainingTravelTimeThresholdForMandatoryLaneChange>
+        <MaxRemainingTravelTimeThresholdForMandatoryLaneChange>12.5</MaxRemainingTravelTimeThresholdForMandatoryLaneChange>
+        <SpeedDiffBetweenPassingAndPassedVeh>11.733334</SpeedDiffBetweenPassingAndPassedVeh>
+        <MinimumPassingSpeed>0</MinimumPassingSpeed>
+        <MinClearanceHeadwayWithEndOfPassingLane>2</MinClearanceHeadwayWithEndOfPassingLane>
+        <FollowerHeadwayThreshold>3</FollowerHeadwayThreshold>
+        <MaxIncreaseInLinkFreeFlowSpeedForWillingnessToMoveOver>7.3333335</MaxIncreaseInLinkFreeFlowSpeedForWillingnessToMoveOver>
+        <MaxDecreaseInLinkFreeFlowSpeedForWillingnessToMoveOver>7.3333335</MaxDecreaseInLinkFreeFlowSpeedForWillingnessToMoveOver>
+        <ProportionOfDriverTypesConsideredSlowerDrivers>0.7</ProportionOfDriverTypesConsideredSlowerDrivers>
+      </PassingLane>
+      <OncomingLanePassingManueverValues>
+        <IsCustomInitialAccelUsed>true</IsCustomInitialAccelUsed>
+        <AccelOfPassingVehDuringInitialManeuverCustom>3</AccelOfPassingVehDuringInitialManeuverCustom>
+        <DecelPassingOncomingAbortMin>-5</DecelPassingOncomingAbortMin>
+        <DecelPassingOncomingAbortMed>-10</DecelPassingOncomingAbortMed>
+        <DecelPassingOncomingAbortMax>-19</DecelPassingOncomingAbortMax>
+        <AccelPassingOncomingExpediteMin>2</AccelPassingOncomingExpediteMin>
+        <AccelPassingOncomingExpediteMed>5</AccelPassingOncomingExpediteMed>
+        <AccelPassingOncomingExpediteMax>8</AccelPassingOncomingExpediteMax>
+        <DecelCooperationOncomingVehicleMin>-2</DecelCooperationOncomingVehicleMin>
+        <DecelCooperationOncomingVehicleMed>-6</DecelCooperationOncomingVehicleMed>
+        <DecelCooperationOncomingVehicleMax>-10</DecelCooperationOncomingVehicleMax>
+        <DecelMergeCooperationPassingOncomingMin>-5</DecelMergeCooperationPassingOncomingMin>
+        <DecelMergeCooperationPassingOncomingMax>-10</DecelMergeCooperationPassingOncomingMax>
+        <TimeToCollisionThresholdForPassingOncomingAbortMinAndMed>6</TimeToCollisionThresholdForPassingOncomingAbortMinAndMed>
+        <TimeToCollisionThresholdForPassingOncomingAbortMedAndMax>4</TimeToCollisionThresholdForPassingOncomingAbortMedAndMax>
+        <TimeToCollisionThresholdForPassingOncomingExpediteMinAndMed>8</TimeToCollisionThresholdForPassingOncomingExpediteMinAndMed>
+        <TimeToCollisionThresholdForPassingOncomingExpediteMedAndMax>6</TimeToCollisionThresholdForPassingOncomingExpediteMedAndMax>
+        <TimeToCollisionThresholdForCooperationOncomingVehicleMin>6</TimeToCollisionThresholdForCooperationOncomingVehicleMin>
+        <TimeToCollisionThresholdForCooperationOncomingVehicleMed>4</TimeToCollisionThresholdForCooperationOncomingVehicleMed>
+        <TimeToCollisionThresholdForCooperationOncomingVehicleMax>2</TimeToCollisionThresholdForCooperationOncomingVehicleMax>
+        <MaxSpeedReductionForPassingOncomingAbort>58.666668</MaxSpeedReductionForPassingOncomingAbort>
+        <MaxSpeedReductionForMergeCooperationPassingOncoming>29.333334</MaxSpeedReductionForMergeCooperationPassingOncoming>
+        <MaxSpeedReductionForCooperationOncomingVehicle>29.333334</MaxSpeedReductionForCooperationOncomingVehicle>
+      </OncomingLanePassingManueverValues>
+      <OncomingLaneDeterminationToPassValues>
+        <ImpatienceValue>0.001</ImpatienceValue>
+        <AdjustedDesireToPassThreshold>0.25</AdjustedDesireToPassThreshold>
+        <MaxSpeedDiffBetweenLeadAndPassingVehBeforePass>7.333</MaxSpeedDiffBetweenLeadAndPassingVehBeforePass>
+        <MaxNumberOfPassengerCarsThatCanBePassedAtOnce>3</MaxNumberOfPassengerCarsThatCanBePassedAtOnce>
+        <NumberOfSecondsToLookForRecentPassByALeader>10</NumberOfSecondsToLookForRecentPassByALeader>
+        <SpeedDiffBetweenPassingAndPassedVeh>17.6</SpeedDiffBetweenPassingAndPassedVeh>
+        <DesiredTimeSpacingWithLeaderBeforePass>0.5</DesiredTimeSpacingWithLeaderBeforePass>
+        <DesiredTimeSpacingWithLeaderAfterPass>1.2</DesiredTimeSpacingWithLeaderAfterPass>
+        <ClearanceHeadwayWithPassedVeh>1</ClearanceHeadwayWithPassedVeh>
+        <TimeSpacingForClearanceGapWithPassedVeh>0.8</TimeSpacingForClearanceGapWithPassedVeh>
+        <MinClearanceHeadwayWithOpposingVeh>1</MinClearanceHeadwayWithOpposingVeh>
+        <IllegalPassingDistanceMin>50</IllegalPassingDistanceMin>
+        <IllegalPassingDistanceMax>500</IllegalPassingDistanceMax>
+        <DistancePassingVehCanInitiatePassBeforePassingZone>175</DistancePassingVehCanInitiatePassBeforePassingZone>
+        <PceOfSingleUnitTruckForMaxNumOfPassengerCarsThatCanBePassed>1.5</PceOfSingleUnitTruckForMaxNumOfPassengerCarsThatCanBePassed>
+        <PceOfSingleTractorTrailerTruckForMaxNumOfPassengerCarsThatCanBePassed>2</PceOfSingleTractorTrailerTruckForMaxNumOfPassengerCarsThatCanBePassed>
+        <PceOfDoubleTractorTrailerTruckForMaxNumOfPassengerCarsThatCanBePassed>3</PceOfDoubleTractorTrailerTruckForMaxNumOfPassengerCarsThatCanBePassed>
+        <MaxNumberOfPassingVehsAhead>2</MaxNumberOfPassingVehsAhead>
+        <MaxNumberOfPassingVehsBehind>1</MaxNumberOfPassingVehsBehind>
+        <MinNumberOfSecondsBetweenConsecutivePasses>3.5</MinNumberOfSecondsBetweenConsecutivePasses>
+      </OncomingLaneDeterminationToPassValues>
+      <SightDistance>
+        <IsAASHTOPassingSightDistModelUsed>false</IsAASHTOPassingSightDistModelUsed>
+        <IsMUTCDPassingSightDistModelUsed>true</IsMUTCDPassingSightDistModelUsed>
+        <AASHTODefaultSpeedBoundaries>
+          <float>30</float>
+          <float>40</float>
+          <float>50</float>
+          <float>60</float>
+        </AASHTODefaultSpeedBoundaries>
+        <AvgPassingSpeed>
+          <float>34.9</float>
+          <float>43.8</float>
+          <float>52.6</float>
+          <float>62</float>
+        </AvgPassingSpeed>
+        <AccelOfPassingVehDuringInitialManeuver>
+          <float>2.05</float>
+          <float>2.1</float>
+          <float>2.16</float>
+          <float>2.2</float>
+        </AccelOfPassingVehDuringInitialManeuver>
+        <TimeForInitialManeuver>
+          <float>3</float>
+          <float>2.5</float>
+          <float>2</float>
+          <float>1.6</float>
+        </TimeForInitialManeuver>
+        <TimeSpentInOncomingLane>
+          <float>5.9</float>
+          <float>6</float>
+          <float>6.2</float>
+          <float>6.4</float>
+        </TimeSpentInOncomingLane>
+        <ClearanceDistWithPassedVeh>
+          <unsignedShort>80</unsignedShort>
+          <unsignedShort>100</unsignedShort>
+          <unsignedShort>120</unsignedShort>
+          <unsignedShort>140</unsignedShort>
+        </ClearanceDistWithPassedVeh>
+        <PercentErrorInDriversEstimationOfOpposingVehTravelDist>
+          <byte>10</byte>
+          <byte>5</byte>
+          <byte>0</byte>
+          <byte>-5</byte>
+          <byte>-10</byte>
+          <byte>-15</byte>
+          <byte>-20</byte>
+          <byte>-25</byte>
+          <byte>-30</byte>
+          <byte>-35</byte>
+        </PercentErrorInDriversEstimationOfOpposingVehTravelDist>
+      </SightDistance>
+    </TwoLanePassing>
+  </LaneChangeParms>
+</SwashSim_Project>
