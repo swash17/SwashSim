@@ -23,7 +23,7 @@
 <meta name="author" content="" />
 
 
-<meta name="date" content="2024-09-02" />
+<meta name="date" content="2024-09-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -201,8 +201,8 @@ div.csl-indent {
 <li class="chapter" data-level="4" data-path="ChapterDrivers.html"><a href="ChapterDrivers.html"><i class="fa fa-check"></i><b>4</b> Drivers</a></li>
 <li class="chapter" data-level="5" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html"><i class="fa fa-check"></i><b>5</b> Vehicles</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-fleet-types"><i class="fa fa-check"></i><b>5.1</b> Vehicle Fleet Types</a></li>
-<li class="chapter" data-level="5.2" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-models"><i class="fa fa-check"></i><b>5.2</b> Vehicle Models</a>
+<li class="chapter" data-level="5.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#FleetTypes"><i class="fa fa-check"></i><b>5.1</b> Vehicle Fleet Types</a></li>
+<li class="chapter" data-level="5.2" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#VehicleModels"><i class="fa fa-check"></i><b>5.2</b> Vehicle Models</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-model-definitions"><i class="fa fa-check"></i><b>5.2.1</b> Vehicle Model Definitions</a></li>
 </ul></li>
@@ -400,9 +400,9 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="20" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html"><i class="fa fa-check"></i><b>20</b> Vehicle Generation</a>
 <ul>
-<li class="chapter" data-level="20.1" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#vehicle-entry-headway-distribution"><i class="fa fa-check"></i><b>20.1</b> Vehicle Entry Headway Distribution</a></li>
-<li class="chapter" data-level="20.2" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-entry-lane"><i class="fa fa-check"></i><b>20.2</b> Set Vehicle Entry Lane</a></li>
-<li class="chapter" data-level="20.3" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-driver-type"><i class="fa fa-check"></i><b>20.3</b> Set Vehicle Driver Type</a></li>
+<li class="chapter" data-level="20.1" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#GenerateHeadway"><i class="fa fa-check"></i><b>20.1</b> Vehicle Entry Headway Distribution</a></li>
+<li class="chapter" data-level="20.2" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#SetEntryLane"><i class="fa fa-check"></i><b>20.2</b> Set Vehicle Entry Lane</a></li>
+<li class="chapter" data-level="20.3" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#SetDriverType"><i class="fa fa-check"></i><b>20.3</b> Set Vehicle Driver Type</a></li>
 </ul></li>
 <li class="chapter" data-level="21" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html"><i class="fa fa-check"></i><b>21</b> Leader/Follower Status</a>
 <ul>
@@ -494,7 +494,7 @@ div.csl-indent {
 <p><span class="math inline">\({V_{c,a}}\)</span> = average curve speed (mi/h),<br />
 <span class="math inline">\({V_{t,a}}\)</span> = average tangent speed (mi/h),<br />
 <span class="math inline">\({R_p}\)</span> = travel path radius (replaced by curve radius in modified model) (ft),<br />
-<span class="math inline">\({I_{tk}}\)</span> = indicator variable for heavy vehicles (1.0 if model is used to predict heavy vehicle speeds, 0.0 otherwise), and
+<span class="math inline">\({I_{tk}}\)</span> = indicator variable for heavy vehicles (1.0 if model is used to predict heavy vehicle speeds, 0.0 otherwise), and<br />
 <span class="math inline">\(e =\)</span> superelevation rate (decimal)<br></p>
 <p>The modified version of the equation substitutes the curve radius for the travel path radius (<span class="math inline">\({R_p}\)</span>). In order to integrate the model into the simulation tool (SwashSim), some assumptions had to be made regarding the average and 85th percentile tangent speeds. The average tangent speed for passenger cars (<span class="math inline">\({V_{t,a,PC}}\)</span>) was assumed to equal the FFS input in the simulation tool. Based on the findings in the <span class="citation">Bonneson, Pratt, and Miles (<a href="references.html#ref-bonneson_development_2007">2007</a>)</span> study, the average tangent speed for heavy vehicles (<span class="math inline">\({V_{t,a,HV}}\)</span>) was assumed to be 97 percent of <span class="math inline">\({V_{t,a,PC}}\)</span>. For both passenger cars and heavy vehicles, the 85th percentile tangent speed was assumed to be 11 percent higher than the average tangent speed. This was also based on findings in the <span class="citation">Bonneson, Pratt, and Miles (<a href="references.html#ref-bonneson_development_2007">2007</a>)</span> study.</p>
 <p>The curve speeds were assumed to follow a normal distribution. The mean was set equal to the average curve speed, and the standard deviation was estimated from the average and 85th percentile curve speeds. The standard deviation was then used to calculate the 15th percentile curve speed. This distribution was applied to the 10 (default) driver types in the simulation tool. The 15th percentile curve speed was assigned to driver type 1 (the most conservative driver), and the 85th percentile curve speed was assigned to driver type 10 (the most aggressive driver). The curve speeds for the other driver types were linearly interpolated between these two speeds. If the driver’s desired speed on the curve exceeded its desired speed on the tangent, the desired curve speed was set equal to the desired tangent speed.</p>
@@ -506,8 +506,8 @@ div.csl-indent {
 <p>where:</p>
 <p><span class="math inline">\(Desired Speed_{ij} = \text{desired speed for vehicle/driver } i \text{ on link } j \text{ (ft/s)}\)</span>,<br />
 <span class="math inline">\(LinkFreeFlowSpeed_{j} = \text{free-flow speed for link } j \text{ (ft/s)}\)</span>,<br />
-<span class="math inline">\(Desired Speed Multiplier_{i} = \text{multiplier for driver type} i \text{ (unitless)}\)</span>, and<br />
-<span class="math inline">\(VehicleTypeDesiredSpeedProportion_{k} = \text{multiplier for vehicle type} k \text{ (unitless)}\)</span>.</p>
+<span class="math inline">\(Desired Speed Multiplier_{i} = \text{multiplier for driver type } i \text{ (unitless)}\)</span>, and<br />
+<span class="math inline">\(VehicleTypeDesiredSpeedProportion_{k} = \text{multiplier for vehicle type } k \text{ (unitless)}\)</span>.</p>
 <p>The desired speed multiplier value (as a function of driver type) and desired speed proportion value (as a function of vehicle type) can be changed in the <a href="overview.html#Settings">Settings</a>. The link free-flow speed is coded by the user in the network setup.</p>
 <p>Additional information about desired speed determination for passing maneuvers on two-lane highways is discussed <a href="ChapterTwoLaneHwyModeling.html#ChapterTwoLaneHwyModeling">here</a>.</p>
 <div id="heavy-vehicles" class="section level3 hasAnchor" number="24.2.1">

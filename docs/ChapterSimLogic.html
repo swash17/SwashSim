@@ -23,7 +23,7 @@
 <meta name="author" content="" />
 
 
-<meta name="date" content="2024-09-02" />
+<meta name="date" content="2024-09-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -201,8 +201,8 @@ div.csl-indent {
 <li class="chapter" data-level="4" data-path="ChapterDrivers.html"><a href="ChapterDrivers.html"><i class="fa fa-check"></i><b>4</b> Drivers</a></li>
 <li class="chapter" data-level="5" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html"><i class="fa fa-check"></i><b>5</b> Vehicles</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-fleet-types"><i class="fa fa-check"></i><b>5.1</b> Vehicle Fleet Types</a></li>
-<li class="chapter" data-level="5.2" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-models"><i class="fa fa-check"></i><b>5.2</b> Vehicle Models</a>
+<li class="chapter" data-level="5.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#FleetTypes"><i class="fa fa-check"></i><b>5.1</b> Vehicle Fleet Types</a></li>
+<li class="chapter" data-level="5.2" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#VehicleModels"><i class="fa fa-check"></i><b>5.2</b> Vehicle Models</a>
 <ul>
 <li class="chapter" data-level="5.2.1" data-path="ChapterVehicles.html"><a href="ChapterVehicles.html#vehicle-model-definitions"><i class="fa fa-check"></i><b>5.2.1</b> Vehicle Model Definitions</a></li>
 </ul></li>
@@ -400,9 +400,9 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="20" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html"><i class="fa fa-check"></i><b>20</b> Vehicle Generation</a>
 <ul>
-<li class="chapter" data-level="20.1" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#vehicle-entry-headway-distribution"><i class="fa fa-check"></i><b>20.1</b> Vehicle Entry Headway Distribution</a></li>
-<li class="chapter" data-level="20.2" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-entry-lane"><i class="fa fa-check"></i><b>20.2</b> Set Vehicle Entry Lane</a></li>
-<li class="chapter" data-level="20.3" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#set-vehicle-driver-type"><i class="fa fa-check"></i><b>20.3</b> Set Vehicle Driver Type</a></li>
+<li class="chapter" data-level="20.1" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#GenerateHeadway"><i class="fa fa-check"></i><b>20.1</b> Vehicle Entry Headway Distribution</a></li>
+<li class="chapter" data-level="20.2" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#SetEntryLane"><i class="fa fa-check"></i><b>20.2</b> Set Vehicle Entry Lane</a></li>
+<li class="chapter" data-level="20.3" data-path="ChapterVehicleGeneration.html"><a href="ChapterVehicleGeneration.html#SetDriverType"><i class="fa fa-check"></i><b>20.3</b> Set Vehicle Driver Type</a></li>
 </ul></li>
 <li class="chapter" data-level="21" data-path="ChapterLeaderFollowerStatus.html"><a href="ChapterLeaderFollowerStatus.html"><i class="fa fa-check"></i><b>21</b> Leader/Follower Status</a>
 <ul>
@@ -488,12 +488,15 @@ div.csl-indent {
 <h2><span class="header-section-number">19.1</span> First Vehicle Entry<a href="ChapterSimLogic.html#first-vehicle-entry" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The set of entry nodes present in the network is looped through and for each one, the following are determined:</p>
 <ol style="list-style-type: decimal">
-<li>the entry time into the network for the first vehicle to arrive; See <a href="ChapterVehicleGeneration.html#ChapterVehicleGeneration">Vehicle Generation</a> for more information on this process.</li>
-<li>the fleet type (small auto, large truck, etc.) of the first vehicle to arrive</li>
-<li>the specific vehicle model type (e.g., Honda Civic); a vehicle model is identified randomly from all vehicle models available for simulation within the determined fleet type (see <a href="ChapterVehicles.html#ChapterVehicles">Vehicles</a> for more information about vehicle model types).</li>
-<li>the assigned lane Id of the entering vehicle; the vehicle fleet type may influence this assignment if there are certain vehicle type lane restrictions (e.g., HOV lane, truck-only lane, no trucks allowed lane)</li>
-<li>the <a href="ChapterDrivers.html#ChapterDrivers">Driver Type</a> for the entering vehicle; the lane assignment may influence the driver type assignment if policies such as ‘slower drivers keep right’ are in place for the downstream link(s)</li>
-<li>the <a href="ChapterDesiredSpeed.html#ChapterDesiredSpeed">Desired Speed</a> for the entering vehicle/driver; the driver and vehicle types influence this setting</li>
+<li>The entry time into the network for the first vehicle to arrive; The <a href="ChapterVehicleGeneration.html#GenerateHeadway">generated headway</a> plus the current simulation gives the network entry time for the subject vehicle.<br />
+</li>
+<li>The <a href="ChapterVehicles.html#FleetTypes">fleet type</a> (small auto, large truck, etc.) of the first vehicle to arrive. Determined randomly based on the respective fleet type percentages specified for the entry node.<br />
+</li>
+<li>The specific <a href="ChapterVehicles.html#VehicleModels">vehicle model</a> (e.g., Honda Civic). A vehicle model is determined randomly, per a uniform distribution, from all vehicle models available for simulation within the selected fleet type.<br />
+</li>
+<li>The <a href="ChapterVehicleGeneration.html#SetEntryLane">assigned entry lane</a> of the entering vehicle; the vehicle fleet type may influence this assignment if there are certain vehicle type lane restrictions (e.g., HOV lane, truck-only lane, no trucks allowed lane)</li>
+<li>The <a href="ChapterVehicleGeneration.html#SetDriverType">assigned driver type</a> for the entering vehicle; the lane assignment may influence the driver type assignment if policies such as ‘slower drivers keep right’ are in place for the downstream link(s)</li>
+<li>The <a href="ChapterDesiredSpeed.html#ChapterDesiredSpeed">desired speed</a> for the entering vehicle/driver; the driver and vehicle types influence this setting</li>
 </ol>
 </div>
 <div id="simulation-time-loop" class="section level2 hasAnchor" number="19.2">
@@ -550,7 +553,8 @@ More information about gap acceptance logic for unsignalized intersections, and 
 <ol style="list-style-type: decimal">
 <li>If it is possible for the vehicle to consider a lane change (e.g., it is on a link with more than one lane), call the lane changing logic and identify the desired lane for the next time step (i.e., the ‘target lane’); If it is not possible to change lanes, the target lane ID is set equal to current lane ID; See <a href="ChapterLaneChanging.html#ChapterLaneChanging">Lane Changing</a> for more information.</li>
 <li>Update leader and follower ID’s as necessary for lane changes</li>
-<li>Calculate acceleration</li>
+<li>Calculate acceleration<br />
+</li>
 </ol>
 <ol style="list-style-type: lower-alpha">
 <li>this a function of <a href="ChapterVehMoveLogic.html#AccelMode">Acceleration Mode</a>, which is a function of platoon status, control points, etc.<br />
@@ -560,7 +564,8 @@ More information about gap acceptance logic for unsignalized intersections, and 
 <li>Calculate velocity (<span class="math inline">\({v_t}={v_{t-1}}+{a_t} \Delta t\)</span>)</li>
 <li>Calculate position (<span class="math inline">\({x_t}={x_{t-1}}+{v_{t-1}} \Delta t + 0.5{a_t} \Delta t^2\)</span>)</li>
 <li>If the emissions/fuel consumption calculation feature is enabled, the corresponding calculations are performed</li>
-<li>Check if a vehicle has exited its current travel link; if so:</li>
+<li>Check if a vehicle has exited its current travel link; if so:<br />
+</li>
 </ol>
 <ol style="list-style-type: lower-alpha">
 <li>Move it onto its target link</li>

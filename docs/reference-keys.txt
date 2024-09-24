@@ -139,8 +139,8 @@ Settings
 ProjectProperties
 ChapterDrivers
 ChapterVehicles
-vehicle-fleet-types
-vehicle-models
+FleetTypes
+VehicleModels
 vehicle-model-definitions
 ChapterNetworkStructure
 overview-1
@@ -290,9 +290,9 @@ update-vehicle-properties
 check-detector-status
 end-of-simulation-run
 ChapterVehicleGeneration
-vehicle-entry-headway-distribution
-set-vehicle-entry-lane
-set-vehicle-driver-type
+GenerateHeadway
+SetEntryLane
+SetDriverType
 ChapterLeaderFollowerStatus
 variable-definitions
 logic-conditions
