@@ -249,7 +249,6 @@ lane-change-data
 platoon-data
 emissions-and-fuel-consumption-data
 ChapterPerformanceMeasures
-average-entry-headway
 flow-rate
 average-speed
 density
@@ -262,8 +261,9 @@ delay
 queue-length
 saturation-flow-rate
 stop-rate
-vehicle-hours-traveled-vht
 vehicle-miles-traveled-vmt
+vehicle-hours-traveled-vht
+vehicle-hours-delayed-vhd
 ChapterCalibration
 introduction-2
 network-calibration
