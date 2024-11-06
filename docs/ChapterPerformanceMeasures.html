@@ -23,7 +23,7 @@
 <meta name="author" content="" />
 
 
-<meta name="date" content="2024-11-04" />
+<meta name="date" content="2024-11-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -519,7 +519,7 @@ other terms as previously defined.</p>
 <h2><span class="header-section-number">16.3</span> Density<a href="ChapterPerformanceMeasures.html#density" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><em>Density Calculation (Detector Measure)</em></p>
 <p>Detector occupancy can be used to approximate density as follows.</p>
-<p><span class="math inline">\(PropOccupancy =\frac{T_o}{T} \times 100\)</span></p>
+<p><span class="math inline">\(PropOccupancy =\frac{T_o}{T}\)</span></p>
 <p>where:</p>
 <p><span class="math inline">\(PropOccupancy\)</span> = proportion of time that a vehicle occupies the location of the point detector,<br />
 <span class="math inline">\(T_o\)</span> = total time the point detector is occupied by a vehicle, and<br />
@@ -531,11 +531,10 @@ other terms as previously defined.</p>
 <span class="math inline">\(L_e\)</span> = effective vehicle length (average vehicle length + detector length), in units of feet, and<br />
 <span class="math inline">\(5280=\)</span> feet per mile.</p>
 <p><em>Density Calculation (Link Measure)</em></p>
-<p><span class="math inline">\(k=\frac{q}{\bar{u}_s}\)</span></p>
+<p><span class="math inline">\(k=\frac{q_d}{\bar{u}_s}\)</span></p>
 <p>where:</p>
-<p><span class="math inline">\(k\)</span> = density in units of vehicles per unit distance, typically veh/mi/ln,<br />
-<span class="math inline">\(q\)</span> = flow rate in vehicles per unit time, typically veh/h/ln, and<br />
-<span class="math inline">\(\bar{u}_s\)</span> = space-mean speed in units of distance per unit time, typically mi/h.</p>
+<p><span class="math inline">\(k\)</span> = density in units of vehicles per unit distance, typically veh/mi/ln, and<br />
+other terms as defined previously.</p>
 </div>
 <div id="percent-followers" class="section level2 hasAnchor" number="16.4">
 <h2><span class="header-section-number">16.4</span> Percent Followers<a href="ChapterPerformanceMeasures.html#percent-followers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -550,9 +549,10 @@ other terms as previously defined.</p>
 <h2><span class="header-section-number">16.5</span> Follower Density<a href="ChapterPerformanceMeasures.html#follower-density" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><em>Follower Density (Detector Measure)</em></p>
 <p>Follower Density is the density times the proportion of followers</p>
-<p><span class="math inline">\(FD=\frac{PF}{100} \times \frac{q_p}{\bar{u}_s}\)</span></p>
+<p><span class="math inline">\(FD=\frac{PF}{100} \times \frac{q_p}{\bar{u}_t}\)</span></p>
 <p>where:</p>
-<p><span class="math inline">\(FD\)</span> = follower density at a designated roadway point during the measurement time period, in units of followers/mi/ln.</p>
+<p><span class="math inline">\(FD\)</span> = follower density at a designated roadway point during the measurement time period, in units of followers/mi/ln, and
+other terms as defined previously.</p>
 </div>
 <div id="acceleration-noise" class="section level2 hasAnchor" number="16.6">
 <h2><span class="header-section-number">16.6</span> Acceleration Noise<a href="ChapterPerformanceMeasures.html#acceleration-noise" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -565,7 +565,6 @@ other terms as previously defined.</p>
 <span class="math inline">\(a(t)=\)</span>acceleration value at time <em>t</em>,<br />
 <span class="math inline">\(\mu=\)</span> mean, and<br />
 <span class="math inline">\(T=\)</span> total time in motion for the trip segment.</p>
-<p>See LinkResults.csv output file, with columns labeled “Accel Noise-Mean Zero (ft/s2)” and “Accel Noise-Mean NonZero (ft/s2)”.</p>
 </div>
 <div id="travel-time" class="section level2 hasAnchor" number="16.7">
 <h2><span class="header-section-number">16.7</span> Travel Time<a href="ChapterPerformanceMeasures.html#travel-time" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -638,14 +637,14 @@ If a vehicle stops one or more times on the link, it only gets counted as one st
 </div>
 <div id="vehicle-miles-traveled-vmt" class="section level2 hasAnchor" number="16.13">
 <h2><span class="header-section-number">16.13</span> Vehicle-Miles-Traveled (VMT)<a href="ChapterPerformanceMeasures.html#vehicle-miles-traveled-vmt" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="math inline">\(VMT=n_p \times l\)</span></p>
+<p><span class="math inline">\(VMT=n_d \times l\)</span></p>
 <p>where:</p>
 <p><span class="math inline">\(VMT\)</span> = vehicle-miles of travel, in units of veh-mi, and<br />
 other terms as defined previously.</p>
 </div>
 <div id="vehicle-hours-traveled-vht" class="section level2 hasAnchor" number="16.14">
 <h2><span class="header-section-number">16.14</span> Vehicle-Hours-Traveled (VHT)<a href="ChapterPerformanceMeasures.html#vehicle-hours-traveled-vht" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="math inline">\(VHT=n_p \times TT_{avg}\)</span></p>
+<p><span class="math inline">\(VHT=n_d \times TT_{avg}\)</span></p>
 <p>where:</p>
 <p><span class="math inline">\(VHT\)</span> = vehicle-hours of travel, in units of veh-h,<br />
 <span class="math inline">\(TT_{avg}\)</span> = average travel time (equivalent to <span class="math inline">\(\bar{t}\)</span> in the average travel time calculation above, in units of h, and<br />
@@ -655,7 +654,7 @@ other terms as defined previously.</p>
 </div>
 <div id="vehicle-hours-delayed-vhd" class="section level2 hasAnchor" number="16.15">
 <h2><span class="header-section-number">16.15</span> Vehicle-Hours-Delayed (VHD)<a href="ChapterPerformanceMeasures.html#vehicle-hours-delayed-vhd" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><span class="math inline">\(VHD=n_p \times(TT_{Avg}-TT_{FF})\)</span></p>
+<p><span class="math inline">\(VHD=n_d \times(TT_{avg}-TT_{FF})\)</span></p>
 <p>where:</p>
 <p><span class="math inline">\(VHD\)</span> = vehicle-hours of delay, in units of veh-h,<br />
 <span class="math inline">\(TT_{FF}\)</span> = free-flow travel time in units of h, and<br />
